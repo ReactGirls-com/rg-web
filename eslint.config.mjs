@@ -144,6 +144,9 @@ export default [
       '@typescript-eslint/no-var-requires': 0, // allow require
       '@typescript-eslint/no-empty-function': 0, // allow empty function
 
+      // CSS Modules rules
+      'css-modules/no-undef-class': 2, // Disallow undefined CSS class names
+
       // Import rules - matching original config
       'import/no-default-export': 0,
       'import/order': [
