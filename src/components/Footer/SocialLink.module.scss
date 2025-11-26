@@ -1,0 +1,45 @@
+.socialLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid $white-20;
+  border-radius: 50%;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+
+  &:hover {
+    border-color: $aztec-atom;
+    background-color: $aztec-atom;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $aztec-atom;
+    outline-offset: 2px;
+  }
+}
+
+.socialIconInstagram,
+.socialIconFacebook,
+.socialIconLinkedin {
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.socialIconInstagram {
+  mask-image: url('../../assets/instagram.svg');
+}
+
+.socialIconFacebook {
+  mask-image: url('../../assets/facebook.svg');
+}
+
+.socialIconLinkedin {
+  mask-image: url('../../assets/linkedin.svg');
+}

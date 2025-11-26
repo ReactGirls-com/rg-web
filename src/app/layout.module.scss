@@ -1,0 +1,64 @@
+.body {
+  background-color: $crystal-cut;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  border-bottom: 4px solid $carbon-fiber;
+
+  @media (min-width: $screen-sm-min) {
+    padding: 24px 40px;
+  }
+}
+
+.logo {
+  display: block;
+  width: 200px;
+  height: 40px;
+  background-color: $carbon-fiber;
+  mask-image: url('../assets/logo.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.headerNavLinks {
+  display: none;
+  gap: 32px;
+  list-style: none;
+
+  @media (min-width: $screen-md-min) {
+    display: flex;
+  }
+}
+
+.headerNavItem {
+  color: $carbon-fiber;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $aztec-atom;
+  }
+}
+
+.headerNavItemActive {
+  color: $grapefruit-pulp;
+}
+
+.content {
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding: 0 24px;
+
+  @media (min-width: $screen-sm-min) {
+    padding: 0 40px;
+  }
+}
