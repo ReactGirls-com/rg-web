@@ -1,30 +1,20 @@
+import { TRANSLATIONS } from './translations';
+
 export const NAV_LINKS = [
   {
-    label: 'Úvod',
-    href: '/',
+    label: TRANSLATIONS.COURSES_LINK_TEXT,
+    href: '/courses',
   },
   {
-    label: 'O nás',
-    href: '/about',
-  },
-  {
-    label: 'Kurzy',
-    href: '/kurzy',
-  },
-  {
-    label: 'Mentoring',
+    label: TRANSLATIONS.MENTORING_LINK_TEXT,
     href: '/mentoring',
   },
   {
-    label: 'Meetupy',
-    href: '/meetupy',
+    label: TRANSLATIONS.MEETUPS_LINK_TEXT,
+    href: '/meetups',
   },
   {
-    label: 'Partneři',
-    href: '/partneri',
-  },
-  {
-    label: 'Kontakt',
-    href: '/kontakt',
+    label: TRANSLATIONS.CONTACT_LINK_TEXT,
+    href: '/contact',
   },
 ];

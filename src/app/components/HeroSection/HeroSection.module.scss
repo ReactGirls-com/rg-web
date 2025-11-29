@@ -1,0 +1,136 @@
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+
+  @media (min-width: $screen-md-min) {
+    flex-direction: row;
+    gap: 64px;
+  }
+}
+
+.headingWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 32px;
+
+  @media (min-width: $screen-md-min) {
+    margin-bottom: 64px;
+  }
+}
+
+.buttonsStatsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.heading {
+  color: $carbon-fiber;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.1;
+
+  @media (min-width: $screen-md-min) {
+    font-size: 3.5rem;
+  }
+}
+
+.paragraph {
+  color: $carbon-fiber;
+  font-size: 1rem;
+  line-height: 1.6;
+
+  @media (min-width: $screen-md-min) {
+    font-size: 1.1rem;
+  }
+}
+
+.statsCardList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+
+  @media (min-width: $screen-sm-min) {
+    flex-wrap: nowrap;
+  }
+}
+
+.imageWrapper {
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 6 / 4;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  background-color: $cursed-gray;
+  background-image: url('../../../assets/people.svg');
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.socialSection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 24px;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+}
+
+.socialButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialIconInstagram,
+.socialIconLinkedin,
+.socialIconCalendar,
+.socialIconMedium {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: $carbon-fiber;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.socialIconInstagram {
+  mask-image: url('../../../assets/instagram.svg');
+}
+
+.socialIconLinkedin {
+  mask-image: url('../../../assets/linkedin.svg');
+}
+
+.socialIconCalendar {
+  mask-image: url('../../../assets/calendar.svg');
+}
+
+.socialIconMedium {
+  mask-image: url('../../../assets/medium.svg');
+}
+
+.grapefruitPulp {
+  color: $grapefruit-pulp;
+}
+
+.aztecAtom {
+  color: $aztec-atom;
+}
+
+.explodingStar {
+  color: $exploding-star;
+}

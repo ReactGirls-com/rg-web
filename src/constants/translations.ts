@@ -1,4 +1,8 @@
 export const TRANSLATIONS = {
+  COURSES_LINK_TEXT: 'Kurzy',
+  MENTORING_LINK_TEXT: 'Mentoring',
+  MEETUPS_LINK_TEXT: 'Meetupy',
+  CONTACT_LINK_TEXT: 'Kontakt',
   ABOUT_SECTION_PILL: 'O nás',
   ABOUT_SECTION_HEADING_BEFORE: 'Budujeme komunitu, kde se',
   ABOUT_SECTION_HEADING_HIGHLIGHT: 'ženy v IT',
@@ -27,4 +31,19 @@ export const TRANSLATIONS = {
   WHY_REACT_GIRLS_STATS_RATING_LABEL: 'Hodnocení meetupů',
   WHY_REACT_GIRLS_STATS_MEMBERS_LABEL: 'Členů komunity',
   WHY_REACT_GIRLS_STATS_SUPPORT_LABEL: 'Komunitní podpora',
+  JOIN_BUTTON_TEXT: 'Přihlásit se',
+  COMMUNITY_SECTION_HEADING_BEFORE: 'V IT',
+  COMMUNITY_SECTION_HEADING_HIGHLIGHT: 'jsme správně,',
+  COMMUNITY_SECTION_HEADING_AFTER: 'společně',
+  COMMUNITY_SECTION_PARAGRAPH:
+    'Jsme komunita, která ženám nabízí bezpečné prostředí pro růst v IT. Společně se zkušenými vývojáři a vývojářkami podporujeme ženy na cestě k tomu, stát se sebevědomými programátorkami.',
+  COMMUNITY_SECTION_BUTTON_JOIN: 'Zapoj se do komunity',
+  COMMUNITY_SECTION_BUTTON_SUPPORT: 'Podpoř nás',
+  COMMUNITY_SECTION_STATS_SUPPORTED_LABEL: 'Podpořili jsme',
+  COMMUNITY_SECTION_STATS_JOINED_LABEL: 'Zapojilo se',
+  COMMUNITY_SECTION_STATS_EVENTS_LABEL: 'Uspořádali jsme',
+  SOCIAL_INSTAGRAM_LABEL: 'Instagram',
+  SOCIAL_LINKEDIN_LABEL: 'LinkedIn',
+  SOCIAL_MEDIUM_LABEL: 'Medium',
+  SOCIAL_CALENDAR_LABEL: 'Kalendář',
 } as const;

@@ -4,9 +4,11 @@ import localFont from 'next/font/local';
 import Link from 'next/link';
 
 import { CustomLink } from '../components/CustomLink';
+import { Button } from '../components/Button';
 import { ChildrenFC } from '../utils/types';
 import { NAV_LINKS } from '../constants';
 import { Footer } from './components/Footer/Footer';
+import { TRANSLATIONS } from '../constants/translations';
 import style from './layout.module.scss';
 
 const inter = localFont({
@@ -52,6 +54,12 @@ const RootLayout: ChildrenFC = ({ children }) => (
                 </CustomLink>
               </li>
             ))}
+
+            <li>
+              <Button variant="grapefruitPulp">
+                {TRANSLATIONS.JOIN_BUTTON_TEXT}
+              </Button>
+            </li>
           </ul>
         </nav>
       </header>
