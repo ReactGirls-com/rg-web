@@ -48,8 +48,8 @@ export const YellowSection: React.FC<YellowSectionProps> = ({
   }, []);
 
   return (
-    <section ref={sectionRef} className={style.yellowSection}>
-      <div className={style.content}>
+    <section ref={sectionRef} className={style.container}>
+      <div className={style.textContent}>
         <h2 className={style.heading}>{heading}</h2>
         <p className={style.paragraph}>{paragraph}</p>
         <ul className={style.bulletList}>

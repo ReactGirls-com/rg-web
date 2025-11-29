@@ -1,39 +1,35 @@
-.yellowSection {
+.container {
   display: flex;
   flex-direction: column;
   gap: 32px;
   padding: 48px 24px;
-  border: 2px solid $carbon-fiber;
+  border: 4px solid $carbon-fiber;
   border-radius: 16px;
   background-color: $exploding-star;
   box-shadow: 4px 4px 0 $carbon-fiber;
-
-  @media (min-width: $screen-sm-min) {
-    padding: 56px 32px;
-  }
+  text-align: left;
 
   @media (min-width: $screen-md-min) {
     flex-direction: row;
-    gap: 48px;
-    align-items: flex-start;
-    padding: 64px 48px;
+    gap: 32px;
+    align-items: center;
+    padding: 48px 32px;
   }
 }
 
-.content {
+.textContent {
+  display: flex;
   flex: 1;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .heading {
   margin: 0 0 16px;
   color: $carbon-fiber;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 1.3;
-
-  @media (min-width: $screen-sm-min) {
-    font-size: 1.75rem;
-  }
 
   @media (min-width: $screen-md-min) {
     font-size: 2rem;
@@ -43,12 +39,8 @@
 .paragraph {
   margin: 0 0 24px;
   color: $carbon-fiber;
-  font-size: 1rem;
-  line-height: 1.6;
-
-  @media (min-width: $screen-sm-min) {
-    font-size: 1.05rem;
-  }
+  font-size: 1.2rem;
+  line-height: 2;
 }
 
 .bulletList {
@@ -62,11 +54,11 @@
 
 .bulletItem {
   display: flex;
-  gap: 12px;
-  align-items: flex-start;
+  gap: 16px;
+  align-items: center;
   color: $carbon-fiber;
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.2;
 
   &::before {
     content: '✓';
@@ -86,15 +78,8 @@
 
 .dataGrid {
   display: grid;
+  flex: 1;
   flex-shrink: 0;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
-
-  @media (min-width: $screen-sm-min) {
-    gap: 20px;
-  }
-
-  @media (min-width: $screen-md-min) {
-    width: 340px;
-  }
 }

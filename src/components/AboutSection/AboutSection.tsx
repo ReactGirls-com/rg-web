@@ -1,7 +1,7 @@
 import { BasicCard } from '../BasicCard';
 import { TargetIcon, HeartIcon, PeopleIcon } from '../BasicCard/Icons';
 import { Section } from '../Section';
-import { TRANSLATIONS } from '@/src/app/constants/translations';
+import { TRANSLATIONS } from '@/src/constants/translations';
 import { YellowSection } from './YellowSection';
 import style from './AboutSection.module.scss';
 

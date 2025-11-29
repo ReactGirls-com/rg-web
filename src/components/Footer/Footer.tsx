@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { NAV_LINKS } from '@/src/app/constants';
+import { NAV_LINKS } from '@/src/constants';
 import { CustomLink } from '../CustomLink';
 import { ContactRow } from './ContactRow';
 import { SocialLink } from './SocialLink';

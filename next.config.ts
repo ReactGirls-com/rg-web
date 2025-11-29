@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
     additionalData: `
       @use "${path.join(process.cwd(), 'src/styles/breakpoint.scss')}" as *;
       @use "${path.join(process.cwd(), 'src/styles/color.scss')}" as *;
+      @use "${path.join(process.cwd(), 'src/styles/constant.scss')}" as *;
     `,
   },
 };
