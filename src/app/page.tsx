@@ -1,5 +1,5 @@
-import style from './page.module.scss';
+import { AboutSection } from './components/AboutSection';
 
-const Home = () => <h1 className={style.title}>ReactGirls</h1>;
+const Home = () => <AboutSection />;
 
 export default Home;

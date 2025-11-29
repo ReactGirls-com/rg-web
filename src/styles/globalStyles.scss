@@ -6,6 +6,7 @@
 
 * {
   margin: 0;
+  padding: 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -23,7 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family:
-    "Inter",
+    var(--font-inter),
     system-ui,
     -apple-system,
     sans-serif;

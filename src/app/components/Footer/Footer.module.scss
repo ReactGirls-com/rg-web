@@ -29,7 +29,7 @@
   height: 40px;
   margin-bottom: 16px;
   background-color: #fff;
-  mask-image: url('../../assets/logo.svg');
+  mask-image: url('../../../assets/logo.svg');
   mask-size: contain;
   mask-repeat: no-repeat;
   mask-position: left center;
@@ -60,12 +60,10 @@
   flex-direction: column;
   gap: 12px;
   margin-left: 28px;
-  padding: 0;
   list-style: none;
 
   @media (min-width: $screen-md-min) {
     margin-left: 0;
-    padding: 0;
   }
 }
 
