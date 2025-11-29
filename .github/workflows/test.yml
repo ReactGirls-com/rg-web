@@ -26,6 +26,9 @@ jobs:
       - name: Run linting
         run: yarn lint
 
+      - name: Run stylelint
+        run: yarn lint:styles
+
       - name: Run formatting
         run: yarn format
 

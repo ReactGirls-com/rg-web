@@ -22,13 +22,13 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
   font-family:
-    'Inter',
+    "Inter",
     system-ui,
     -apple-system,
     sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
 img,
@@ -60,6 +60,7 @@ h6 {
 p {
   text-wrap: pretty;
 }
+
 h1,
 h2,
 h3,
@@ -71,8 +72,20 @@ h6 {
 
 #root,
 #__next {
-  isolation: isolate;
   display: flex;
-  flex-direction: column;
   flex: 1;
+  flex-direction: column;
+  isolation: isolate;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border-width: 0;
+  white-space: nowrap;
+  clip-path: rect(0, 0, 0, 0);
 }
