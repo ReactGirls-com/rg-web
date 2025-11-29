@@ -5,70 +5,43 @@ import clsx from 'clsx';
 import { CountUp } from './CountUp';
 import style from './DataCard.module.scss';
 
-export type DataCardProps = {
-  value: string;
+type DataCardProps = {
+  value: number | string;
+  valueSuffix?: string;
   label: string;
-  valueColor?: 'red' | 'blue' | 'purple' | 'orange';
+  colorClassName: string;
   showStar?: boolean;
-  startAnimation?: boolean;
-};
-
-const parseValue = (value: string) => {
-  const match = value.match(/^(\d+(?:\.\d+)?)(.*)?$/);
-
-  if (!match) {
-    return { number: null, suffix: value };
-  }
-
-  return {
-    number: parseFloat(match[1]),
-    suffix: match[2] || '',
-  };
+  animate?: boolean;
 };
 
 export const DataCard: React.FC<DataCardProps> = ({
   value,
+  valueSuffix,
   label,
-  valueColor = 'blue',
+  colorClassName,
   showStar = false,
-  startAnimation = false,
-}) => {
-  const { number, suffix } = parseValue(value);
-  const isDecimal = number !== null && !Number.isInteger(number);
+  animate = false,
+}) => (
+  <article className={style.dataCard}>
+    <div
+      className={clsx(style.valueWrapper, colorClassName)}
+      aria-label={`${value} ${label}`}
+    >
+      {typeof value === 'number' && animate ? (
+        <>
+          <CountUp to={value} duration={1000} />
 
-  return (
-    <article className={style.dataCard}>
-      <div
-        className={clsx(style.valueWrapper, {
-          [style.valueRed]: valueColor === 'red',
-          [style.valueBlue]: valueColor === 'blue',
-          [style.valuePurple]: valueColor === 'purple',
-          [style.valueOrange]: valueColor === 'orange',
-        })}
-        aria-label={`${value} ${label}`}
-      >
-        {number !== null && startAnimation ? (
-          <>
-            {isDecimal ? (
-              <>
-                <CountUp to={Math.floor(number)} duration={800} />
-                {`.${String(number).split('.')[1]}`}
-              </>
-            ) : (
-              <CountUp to={number} duration={1000} />
-            )}
-            {suffix}
-          </>
-        ) : (
-          value
-        )}
-        {showStar && (
-          <span className={style.star} aria-hidden="true">
-            ★
-          </span>
-        )}
-      </div>
-      <p className={style.dataLabel}>{label}</p>
-    </article>
-  );
-};
+          {valueSuffix}
+        </>
+      ) : (
+        value
+      )}
+      {showStar && (
+        <span className={style.star} aria-hidden="true">
+          ★
+        </span>
+      )}
+    </div>
+    <p className={style.dataLabel}>{label}</p>
+  </article>
+);

@@ -5,70 +5,41 @@ import { TRANSLATIONS } from '@/src/constants/translations';
 import { YellowSection } from './YellowSection';
 import style from './AboutSection.module.scss';
 
-const { aboutSection, cards, whyReactGirls } = TRANSLATIONS;
-
 export const AboutSection = () => (
   <Section
-    pillText={aboutSection.pill}
+    pillText={TRANSLATIONS.ABOUT_SECTION_PILL}
     heading={
       <>
-        {aboutSection.heading.before}{' '}
+        {TRANSLATIONS.ABOUT_SECTION_HEADING_BEFORE}{' '}
         <span className={style.highlight}>
-          {aboutSection.heading.highlight}
+          {TRANSLATIONS.ABOUT_SECTION_HEADING_HIGHLIGHT}
         </span>{' '}
-        {aboutSection.heading.after}
+        {TRANSLATIONS.ABOUT_SECTION_HEADING_AFTER}
       </>
     }
-    subheading={aboutSection.subheading}
+    subheading={TRANSLATIONS.ABOUT_SECTION_SUBHEADING}
   >
     <div className={style.cardsContainer}>
       <BasicCard
         icon={<TargetIcon />}
-        title={cards.mission.title}
-        description={cards.mission.description}
+        title={TRANSLATIONS.CARD_MISSION_TITLE}
+        description={TRANSLATIONS.CARD_MISSION_DESCRIPTION}
         iconColor="red"
       />
       <BasicCard
         icon={<HeartIcon />}
-        title={cards.vision.title}
-        description={cards.vision.description}
+        title={TRANSLATIONS.CARD_VISION_TITLE}
+        description={TRANSLATIONS.CARD_VISION_DESCRIPTION}
         iconColor="cyan"
       />
       <BasicCard
         icon={<PeopleIcon />}
-        title={cards.unique.title}
-        description={cards.unique.description}
+        title={TRANSLATIONS.CARD_UNIQUE_TITLE}
+        description={TRANSLATIONS.CARD_UNIQUE_DESCRIPTION}
         iconColor="purple"
       />
     </div>
 
-    <YellowSection
-      heading={whyReactGirls.heading}
-      paragraph={whyReactGirls.paragraph}
-      bulletPoints={[...whyReactGirls.bulletPoints]}
-      dataCards={[
-        {
-          value: whyReactGirls.stats.satisfaction.value,
-          label: whyReactGirls.stats.satisfaction.label,
-          valueColor: 'red',
-        },
-        {
-          value: whyReactGirls.stats.rating.value,
-          label: whyReactGirls.stats.rating.label,
-          valueColor: 'blue',
-          showStar: true,
-        },
-        {
-          value: whyReactGirls.stats.members.value,
-          label: whyReactGirls.stats.members.label,
-          valueColor: 'purple',
-        },
-        {
-          value: whyReactGirls.stats.support.value,
-          label: whyReactGirls.stats.support.label,
-          valueColor: 'orange',
-        },
-      ]}
-    />
+    <YellowSection />
   </Section>
 );
