@@ -1,19 +1,21 @@
-import { BasicCard } from '../BasicCard';
-import { TargetIcon, HeartIcon, PeopleIcon } from '../BasicCard/Icons';
-import { Section } from '../Section';
+import { Section } from '../../../components/Section';
+import { HeadingHighlight } from '../../../components/HeadingHighlight';
 import { TRANSLATIONS } from '@/src/constants/translations';
 import { YellowSection } from './YellowSection';
+import { COLORS } from '@/src/styles/color';
+import { BasicCard } from '@/src/components/BasicCard';
 import style from './AboutSection.module.scss';
 
 export const AboutSection = () => (
   <Section
     pillText={TRANSLATIONS.ABOUT_SECTION_PILL}
+    pillColor={COLORS.paleLavender}
     heading={
       <>
         {TRANSLATIONS.ABOUT_SECTION_HEADING_BEFORE}{' '}
-        <span className={style.highlight}>
+        <HeadingHighlight highlightColor={COLORS.paleLavender}>
           {TRANSLATIONS.ABOUT_SECTION_HEADING_HIGHLIGHT}
-        </span>{' '}
+        </HeadingHighlight>{' '}
         {TRANSLATIONS.ABOUT_SECTION_HEADING_AFTER}
       </>
     }
@@ -21,22 +23,22 @@ export const AboutSection = () => (
   >
     <div className={style.cardsContainer}>
       <BasicCard
-        icon={<TargetIcon />}
+        iconClassName={style.iconTarget}
         title={TRANSLATIONS.CARD_MISSION_TITLE}
         description={TRANSLATIONS.CARD_MISSION_DESCRIPTION}
-        iconColor="red"
+        iconColor="grapefruitPulp"
       />
       <BasicCard
-        icon={<HeartIcon />}
+        iconClassName={style.iconHeart}
         title={TRANSLATIONS.CARD_VISION_TITLE}
         description={TRANSLATIONS.CARD_VISION_DESCRIPTION}
-        iconColor="cyan"
+        iconColor="aztecAtom"
       />
       <BasicCard
-        icon={<PeopleIcon />}
+        iconClassName={style.iconPeople}
         title={TRANSLATIONS.CARD_UNIQUE_TITLE}
         description={TRANSLATIONS.CARD_UNIQUE_DESCRIPTION}
-        iconColor="purple"
+        iconColor="paleLavender"
       />
     </div>
 

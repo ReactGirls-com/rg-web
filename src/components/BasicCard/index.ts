@@ -1,1 +1,0 @@
-export { BasicCard } from './BasicCard';

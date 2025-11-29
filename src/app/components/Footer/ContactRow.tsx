@@ -1,4 +1,4 @@
-import { Row } from '../Row';
+import { Row } from '../../../components/Row';
 import style from './ContactRow.module.scss';
 
 type ContactRowProps = {

@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { CustomLink } from '../components/CustomLink';
 import { ChildrenFC } from '../utils/types';
 import { NAV_LINKS } from '../constants';
-import { Footer } from '../components/Footer/Footer';
+import { Footer } from './components/Footer/Footer';
 import style from './layout.module.scss';
 
 const inter = localFont({

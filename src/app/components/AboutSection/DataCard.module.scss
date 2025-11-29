@@ -3,10 +3,9 @@
   flex-direction: column;
   align-items: center;
   padding: 24px 16px;
-  border: 2px solid $carbon-fiber;
+  border: 3px solid $carbon-fiber;
   border-radius: 12px;
   background-color: $crystal-cut;
-  text-align: center;
 }
 
 .valueWrapper {
@@ -37,7 +36,7 @@
   width: 25px;
   height: 25px;
   background-color: currentcolor;
-  mask-image: url('../../assets/star.svg');
+  mask-image: url('../../../assets/star.svg');
   mask-size: contain;
   mask-repeat: no-repeat;
   mask-position: center;

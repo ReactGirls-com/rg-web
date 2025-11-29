@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 
 import { DataCard } from './DataCard';
 import { TRANSLATIONS } from '@/src/constants/translations';
+import { BorderBox } from '../../../components/BorderBox';
 import style from './YellowSection.module.scss';
 
 export const YellowSection: React.FC = () => {
@@ -37,7 +38,7 @@ export const YellowSection: React.FC = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className={style.container}>
+    <BorderBox as="section" ref={sectionRef} className={style.container}>
       <div className={style.textContent}>
         <h2 className={style.heading}>
           {TRANSLATIONS.WHY_REACT_GIRLS_HEADING}
@@ -87,6 +88,6 @@ export const YellowSection: React.FC = () => {
           colorClassName={style.explodingStar}
         />
       </div>
-    </section>
+    </BorderBox>
   );
 };

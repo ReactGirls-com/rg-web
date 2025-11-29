@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 import { NAV_LINKS } from '@/src/constants';
-import { CustomLink } from '../CustomLink';
+import { CustomLink } from '../../../components/CustomLink';
 import { ContactRow } from './ContactRow';
 import { SocialLink } from './SocialLink';
 import contactRowStyle from './ContactRow.module.scss';
