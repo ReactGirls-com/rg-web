@@ -5,11 +5,11 @@
   width: 100%;
   max-width: $max-screen-width;
   margin: 0 auto;
-  padding: 48px 24px;
+  padding: 48px 0;
   text-align: center;
 
   @media (min-width: $screen-md-min) {
-    padding: 100px 40px;
+    padding: 100px 0;
   }
 }
 

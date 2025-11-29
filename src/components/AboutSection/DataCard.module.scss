@@ -1,45 +1,49 @@
 .dataCard {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 24px 16px;
   border: 2px solid $carbon-fiber;
   border-radius: 12px;
-  background-color: #fff;
+  background-color: $crystal-cut;
   text-align: center;
-
-  @media (min-width: $screen-sm-min) {
-    padding: 28px 20px;
-  }
 }
 
 .valueWrapper {
   display: flex;
-  gap: 4px;
+  gap: 6px;
   justify-content: center;
   align-items: center;
+  width: 80px;
   margin-bottom: 8px;
-  color: var(--text-color);
   font-weight: 700;
-  font-size: 2.5rem;
-  line-height: 1;
+  font-size: 2rem;
+  line-height: 1.2;
 
-  @media (min-width: $screen-sm-min) {
-    font-size: 3rem;
-  }
-}
-
-.star {
-  color: $aztec-atom;
-  font-size: 1.5rem;
-
-  @media (min-width: $screen-sm-min) {
-    font-size: 2rem;
+  @media (min-width: $screen-md-min) {
+    width: 110px;
+    font-size: 2.5rem;
   }
 }
 
 .dataLabel {
-  margin: 0;
   color: $carbon-fiber;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   line-height: 1.4;
+}
+
+.star {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: currentcolor;
+  mask-image: url('../../assets/star.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  @media (min-width: $screen-md-min) {
+    width: 30px;
+    height: 30px;
+  }
 }

@@ -11,7 +11,8 @@ type DataCardProps = {
   label: string;
   colorClassName: string;
   showStar?: boolean;
-  animate?: boolean;
+  startAnimation?: boolean;
+  shouldAnimate?: boolean;
 };
 
 export const DataCard: React.FC<DataCardProps> = ({
@@ -20,28 +21,39 @@ export const DataCard: React.FC<DataCardProps> = ({
   label,
   colorClassName,
   showStar = false,
-  animate = false,
-}) => (
-  <article className={style.dataCard}>
-    <div
-      className={clsx(style.valueWrapper, colorClassName)}
-      aria-label={`${value} ${label}`}
-    >
-      {typeof value === 'number' && animate ? (
-        <>
-          <CountUp to={value} duration={1000} />
+  startAnimation = false,
+  shouldAnimate,
+}) => {
+  const isNumber = typeof value === 'number';
 
-          {valueSuffix}
-        </>
-      ) : (
-        value
-      )}
-      {showStar && (
-        <span className={style.star} aria-hidden="true">
-          ★
-        </span>
-      )}
-    </div>
-    <p className={style.dataLabel}>{label}</p>
-  </article>
-);
+  return (
+    <article className={style.dataCard}>
+      <div
+        className={clsx(style.valueWrapper, colorClassName)}
+        aria-label={`${value} ${label}`}
+      >
+        {shouldAnimate && isNumber && (
+          <>
+            {startAnimation ? (
+              <>
+                <CountUp to={value} duration={1000} />
+
+                {valueSuffix}
+              </>
+            ) : (
+              <>0 {valueSuffix}</>
+            )}
+          </>
+        )}
+
+        {!shouldAnimate && (
+          <>
+            {value} {valueSuffix}
+          </>
+        )}
+        {showStar && <span className={style.star} aria-hidden="true" />}
+      </div>
+      <p className={style.dataLabel}>{label}</p>
+    </article>
+  );
+};

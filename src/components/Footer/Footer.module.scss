@@ -60,12 +60,10 @@
   flex-direction: column;
   gap: 12px;
   margin-left: 28px;
-  padding: 0;
   list-style: none;
 
   @media (min-width: $screen-md-min) {
     margin-left: 0;
-    padding: 0;
   }
 }
 

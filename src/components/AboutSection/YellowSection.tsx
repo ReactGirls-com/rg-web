@@ -63,8 +63,9 @@ export const YellowSection: React.FC = () => {
           value={97}
           valueSuffix="%"
           label={TRANSLATIONS.WHY_REACT_GIRLS_STATS_SATISFACTION_LABEL}
-          colorClassName={style.explodingStar}
-          animate={startAnimation}
+          colorClassName={style.grapefruitPulp}
+          startAnimation={startAnimation}
+          shouldAnimate
         />
         <DataCard
           value="4.9"
@@ -77,12 +78,13 @@ export const YellowSection: React.FC = () => {
           valueSuffix="+"
           label={TRANSLATIONS.WHY_REACT_GIRLS_STATS_MEMBERS_LABEL}
           colorClassName={style.paleLavender}
-          animate={startAnimation}
+          startAnimation={startAnimation}
+          shouldAnimate
         />
         <DataCard
           value="24/7"
           label={TRANSLATIONS.WHY_REACT_GIRLS_STATS_SUPPORT_LABEL}
-          colorClassName={style.grapefruitPulp}
+          colorClassName={style.explodingStar}
         />
       </div>
     </section>
