@@ -1,0 +1,164 @@
+@import '../../styles/breakpoint';
+@import '../../styles/color';
+
+.yellowSection {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 48px 24px;
+  border: 2px solid $carbon-fiber;
+  border-radius: 16px;
+  background-color: $exploding-star;
+  box-shadow: 4px 4px 0 $carbon-fiber;
+
+  @media (min-width: $screen-sm-min) {
+    padding: 56px 32px;
+  }
+
+  @media (min-width: $screen-md-min) {
+    flex-direction: row;
+    gap: 48px;
+    align-items: flex-start;
+    padding: 64px 48px;
+  }
+}
+
+.content {
+  flex: 1;
+}
+
+.heading {
+  margin: 0 0 16px;
+  color: $carbon-fiber;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.3;
+
+  @media (min-width: $screen-sm-min) {
+    font-size: 1.75rem;
+  }
+
+  @media (min-width: $screen-md-min) {
+    font-size: 2rem;
+  }
+}
+
+.paragraph {
+  margin: 0 0 24px;
+  color: $carbon-fiber;
+  font-size: 1rem;
+  line-height: 1.6;
+
+  @media (min-width: $screen-sm-min) {
+    font-size: 1.05rem;
+  }
+}
+
+.bulletList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bulletItem {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  color: $carbon-fiber;
+  font-size: 1rem;
+  line-height: 1.6;
+
+  &::before {
+    content: '✓';
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    margin-top: 2px;
+    border-radius: 50%;
+    background-color: $carbon-fiber;
+    color: #fff;
+    font-size: 0.85rem;
+  }
+}
+
+.dataGrid {
+  display: grid;
+  flex-shrink: 0;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+
+  @media (min-width: $screen-sm-min) {
+    gap: 20px;
+  }
+
+  @media (min-width: $screen-md-min) {
+    width: 340px;
+  }
+}
+
+.dataCard {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 16px;
+  border: 2px solid $carbon-fiber;
+  border-radius: 12px;
+  background-color: #fff;
+  text-align: center;
+
+  @media (min-width: $screen-sm-min) {
+    padding: 28px 20px;
+  }
+}
+
+.valueWrapper {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1;
+
+  @media (min-width: $screen-sm-min) {
+    font-size: 3rem;
+  }
+}
+
+.valueRed {
+  color: $grapefruit-pulp;
+}
+
+.valueBlue {
+  color: $aztec-atom;
+}
+
+.valuePurple {
+  color: $pale-lavender;
+}
+
+.valueOrange {
+  color: $exploding-star;
+}
+
+.star {
+  color: $aztec-atom;
+  font-size: 1.5rem;
+
+  @media (min-width: $screen-sm-min) {
+    font-size: 2rem;
+  }
+}
+
+.dataLabel {
+  margin: 0;
+  color: $carbon-fiber;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}

@@ -1,0 +1,1 @@
+export { YellowSection } from './YellowSection';
