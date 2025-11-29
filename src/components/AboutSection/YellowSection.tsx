@@ -1,79 +1,15 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import clsx from 'clsx';
 
-import { CountUp } from './CountUp';
+import { DataCard, DataCardProps } from './DataCard';
 import style from './YellowSection.module.scss';
-
-type DataCardProps = {
-  value: string;
-  label: string;
-  valueColor?: 'red' | 'blue' | 'purple' | 'orange';
-  showStar?: boolean;
-  startAnimation?: boolean;
-};
-
-const parseValue = (value: string) => {
-  const match = value.match(/^(\d+(?:\.\d+)?)(.*)?$/);
-
-  if (!match) {
-    return { number: null, suffix: value };
-  }
-
-  return {
-    number: parseFloat(match[1]),
-    suffix: match[2] || '',
-  };
-};
-
-const DataCard: React.FC<DataCardProps> = ({
-  value,
-  label,
-  valueColor = 'blue',
-  showStar = false,
-  startAnimation = false,
-}) => {
-  const { number, suffix } = parseValue(value);
-  const isDecimal = number !== null && !Number.isInteger(number);
-
-  return (
-    <div className={style.dataCard}>
-      <div
-        className={clsx(style.valueWrapper, {
-          [style.valueRed]: valueColor === 'red',
-          [style.valueBlue]: valueColor === 'blue',
-          [style.valuePurple]: valueColor === 'purple',
-          [style.valueOrange]: valueColor === 'orange',
-        })}
-      >
-        {number !== null && startAnimation ? (
-          <>
-            {isDecimal ? (
-              <>
-                <CountUp to={Math.floor(number)} duration={800} />
-                {`.${String(number).split('.')[1]}`}
-              </>
-            ) : (
-              <CountUp to={number} duration={1000} />
-            )}
-            {suffix}
-          </>
-        ) : (
-          value
-        )}
-        {showStar && <span className={style.star}>★</span>}
-      </div>
-      <p className={style.dataLabel}>{label}</p>
-    </div>
-  );
-};
 
 type YellowSectionProps = {
   heading: string;
   paragraph: string;
   bulletPoints: string[];
-  dataCards: DataCardProps[];
+  dataCards: Omit<DataCardProps, 'startAnimation'>[];
 };
 
 export const YellowSection: React.FC<YellowSectionProps> = ({

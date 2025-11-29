@@ -1,0 +1,60 @@
+.dataCard {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 16px;
+  border: 2px solid $carbon-fiber;
+  border-radius: 12px;
+  background-color: #fff;
+  text-align: center;
+
+  @media (min-width: $screen-sm-min) {
+    padding: 28px 20px;
+  }
+}
+
+.valueWrapper {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1;
+
+  @media (min-width: $screen-sm-min) {
+    font-size: 3rem;
+  }
+}
+
+.valueRed {
+  color: $grapefruit-pulp;
+}
+
+.valueBlue {
+  color: $aztec-atom;
+}
+
+.valuePurple {
+  color: $pale-lavender;
+}
+
+.valueOrange {
+  color: $exploding-star;
+}
+
+.star {
+  color: $aztec-atom;
+  font-size: 1.5rem;
+
+  @media (min-width: $screen-sm-min) {
+    font-size: 2rem;
+  }
+}
+
+.dataLabel {
+  margin: 0;
+  color: $carbon-fiber;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}

@@ -1,67 +1,17 @@
-@import '../../styles/breakpoint';
-@import '../../styles/color';
+.highlight {
+  color: $pale-lavender;
+}
 
-.aboutSection {
+.cardsContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 24px;
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 48px 24px;
-  text-align: center;
-
-  @media (min-width: $screen-sm-min) {
-    padding: 64px 40px;
-  }
+  margin-bottom: 24px;
 
   @media (min-width: $screen-md-min) {
-    padding: 80px 40px;
-  }
-}
-
-.pill {
-  padding: 10px 28px;
-  border: 2px solid $carbon-fiber;
-  border-radius: 32px;
-  background-color: $pale-lavender;
-  color: $carbon-fiber;
-  box-shadow: 3px 3px 0 $carbon-fiber;
-  font-weight: 600;
-  font-size: 0.9rem;
-  white-space: nowrap;
-}
-
-.heading {
-  margin: 24px 0 16px;
-  color: $carbon-fiber;
-  font-weight: 700;
-  font-size: 1.75rem;
-  line-height: 1.3;
-
-  @media (min-width: $screen-sm-min) {
-    font-size: 2.25rem;
-  }
-
-  @media (min-width: $screen-md-min) {
-    margin: 32px 0 24px;
-    font-size: 3rem;
-  }
-}
-
-.subheading {
-  max-width: 800px;
-  margin: 0 0 48px;
-  color: $carbon-fiber;
-  font-size: 1rem;
-  line-height: 1.6;
-
-  @media (min-width: $screen-sm-min) {
-    font-size: 1.1rem;
-  }
-
-  @media (min-width: $screen-md-min) {
-    margin-bottom: 64px;
-    font-size: 1.15rem;
+    flex-direction: row;
+    gap: 32px;
+    margin-bottom: 32px;
   }
 }
