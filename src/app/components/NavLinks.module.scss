@@ -1,0 +1,29 @@
+.list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.listItem {
+  list-style: none;
+}
+
+.link {
+  color: $cursed-gray;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $aztec-atom;
+  }
+}
+
+.linkActive {
+  color: $grapefruit-pulp;
+}
+
+.buttonWrapper {
+  list-style: none;
+}

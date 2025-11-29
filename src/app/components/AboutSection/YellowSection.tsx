@@ -1,41 +1,14 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
-
 import { DataCard } from './DataCard';
 import { TRANSLATIONS } from '@/src/constants/translations';
 import { BorderBox } from '../../../components/BorderBox';
+import { useIntersectionObserver } from '@/src/hooks/useIntersectionObserver';
 import style from './YellowSection.module.scss';
 
 export const YellowSection: React.FC = () => {
-  const sectionRef = useRef<HTMLDivElement | null>(null);
-  const [startAnimation, setStartAnimation] = useState(false);
-
-  useEffect(() => {
-    if (typeof IntersectionObserver === 'undefined') {
-      const timeoutRef = setTimeout(() => setStartAnimation(true), 0);
-
-      return () => clearTimeout(timeoutRef);
-    }
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setStartAnimation(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.3 },
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
+  const { elementRef: sectionRef, isIntersecting: startAnimation } =
+    useIntersectionObserver({ threshold: 0.3 });
 
   return (
     <BorderBox as="section" ref={sectionRef} className={style.container}>

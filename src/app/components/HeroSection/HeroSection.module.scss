@@ -1,0 +1,138 @@
+.heroSection {
+  padding-bottom: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+
+  @media (min-width: $screen-md-min) {
+    flex-direction: row;
+    gap: 64px;
+    align-items: center;
+  }
+}
+
+.leftContentWrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 60px;
+  width: 100%;
+
+  @media (min-width: $screen-md-min) {
+    max-width: 590px;
+  }
+}
+
+.rightContentWrapper {
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+
+  @media (min-width: $screen-md-min) {
+    width: auto;
+  }
+}
+
+.headingWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.buttonsStatsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.heading {
+  color: $carbon-fiber;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.1;
+
+  @media (min-width: $screen-md-min) {
+    font-size: 3.5rem;
+  }
+}
+
+.paragraph {
+  color: $carbon-fiber;
+  font-size: 1rem;
+  line-height: 1.6;
+
+  @media (min-width: $screen-md-min) {
+    font-size: 1.1rem;
+  }
+}
+
+.statsCardList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: flex-start;
+
+  @media (min-width: $screen-md-min) {
+    flex-wrap: nowrap;
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  padding: 0;
+}
+
+.image {
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.socialSection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  margin-top: 48px;
+  margin-bottom: 32px;
+
+  @media (min-width: $screen-md-min) {
+    align-self: flex-end;
+    width: auto;
+    margin-top: 80px;
+  }
+}
+
+.socialLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: flex-start;
+
+  @media (min-width: $screen-md-min) {
+    justify-content: flex-end;
+  }
+}
+
+.grapefruitPulp {
+  color: $grapefruit-pulp;
+}
+
+.aztecAtom {
+  color: $aztec-atom;
+}
+
+.explodingStar {
+  color: $exploding-star;
+}

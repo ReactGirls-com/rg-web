@@ -1,31 +1,42 @@
+import clsx from 'clsx';
+
 import { ChildrenFC } from '@/src/utils/types';
 import style from './Section.module.scss';
 
 type SectionProps = {
-  pillText: string;
-  pillColor: string;
-  heading: React.ReactNode;
-  subheading: string;
+  ref?: React.RefObject<HTMLElement | null>;
+  titleText?: string;
+  titleColor?: string;
+  heading?: React.ReactNode;
+  subheading?: string;
+  className?: string;
 };
 
 export const Section: ChildrenFC<SectionProps> = ({
-  pillText,
-  pillColor,
+  ref,
+  titleText,
+  titleColor,
   heading,
   subheading,
   children,
+  className,
 }) => (
-  <section className={style.section}>
-    <div className={style.header}>
+  <section ref={ref} className={clsx(style.section, className)}>
+    {titleText && (
       <div
-        style={{ '--pill-color': pillColor } as React.CSSProperties}
+        style={{ '--title-color': titleColor } as React.CSSProperties}
         className={style.pill}
       >
-        {pillText}
+        {titleText}
       </div>
-      <h2 className={style.heading}>{heading}</h2>
-      <p className={style.subheading}>{subheading}</p>
-    </div>
+    )}
+
+    {(heading || subheading) && (
+      <div className={style.header}>
+        {heading && <h2 className={style.heading}>{heading}</h2>}
+        {subheading && <p className={style.subheading}>{subheading}</p>}
+      </div>
+    )}
     {children}
   </section>
 );

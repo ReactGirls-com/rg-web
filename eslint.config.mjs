@@ -146,6 +146,7 @@ export default [
 
       // CSS Modules rules
       'css-modules/no-undef-class': 2, // Disallow undefined CSS class names
+      'css-modules/no-unused-class': 2, // Disallow unused CSS classes
 
       // Import rules - matching original config
       'import/no-default-export': 0,
