@@ -3,9 +3,9 @@ import '../styles/globalStyles.scss';
 import localFont from 'next/font/local';
 import Link from 'next/link';
 
-import { CustomLink } from '../components/CustomLink';
+import { NavLinks } from './components/NavLinks';
+import { Header } from './components/Header';
 import { ChildrenFC } from '../utils/types';
-import { NAV_LINKS } from '../constants';
 import { Footer } from './components/Footer/Footer';
 import style from './layout.module.scss';
 
@@ -39,20 +39,10 @@ const RootLayout: ChildrenFC = ({ children }) => (
           <span className="visually-hidden">ReactGirls</span>
         </Link>
 
-        <nav aria-label="Main navigation">
-          <ul className={style.headerNavLinks}>
-            {NAV_LINKS.map(({ label, href }) => (
-              <li key={href}>
-                <CustomLink
-                  className={style.headerNavItem}
-                  activeClassName={style.headerNavItemActive}
-                  href={href}
-                >
-                  {label}
-                </CustomLink>
-              </li>
-            ))}
-          </ul>
+        <Header logoClassName={style.logo} />
+
+        <nav aria-label="Main navigation" className={style.headerNav}>
+          <NavLinks listClassName={style.headerNavLinks} />
         </nav>
       </header>
       <main className={style.content}>{children}</main>

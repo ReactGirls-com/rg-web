@@ -10,5 +10,7 @@ module.exports = {
     'selector-id-pattern': null, // Allow custom id names
     'selector-max-type': null, // Allow multiple type selectors
     'selector-max-id': null, // Allow multiple id selectors
+    'selector-pseudo-class-no-unknown': null, // Allow unknown pseudo-classes
+    'declaration-no-important': null, // Allow important declarations
   },
 };

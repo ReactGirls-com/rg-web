@@ -3,28 +3,30 @@
 import clsx from 'clsx';
 
 import { CountUp } from '@/src/components/CountUp';
-import style from './DataCard.module.scss';
+import { BorderBox } from '@/src/components/BorderBox';
+import style from './StatsCard.module.scss';
 
-type DataCardProps = {
-  value: number | string;
+type StatsCardProps = {
+  value: number;
   valueSuffix?: string;
   label: string;
+  underLabel: string;
   colorClassName: string;
-  showStar?: boolean;
   startAnimation?: boolean;
   shouldAnimate?: boolean;
 };
 
-export const DataCard: React.FC<DataCardProps> = ({
+export const StatsCard: React.FC<StatsCardProps> = ({
   value,
   valueSuffix,
   label,
+  underLabel,
   colorClassName,
-  showStar = false,
   startAnimation = false,
   shouldAnimate,
 }) => (
-  <article className={style.dataCard}>
+  <BorderBox as="article" className={style.statsCard}>
+    <p className={style.label}>{label}</p>
     <div className={clsx(style.valueWrapper, colorClassName)}>
       <CountUp
         to={value}
@@ -33,9 +35,7 @@ export const DataCard: React.FC<DataCardProps> = ({
         shouldAnimate={shouldAnimate}
         startAnimation={startAnimation}
       />
-
-      {showStar && <span className={style.star} aria-hidden="true" />}
     </div>
-    <p className={style.dataLabel}>{label}</p>
-  </article>
+    <p className={style.label}>{underLabel}</p>
+  </BorderBox>
 );

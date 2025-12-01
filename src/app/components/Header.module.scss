@@ -1,0 +1,132 @@
+.burgerMenuWrapper {
+  @media (min-width: $screen-md-min) {
+    display: none;
+  }
+
+  :global(.bm-menu-wrap) {
+    top: 0;
+  }
+
+  :global(.bm-overlay) {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(45 45 45 / 80%);
+  }
+
+  :global(.bm-menu) {
+    padding: 32px $mobile-horizontal-padding;
+    border-left: 3px solid $carbon-fiber;
+    background-color: $crystal-cut;
+  }
+
+  :global(.bm-item-list) {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.burgerButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus-visible {
+    border-radius: 4px;
+    outline: 3px solid $aztec-atom;
+    outline-offset: 2px;
+  }
+}
+
+.burgerIcon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url('../../assets/burger.svg') no-repeat center;
+}
+
+.closeButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus-visible {
+    border-radius: 4px;
+    outline: 3px solid $aztec-atom;
+    outline-offset: 2px;
+  }
+}
+
+.closeIcon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url('../../assets/cross.svg') no-repeat center;
+}
+
+.menuHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid $carbon-fiber;
+}
+
+.menuLogo {
+  display: block;
+  width: 160px;
+  height: 32px;
+  background-color: $carbon-fiber;
+  mask-image: url('../../assets/logo.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.menuLinks {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menuLink {
+  display: block;
+  padding: 10px 0;
+  font-size: 1.125rem;
+
+  &:focus-visible {
+    border-radius: 4px;
+    outline: 3px solid $aztec-atom;
+    outline-offset: 4px;
+  }
+}
+
+.menuButtonWrapper {
+  margin-top: 12px;
+}

@@ -1,11 +1,10 @@
 import Link from 'next/link';
 
-import { NAV_LINKS } from '@/src/constants';
+import { NAV_LINKS, SOCIAL_LINKS } from '@/src/constants';
 import { CustomLink } from '../../../components/CustomLink';
+import { IconButton } from '@/src/components/IconButton';
 import { ContactRow } from './ContactRow';
-import { SocialLink } from './SocialLink';
-import contactRowStyle from './ContactRow.module.scss';
-import socialLinkStyle from './SocialLink.module.scss';
+import { TRANSLATIONS } from '@/src/constants/translations';
 import style from './Footer.module.scss';
 
 export const Footer: React.FC = () => (
@@ -19,33 +18,24 @@ export const Footer: React.FC = () => (
         >
           <span className="visually-hidden">ReactGirls</span>
         </Link>
-        <p className={style.footerDescription}>
-          Empowering women to start and thrive in their tech careers through
-          education, mentorship, and community.
-        </p>
+        <p className={style.footerDescription}>{TRANSLATIONS.FOOTER_CLAIM}</p>
         <nav className={style.socialLinks} aria-label="Social media links">
-          <SocialLink
-            href="https://www.instagram.com/reactgirlsprague/"
-            ariaLabel="Visit our Instagram page"
-            label="Instagram"
-            iconClass={socialLinkStyle.socialIconInstagram}
-          />
-          <SocialLink
-            href="https://www.facebook.com/ReactGirlsPrague/"
-            ariaLabel="Visit our Facebook page"
-            label="Facebook"
-            iconClass={socialLinkStyle.socialIconFacebook}
-          />
-          <SocialLink
-            href="https://www.linkedin.com/company/reactgirlsprague/posts/?feedView=all"
-            ariaLabel="Visit our LinkedIn page"
-            label="LinkedIn"
-            iconClass={socialLinkStyle.socialIconLinkedin}
-          />
+          {SOCIAL_LINKS.map(({ label, icon, href, ariaLabel }) => (
+            <IconButton
+              key={label}
+              href={href}
+              variant="secondary"
+              aria-label={ariaLabel}
+              icon={icon}
+              iconClassName={style.socialIcon}
+            />
+          ))}
         </nav>
       </section>
       <nav aria-label="Footer navigation">
-        <h2 className={style.footerNavTitle}>Quick Links</h2>
+        <h2 className={style.footerNavTitle}>
+          {TRANSLATIONS.FOOTER_NAV_TITLE}
+        </h2>
         <ul className={style.footerNavLinks}>
           {NAV_LINKS.map(({ label, href }) => (
             <li key={href}>
@@ -61,22 +51,23 @@ export const Footer: React.FC = () => (
         </ul>
       </nav>
       <section>
-        <h2 className={style.footerContactTitle}>Get in Touch</h2>
+        <h2 className={style.footerContactTitle}>
+          {TRANSLATIONS.FOOTER_CONTACT_TITLE}
+        </h2>
         <address className={style.contactInfo}>
           <ContactRow
-            iconClass={contactRowStyle.contactIconEmail}
-            label="Email"
-            value="hello@reactgirls.com"
+            iconClass={style.contactIconEmail}
+            value="reactgirlsprague@gmail.com"
           />
           <ContactRow
-            iconClass={contactRowStyle.contactIconPhone}
-            label="Phone"
-            value="+1 (234) 567-890"
-          />
-          <ContactRow
-            iconClass={contactRowStyle.contactIconPin}
-            label="Location"
-            value="San Francisco, CA"
+            iconClass={style.contactIconPin}
+            value={
+              <>
+                <div>ReactGirls z. s.</div>
+                <div>V jehličí 2106/2, Krč,</div> <div>Praha 4, 142 00,</div>{' '}
+                <div>Česká republika</div>
+              </>
+            }
           />
         </address>
       </section>

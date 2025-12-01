@@ -1,33 +1,3 @@
-.contactIconEmail,
-.contactIconPhone,
-.contactIconPin {
-  flex-shrink: 0;
-  width: 18px;
-  height: 18px;
-  margin-top: 2px;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.contactIconEmail {
-  background-image: url('../../../assets/email.svg');
-}
-
-.contactIconPhone {
-  background-image: url('../../../assets/phone.svg');
-}
-
-.contactIconPin {
-  background-image: url('../../../assets/pin.svg');
-}
-
-.contactLabel {
-  color: $white-80;
-  font-weight: 400;
-  font-size: 0.85rem;
-}
-
 .contactValue {
   color: #fff;
   font-weight: 400;

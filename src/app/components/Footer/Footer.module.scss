@@ -18,6 +18,7 @@
   @media (min-width: $screen-md-min) {
     flex-direction: row;
     gap: 48px;
+    justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 40px;
   }
@@ -45,6 +46,7 @@
 
 .socialLinks {
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
@@ -115,4 +117,27 @@
   color: $white-80;
   font-weight: 400;
   font-size: 0.85rem;
+}
+
+.contactIconEmail,
+.contactIconPin {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contactIconEmail {
+  background-image: url('../../../assets/email.svg');
+}
+
+.contactIconPin {
+  background-image: url('../../../assets/pin.svg');
+}
+
+.socialIcon {
+  background-color: #fff;
 }
