@@ -3,7 +3,7 @@ export const TRANSLATIONS = {
   MENTORING_LINK_TEXT: 'Mentoring',
   MEETUPS_LINK_TEXT: 'Meetupy',
   CONTACT_LINK_TEXT: 'Kontakt',
-  ABOUT_SECTION_PILL: 'O nás',
+  ABOUT_SECTION_TITLE: 'O nás',
   ABOUT_SECTION_HEADING_BEFORE: 'Budujeme komunitu, kde se',
   ABOUT_SECTION_HEADING_HIGHLIGHT: 'ženy v IT',
   ABOUT_SECTION_HEADING_AFTER: 'cítí dobře',
@@ -48,5 +48,42 @@ export const TRANSLATIONS = {
   SOCIAL_ARIA_LABEL: 'Navštivte náš',
   FOOTER_CLAIM: 'V IT jsme správně, společně',
   FOOTER_NAV_TITLE: 'Rychlé odkazy',
-  FOOTER_CONTACT_TITLE: 'Kontaktuj nás',
+  FOOTER_CONTACT_TITLE: 'Kontakty',
+  OUR_ACTIVITIES_SECTION_TITLE: 'Naše aktivity',
+  OUR_ACTIVITIES_SECTION_HEADING_BEFORE:
+    'Podpora, kterou potřebuješ k úspěchu jako',
+  OUR_ACTIVITIES_SECTION_HEADING_HIGHLIGHT: 'programátorka',
+  OUR_ACTIVITIES_SECTION_SUBHEADING:
+    'Od strukturovaných kurzů až po individuální mentoring, nabízíme ucelený ekosystém podpory, který tě provede růstem v každé fázi tvé cesty do IT.',
+  OUR_ACTIVITIES_COURSES_TITLE: 'Kurzy',
+  OUR_ACTIVITIES_COURSES_DESCRIPTION:
+    'Intenzivní kurzy programování, které vedou naši zkušení lektoři a lektorky. Během synchronních offline lekcí tě provedeme teorií i praxí a sama si budeš moct vše hned vyzkoušet.',
+  OUR_ACTIVITIES_COURSES_BULLET_1: 'Jednodenní workshopy i dlouhodobé akademie',
+  OUR_ACTIVITIES_COURSES_BULLET_2: 'Praktická cvičení a projekty',
+  OUR_ACTIVITIES_COURSES_BULLET_3: 'Certifikát o absolvování',
+  OUR_ACTIVITIES_COURSES_BUTTON: 'Prozkoumat kurzy',
+  OUR_ACTIVITIES_MENTORING_BADGE: 'Náš hlavní program',
+  OUR_ACTIVITIES_MENTORING_TITLE: 'Mentoring',
+  OUR_ACTIVITIES_MENTORING_DESCRIPTION:
+    'Pracuj na svém vlastním projektu s podporou zkušeného mentora nebo mentorky a získej zkušenosti díky programu, který simuluje reálné pracovní prostředí.',
+  OUR_ACTIVITIES_MENTORING_BULLET_1:
+    'Týdenní individuální schůzky s code review',
+  OUR_ACTIVITIES_MENTORING_BULLET_2: 'Vlastní projekt do portfolia',
+  OUR_ACTIVITIES_MENTORING_BULLET_3: 'Podpora v řízení kariéry',
+  OUR_ACTIVITIES_MENTORING_BULLET_4:
+    'Mock interview s HR a seniorním programátorem',
+  OUR_ACTIVITIES_MENTORING_BUTTON: 'Prozkoumat mentoring',
+  OUR_ACTIVITIES_MEETUPS_TITLE: 'Meetupy',
+  OUR_ACTIVITIES_MEETUPS_DESCRIPTION:
+    'Přidej se k naší komunitě na meetupeech, ať už jako publikum, nebo jako speaker/speakerka. Vytváříme bezpečný prostor k networkingu nejen pro ženy.',
+  OUR_ACTIVITIES_MEETUPS_BULLET_1: 'Speakeři a speakerky z praxe',
+  OUR_ACTIVITIES_MEETUPS_BULLET_2: 'Komunitní prostředí',
+  OUR_ACTIVITIES_MEETUPS_BULLET_3: 'Příležitost k networkingu',
+  OUR_ACTIVITIES_MEETUPS_BUTTON: 'Prozkoumat meetupy',
+  OUR_ACTIVITIES_CTA_TITLE: 'Nenacházíš, co potřebuješ?',
+  OUR_ACTIVITIES_CTA_DESCRIPTION:
+    'Pokud máš nápad na tematickou oblast nebo program, který ti u nás chybí, dej nám vědět! Tvůj tip s týmem rádi prokonzultujeme.',
+  OUR_ACTIVITIES_CTA_BUTTON: 'Napiš nám',
+  OUR_ACTIVITIES_CTA_COPY_EMAIL: 'Zkopirovat email',
+  OUR_ACTIVITIES_CTA_COPIED_EMAIL: 'Zkopirovano',
 } as const;

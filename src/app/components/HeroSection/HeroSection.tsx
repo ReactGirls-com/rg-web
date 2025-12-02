@@ -94,7 +94,6 @@ export const HeroSection: React.FC = () => {
               alt=""
               className={style.image}
               fill
-              sizes="(max-width: 768px) 100vw, (max-width: 992px) 50vw, 40vw"
               priority
             />
           </BorderBox>

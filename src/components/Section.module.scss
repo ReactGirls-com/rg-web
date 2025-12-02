@@ -1,16 +1,5 @@
 .section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: $max-screen-width;
-  margin: 0 auto;
-  padding: 48px $mobile-horizontal-padding;
   border-bottom: 3px solid $carbon-fiber;
-
-  @media (min-width: $screen-md-min) {
-    padding: 80px $desktop-horizontal-padding;
-  }
 
   &:nth-child(even) {
     background-color: white;
@@ -18,6 +7,20 @@
 
   &:last-child {
     border-bottom: none;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: $max-screen-width;
+  margin: 0 auto;
+  padding: 48px $mobile-horizontal-padding;
+
+  @media (min-width: $screen-md-min) {
+    padding: 80px $desktop-horizontal-padding;
   }
 }
 
@@ -29,11 +32,11 @@
   margin-bottom: 32px;
 
   @media (min-width: $screen-md-min) {
-    margin-bottom: 80px;
+    margin-bottom: 64px;
   }
 }
 
-.pill {
+.title {
   margin-bottom: 32px;
   border-bottom: 4px solid var(--title-color);
   color: $carbon-fiber;
