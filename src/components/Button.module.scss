@@ -2,12 +2,16 @@
 @import '../styles/breakpoint';
 
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 12px 24px;
   border: 3px solid $carbon-fiber;
   border-radius: 32px;
   background-color: var(--button-color, transparent);
   color: #fff;
   box-shadow: 3px 3px 0 $carbon-fiber;
+  text-decoration: none;
   white-space: nowrap;
   cursor: pointer;
   transition:

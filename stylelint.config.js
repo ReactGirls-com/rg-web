@@ -12,5 +12,7 @@ module.exports = {
     'selector-max-id': null, // Allow multiple id selectors
     'selector-pseudo-class-no-unknown': null, // Allow unknown pseudo-classes
     'declaration-no-important': null, // Allow important declarations
+    'custom-property-pattern': null, // Allow custom property names
+    'keyframes-name-pattern': null, // Allow custom keyframes names
   },
 };

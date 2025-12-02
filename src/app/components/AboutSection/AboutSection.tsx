@@ -8,7 +8,7 @@ import style from './AboutSection.module.scss';
 
 export const AboutSection = () => (
   <Section
-    titleText={TRANSLATIONS.ABOUT_SECTION_PILL}
+    titleText={TRANSLATIONS.ABOUT_SECTION_TITLE}
     titleColor={COLORS.paleLavender}
     heading={
       <>

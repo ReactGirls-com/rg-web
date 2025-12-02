@@ -21,22 +21,24 @@ export const Section: ChildrenFC<SectionProps> = ({
   children,
   className,
 }) => (
-  <section ref={ref} className={clsx(style.section, className)}>
-    {titleText && (
-      <div
-        style={{ '--title-color': titleColor } as React.CSSProperties}
-        className={style.pill}
-      >
-        {titleText}
-      </div>
-    )}
+  <section className={style.section} ref={ref}>
+    <div className={clsx(style.content, className)}>
+      {titleText && (
+        <div
+          style={{ '--title-color': titleColor } as React.CSSProperties}
+          className={style.title}
+        >
+          {titleText}
+        </div>
+      )}
 
-    {(heading || subheading) && (
-      <div className={style.header}>
-        {heading && <h2 className={style.heading}>{heading}</h2>}
-        {subheading && <p className={style.subheading}>{subheading}</p>}
-      </div>
-    )}
-    {children}
+      {(heading || subheading) && (
+        <div className={style.header}>
+          {heading && <h2 className={style.heading}>{heading}</h2>}
+          {subheading && <p className={style.subheading}>{subheading}</p>}
+        </div>
+      )}
+      {children}
+    </div>
   </section>
 );

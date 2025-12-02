@@ -1,0 +1,47 @@
+@import '../../../styles/color';
+@import '../../../styles/breakpoint';
+
+.buttonWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.desktopCopyButton {
+  display: none;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $screen-md-min) {
+    display: flex;
+  }
+}
+
+.mobileEmailButton {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $screen-md-min) {
+    display: none;
+  }
+}
+
+.icon {
+  position: relative;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.iconCopy {
+  background-image: url('../../../assets/copy.svg');
+}
+
+.iconCheckmark {
+  background-image: url('../../../assets/checkmark.svg');
+}

@@ -1,0 +1,37 @@
+@import '../../../styles/breakpoint';
+
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  margin-bottom: 64px;
+
+  @media (min-width: $screen-md-min) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.iconBook {
+  background: url('../../../assets/book.svg') no-repeat center center;
+  background-color: $grapefruit-pulp;
+  background-size: 32px 32px;
+}
+
+.iconPeople {
+  background-color: $pale-lavender;
+  mask-image: url('../../../assets/people.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.iconCalendar {
+  background: url('../../../assets/calendar.svg') no-repeat center center;
+  background-color: $aztec-atom;
+  background-size: 32px 32px;
+}
+
+.cardMentoring {
+  background-color: $pale-lavender;
+}
