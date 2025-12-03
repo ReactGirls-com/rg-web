@@ -43,9 +43,9 @@ export const CopyEmailButton: React.FC<CopyEmailButtonProps> = ({
         variant="explodingStar"
         href={`mailto:${email}`}
         className={style.mobileEmailButton}
-        aria-label={TRANSLATIONS.OUR_ACTIVITIES_CTA_BUTTON}
+        aria-label={TRANSLATIONS.CTA_BUTTON}
       >
-        {TRANSLATIONS.OUR_ACTIVITIES_CTA_BUTTON}
+        {TRANSLATIONS.CTA_BUTTON}
       </Button>
 
       <Button

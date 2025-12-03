@@ -22,7 +22,7 @@ export const CountUp: React.FC<CountUpProps> = ({
   const isNumber = typeof to === 'number';
 
   useEffect(() => {
-    if (!isNumber) {
+    if (!isNumber || !startAnimation) {
       return;
     }
 
@@ -45,7 +45,7 @@ export const CountUp: React.FC<CountUpProps> = ({
     };
 
     requestAnimationFrame(animate);
-  }, [to, duration]);
+  }, [to, duration, startAnimation]);
 
   return (
     <>

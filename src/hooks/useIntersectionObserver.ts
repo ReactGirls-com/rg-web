@@ -2,12 +2,14 @@ import { useEffect, useRef, useState } from 'react';
 
 type UseIntersectionObserverOptions = {
   threshold?: number;
+  rootMargin?: string;
 };
 
 export const useIntersectionObserver = ({
   threshold = 0.3,
+  rootMargin = '0px 0px -30% 0px',
 }: UseIntersectionObserverOptions = {}) => {
-  const elementRef = useRef<HTMLElement>(null);
+  const elementRef = useRef<HTMLDivElement>(null);
   const [isIntersecting, setIsIntersecting] = useState(false);
 
   useEffect(() => {
@@ -24,7 +26,7 @@ export const useIntersectionObserver = ({
           observer.disconnect();
         }
       },
-      { threshold },
+      { threshold, rootMargin },
     );
 
     if (elementRef.current) {
@@ -34,7 +36,7 @@ export const useIntersectionObserver = ({
     return () => {
       observer.disconnect();
     };
-  }, [threshold]);
+  }, [threshold, rootMargin]);
 
   return { elementRef, isIntersecting };
 };
