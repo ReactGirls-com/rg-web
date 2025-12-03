@@ -80,10 +80,19 @@ export const TRANSLATIONS = {
   OUR_ACTIVITIES_MEETUPS_BULLET_2: 'Komunitní prostředí',
   OUR_ACTIVITIES_MEETUPS_BULLET_3: 'Příležitost k networkingu',
   OUR_ACTIVITIES_MEETUPS_BUTTON: 'Prozkoumat meetupy',
-  OUR_ACTIVITIES_CTA_TITLE: 'Nenacházíš, co potřebuješ?',
-  OUR_ACTIVITIES_CTA_DESCRIPTION:
+  CTA_TITLE: 'Nenacházíš, co potřebuješ?',
+  CTA_DESCRIPTION:
     'Pokud máš nápad na tematickou oblast nebo program, který ti u nás chybí, dej nám vědět! Tvůj tip s týmem rádi prokonzultujeme.',
-  OUR_ACTIVITIES_CTA_BUTTON: 'Napiš nám',
-  OUR_ACTIVITIES_CTA_COPY_EMAIL: 'Zkopirovat email',
-  OUR_ACTIVITIES_CTA_COPIED_EMAIL: 'Zkopirovano',
+  CTA_BUTTON: 'Napiš nám',
+  CTA_COPY_EMAIL: 'Zkopirovat email',
+  CTA_COPIED_EMAIL: 'Zkopirovano',
+  COURSES_SECTION_TITLE: 'Offline lekce',
+  COURSES_SECTION_HEADING_BEFORE: 'Přihlas se do intenzivních kurzů',
+  COURSES_SECTION_HEADING_HIGHLIGHT: 'programování',
+  COURSES_SECTION_SUBHEADING:
+    'Během synchronních offline lekcí tě provedeme teorií i praxí a sama si budeš moct vše hned vyzkoušet. Myslíme si, že setkávat se v realitě s dalšími členkami komunity je důležité. Proto všechny naše akademie a workshopy probíhají výhradně offline v Praze.',
+  COURSES_STATS_GRADUATES_LABEL: 'Absolventek kurzů',
+  COURSES_STATS_COMPLETION_LABEL: 'Míra úspěšného dokončení',
+  COURSES_STATS_LECTURERS_LABEL: 'Zkušených lektorů a koučů',
+  COURSES_STATS_LESSONS_LABEL: 'Proběhlých lekcí',
 } as const;

@@ -1,6 +1,3 @@
-@import '../../../styles/color';
-@import '../../../styles/breakpoint';
-
 .buttonWrapper {
   position: relative;
   display: inline-block;
@@ -39,9 +36,9 @@
 }
 
 .iconCopy {
-  background-image: url('../../../assets/copy.svg');
+  background-image: url('../../assets/copy.svg');
 }
 
 .iconCheckmark {
-  background-image: url('../../../assets/checkmark.svg');
+  background-image: url('../../assets/checkmark.svg');
 }

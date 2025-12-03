@@ -1,0 +1,38 @@
+.heading {
+  font-size: 2.5rem;
+
+  @media (min-width: $screen-md-min) {
+    font-size: 3.5rem;
+  }
+}
+
+.dataGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
+  width: 100%;
+
+  @media (min-width: $screen-sm-min) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $screen-md-min) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.grapefruitPulp {
+  color: $grapefruit-pulp;
+}
+
+.aztecAtom {
+  color: $aztec-atom;
+}
+
+.paleLavender {
+  color: $pale-lavender;
+}
+
+.explodingStar {
+  color: $exploding-star;
+}

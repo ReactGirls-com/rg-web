@@ -1,13 +1,15 @@
+import { ReactNode, RefObject } from 'react';
 import clsx from 'clsx';
 
 import { ChildrenFC } from '@/src/utils/types';
 import style from './Section.module.scss';
 
 type SectionProps = {
-  ref?: React.RefObject<HTMLElement | null>;
+  ref?: RefObject<HTMLElement | null>;
   titleText?: string;
   titleColor?: string;
-  heading?: React.ReactNode;
+  heading?: ReactNode;
+  headingClassName?: string;
   subheading?: string;
   className?: string;
 };
@@ -17,6 +19,7 @@ export const Section: ChildrenFC<SectionProps> = ({
   titleText,
   titleColor,
   heading,
+  headingClassName,
   subheading,
   children,
   className,
@@ -34,7 +37,9 @@ export const Section: ChildrenFC<SectionProps> = ({
 
       {(heading || subheading) && (
         <div className={style.header}>
-          {heading && <h2 className={style.heading}>{heading}</h2>}
+          {heading && (
+            <h2 className={clsx(style.heading, headingClassName)}>{heading}</h2>
+          )}
           {subheading && <p className={style.subheading}>{subheading}</p>}
         </div>
       )}

@@ -3,25 +3,25 @@
 import clsx from 'clsx';
 
 import { CountUp } from '@/src/components/CountUp';
-import { BorderBox } from '@/src/components/BorderBox';
+import { BorderBox } from './BorderBox';
 import { useIntersectionObserver } from '@/src/hooks/useIntersectionObserver';
-import style from './StatsCard.module.scss';
+import style from './DataCard.module.scss';
 
-type StatsCardProps = {
-  value: number;
+type DataCardProps = {
+  value: number | string;
   valueSuffix?: string;
   label: string;
-  underLabel: string;
   colorClassName: string;
+  showStar?: boolean;
   shouldAnimate?: boolean;
 };
 
-export const StatsCard: React.FC<StatsCardProps> = ({
+export const DataCard: React.FC<DataCardProps> = ({
   value,
   valueSuffix,
   label,
-  underLabel,
   colorClassName,
+  showStar = false,
   shouldAnimate,
 }) => {
   const { elementRef, isIntersecting: startAnimation } =
@@ -29,8 +29,7 @@ export const StatsCard: React.FC<StatsCardProps> = ({
 
   return (
     <div ref={elementRef}>
-      <BorderBox as="article" className={style.statsCard}>
-        <p className={style.label}>{label}</p>
+      <BorderBox as="article" className={style.dataCard}>
         <div className={clsx(style.valueWrapper, colorClassName)}>
           <CountUp
             to={value}
@@ -39,8 +38,10 @@ export const StatsCard: React.FC<StatsCardProps> = ({
             shouldAnimate={shouldAnimate}
             startAnimation={startAnimation}
           />
+
+          {showStar && <span className={style.star} aria-hidden="true" />}
         </div>
-        <p className={style.label}>{underLabel}</p>
+        <p className={style.dataLabel}>{label}</p>
       </BorderBox>
     </div>
   );

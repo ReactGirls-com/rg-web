@@ -5,22 +5,27 @@ import mediumIcon from '../assets/medium.svg';
 import facebookIcon from '../assets/facebook.svg';
 import meetupIcon from '../assets/meeetup.svg';
 
+export const COURSES_LINK = '/courses';
+export const MENTORING_LINK = '/mentoring';
+export const MEETUPS_LINK = '/meetups';
+export const CONTACT_LINK = '/contact';
+
 export const NAV_LINKS = [
   {
     label: TRANSLATIONS.COURSES_LINK_TEXT,
-    href: '/courses',
+    href: COURSES_LINK,
   },
   {
     label: TRANSLATIONS.MENTORING_LINK_TEXT,
-    href: '/mentoring',
+    href: MENTORING_LINK,
   },
   {
     label: TRANSLATIONS.MEETUPS_LINK_TEXT,
-    href: '/meetups',
+    href: MEETUPS_LINK,
   },
   {
     label: TRANSLATIONS.CONTACT_LINK_TEXT,
-    href: '/contact',
+    href: CONTACT_LINK,
   },
 ];
 

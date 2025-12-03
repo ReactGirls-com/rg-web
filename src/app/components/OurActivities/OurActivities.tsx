@@ -2,10 +2,9 @@ import { Section } from '../../../components/Section';
 import { HeadingHighlight } from '../../../components/HeadingHighlight';
 import { TRANSLATIONS } from '@/src/constants/translations';
 import { COLORS } from '@/src/styles/color';
-import { NAV_LINKS } from '@/src/constants';
-import { CtaBanner } from '@/src/components/CtaBanner';
-import { CopyEmailButton } from './CopyEmailButton';
+import { COURSES_LINK, MENTORING_LINK, MEETUPS_LINK } from '@/src/constants';
 import { ActivityCard } from './ActivityCard';
+import { AreYouLostBanner } from '@/src/components/AreYouLostBanner/AreYouLostBanner';
 import style from './OurActivities.module.scss';
 
 export const OurActivities = () => (
@@ -33,7 +32,7 @@ export const OurActivities = () => (
           TRANSLATIONS.OUR_ACTIVITIES_COURSES_BULLET_3,
         ]}
         buttonVariant="grapefruitPulp"
-        buttonHref={NAV_LINKS[0].href}
+        buttonHref={COURSES_LINK}
         buttonText={TRANSLATIONS.OUR_ACTIVITIES_COURSES_BUTTON}
         bulletListColor={COLORS.grapefruitPulp}
       />
@@ -49,7 +48,7 @@ export const OurActivities = () => (
           TRANSLATIONS.OUR_ACTIVITIES_MENTORING_BULLET_4,
         ]}
         buttonVariant="explodingStar"
-        buttonHref={NAV_LINKS[1].href}
+        buttonHref={MENTORING_LINK}
         buttonText={TRANSLATIONS.OUR_ACTIVITIES_MENTORING_BUTTON}
         showStarBadge
         showBadge
@@ -68,21 +67,12 @@ export const OurActivities = () => (
           TRANSLATIONS.OUR_ACTIVITIES_MEETUPS_BULLET_3,
         ]}
         buttonVariant="aztecAtom"
-        buttonHref={NAV_LINKS[2].href}
+        buttonHref={MEETUPS_LINK}
         buttonText={TRANSLATIONS.OUR_ACTIVITIES_MEETUPS_BUTTON}
         bulletListColor={COLORS.aztecAtom}
       />
     </div>
 
-    <CtaBanner
-      title={TRANSLATIONS.OUR_ACTIVITIES_CTA_TITLE}
-      description={TRANSLATIONS.OUR_ACTIVITIES_CTA_DESCRIPTION}
-    >
-      <CopyEmailButton
-        email="reactgirlsprague@gmail.com"
-        copyText={TRANSLATIONS.OUR_ACTIVITIES_CTA_COPY_EMAIL}
-        copiedText={TRANSLATIONS.OUR_ACTIVITIES_CTA_COPIED_EMAIL}
-      />
-    </CtaBanner>
+    <AreYouLostBanner />
   </Section>
 );
