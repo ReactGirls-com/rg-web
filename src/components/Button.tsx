@@ -47,14 +47,21 @@ export const Button: React.FC<ButtonProps> = ({
   } as React.CSSProperties;
 
   if (href) {
+    const isExternalLink = href.startsWith('http');
+
     return (
       <Link
         href={href}
-        className={buttonClassName}
+        className={clsx(buttonClassName, {
+          [style.externalLink]: isExternalLink,
+        })}
         style={buttonStyle}
+        target={isExternalLink ? '_blank' : undefined}
+        rel={isExternalLink ? 'noopener noreferrer' : undefined}
         {...(props as any)}
       >
         {children}
+        {isExternalLink && <span className={style.icon} />}
       </Link>
     );
   }

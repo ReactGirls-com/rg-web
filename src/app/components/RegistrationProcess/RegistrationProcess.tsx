@@ -1,9 +1,9 @@
-import { RegistrationProcess as AbstractedRegistrationProcess } from '@/src/components/RegistrationProcess';
+import { StepProcess } from '@/src/components/StepProcess';
 import { TRANSLATIONS } from '@/src/constants/translations';
 import { COLORS } from '@/src/styles/color';
 
 export const RegistrationProcess = () => (
-  <AbstractedRegistrationProcess
+  <StepProcess
     headingBefore={TRANSLATIONS.REGISTRATION_PROCESS_SECTION_HEADING_BEFORE}
     headingHighlight={
       TRANSLATIONS.REGISTRATION_PROCESS_SECTION_HEADING_HIGHLIGHT

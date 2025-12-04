@@ -33,3 +33,18 @@
 .darkText {
   color: $carbon-fiber;
 }
+
+.externalLink {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  background-image: url('../assets/external-link.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

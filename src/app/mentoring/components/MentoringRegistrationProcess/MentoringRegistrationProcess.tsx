@@ -1,9 +1,9 @@
-import { RegistrationProcess } from '@/src/components/RegistrationProcess';
+import { StepProcess } from '@/src/components/StepProcess';
 import { TRANSLATIONS } from '@/src/constants/translations';
 import { COLORS } from '@/src/styles/color';
 
 export const MentoringRegistrationProcess = () => (
-  <RegistrationProcess
+  <StepProcess
     headingBefore={TRANSLATIONS.MENTORING_REGISTRATION_HEADING_BEFORE}
     headingHighlight={TRANSLATIONS.MENTORING_REGISTRATION_HEADING_HIGHLIGHT}
     headingHighlightColor={COLORS.paleLavender}
