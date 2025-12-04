@@ -95,4 +95,47 @@ export const TRANSLATIONS = {
   COURSES_STATS_COMPLETION_LABEL: 'Míra úspěšného dokončení',
   COURSES_STATS_LECTURERS_LABEL: 'Zkušených lektorů a koučů',
   COURSES_STATS_LESSONS_LABEL: 'Proběhlých lekcí',
-} as const;
+  PARTNERS_SECTION_TITLE: 'Naši partneři',
+  PARTNERS_SECTION_HEADING_BEFORE: 'Spolu s',
+  PARTNERS_SECTION_HEADING_HIGHLIGHT: 'partnery',
+  PARTNERS_SECTION_HEADING_AFTER: 'pomáháme ženám růst v IT',
+  PARTNERS_SECTION_SUBHEADING:
+    'Díky partnerům můžeme držet naše aktivity dostupné, komunita může růst a více žen má tak šanci udělat další krok k tomu, stát se úspěšnými a sebevědomými programátorkami.',
+  MENTORING_SECTION_TITLE: 'Náš hlavní program',
+  MENTORING_SECTION_HEADING_BEFORE: 'Naprogramuj svůj první',
+  MENTORING_SECTION_HEADING_HIGHLIGHT: 'projekt',
+  MENTORING_SECTION_SUBHEADING:
+    'Už umíš pracovat s JavaScriptem, máš nápad na vlastní web nebo appku, ale sama nevíš, jak na to? Naprogramuj si svůj vlastní projekt do portfolia s podporou zkušeného mentora nebo mentorky.',
+  MENTORING_STATS_GRADUATES_LABEL: 'Absolventek mentoringu',
+  MENTORING_STATS_MENTORS_LABEL: 'Zkušených mentorů',
+  MENTORING_STATS_DURATION_LABEL: 'Délka trvání programu',
+  MENTORING_STATS_RECOMMENDATION_LABEL:
+    'Mentees by mentoring doporučilo kamarádce',
+  MEETUPS_SECTION_TITLE: 'Komunitní akce',
+  MEETUPS_SECTION_HEADING_BEFORE: 'Užij si s námi',
+  MEETUPS_SECTION_HEADING_HIGHLIGHT: 'komunitní',
+  MEETUPS_SECTION_HEADING_AFTER: 'atmosféru',
+  MEETUPS_SECTION_SUBHEADING:
+    'Připoj se k nám na dalším ReactGirls meetupu. Poslechni si zajímavé přednášky, nebo se zkus postavit na pódium s mikrofonem.',
+  MEETUPS_SECTION_BUTTON: 'Prohlédni si plánované akce',
+  MEETUPS_STATS_PAST_MEETUPS_LABEL: 'Proběhlých meetupů',
+  MEETUPS_STATS_MEMBERS_LABEL: 'Členů',
+  MEETUPS_STATS_SPEAKERS_LABEL: 'Přednášejících z praxe',
+  MEETUPS_STATS_RATING_LABEL: 'Hodnocení meetupů',
+  CONTACT_SECTION_TITLE: 'Kontakt',
+  CONTACT_HERO_BUTTON_TEXT: 'Kontaktuj nás',
+  CONTACT_HERO_HEADING_BEFORE: 'Kontakt',
+  CONTACT_HERO_HEADING_HIGHLIGHT: 'ReactGirls',
+  CONTACT_HERO_SUBHEADING:
+    'Máš otázky? Chceš se zapojit? Rádi tě uslyšíme! Kontaktuj nás prostřednictvím některého z kanálů níže.',
+  CONTACT_SECTION_HEADING: 'Kontaktuj nás',
+  CONTACT_EMAIL_LABEL: 'Email',
+  CONTACT_ADDRESS_LABEL: 'Adresa',
+  CONTACT_SOCIAL_LABEL: 'Sleduj nás',
+  TEAM_SECTION_TITLE: 'Náš tým',
+  TEAM_SECTION_HEADING_BEFORE: 'Poznej',
+  TEAM_SECTION_HEADING_HIGHLIGHT: 'ReactGirls',
+  TEAM_SECTION_HEADING_AFTER: 'tým',
+  TEAM_SECTION_DESCRIPTION:
+    'Náš tým se skládá z lidí, které baví technologie a kteří ve sdílení svých zkušeností vidí smysl. Společně budujeme komunitu, která ženám dává bezpečné prostředí pro růst v IT.',
+};

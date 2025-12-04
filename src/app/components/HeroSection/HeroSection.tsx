@@ -1,8 +1,10 @@
+'use client';
+
 import Image from 'next/image';
 
 import { StatsCard } from './StatsCard';
 import { TRANSLATIONS } from '@/src/constants/translations';
-import { SOCIAL_LINKS } from '@/src/constants';
+import { SECTION_IDS, SOCIAL_LINKS } from '@/src/constants';
 import { Button } from '@/src/components/Button';
 import { IconButton } from '@/src/components/IconButton';
 import { HeadingHighlight } from '@/src/components/HeadingHighlight';
@@ -12,6 +14,22 @@ import { Row } from '@/src/components/Row';
 import { BorderBox } from '@/src/components/BorderBox';
 import heroImage from '../../../assets/hero-image.png';
 import style from './HeroSection.module.scss';
+
+const SCROLL_OFFSET = 40;
+
+const handleSmoothScroll = (sectionId: string) => {
+  const targetElement = window.document.getElementById(sectionId);
+
+  if (targetElement) {
+    const elementPosition = targetElement.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.scrollY - SCROLL_OFFSET;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth',
+    });
+  }
+};
 
 export const HeroSection: React.FC = () => (
   <Section className={style.heroSection}>
@@ -32,12 +50,20 @@ export const HeroSection: React.FC = () => (
 
         <div className={style.buttonsStatsWrapper}>
           <Row flexWrap gap="16px">
-            {/* TODO: Scroll to "Nase Aktivity", we should use scroll to anchor */}
-            <Button variant="aztecAtom">
+            <Button
+              variant="aztecAtom"
+              onClick={() => {
+                handleSmoothScroll(SECTION_IDS.OUR_ACTIVITIES);
+              }}
+            >
               {TRANSLATIONS.COMMUNITY_SECTION_BUTTON_JOIN}
             </Button>
-            {/* TODO: Scroll to "Nasi partneri", we should use scroll to anchor */}
-            <Button variant="explodingStar">
+            <Button
+              variant="explodingStar"
+              onClick={() => {
+                handleSmoothScroll(SECTION_IDS.PARTNERS);
+              }}
+            >
               {TRANSLATIONS.COMMUNITY_SECTION_BUTTON_SUPPORT}
             </Button>
           </Row>

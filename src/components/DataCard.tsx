@@ -28,7 +28,7 @@ export const DataCard: React.FC<DataCardProps> = ({
     useIntersectionObserver({ threshold: 0.3 });
 
   return (
-    <div ref={elementRef}>
+    <div ref={elementRef} className={style.wrapper}>
       <BorderBox as="article" className={style.dataCard}>
         <div className={clsx(style.valueWrapper, colorClassName)}>
           <CountUp
