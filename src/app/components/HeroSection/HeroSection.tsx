@@ -4,32 +4,15 @@ import Image from 'next/image';
 
 import { StatsCard } from './StatsCard';
 import { TRANSLATIONS } from '@/src/constants/translations';
-import { SECTION_IDS, SOCIAL_LINKS } from '@/src/constants';
-import { Button } from '@/src/components/Button';
+import { SOCIAL_LINKS } from '@/src/constants';
 import { IconButton } from '@/src/components/IconButton';
 import { HeadingHighlight } from '@/src/components/HeadingHighlight';
 import { COLORS } from '@/src/styles/color';
 import { Section } from '@/src/components/Section';
-import { Row } from '@/src/components/Row';
 import { BorderBox } from '@/src/components/BorderBox';
 import heroImage from '../../../assets/hero-image.png';
+import { HeroButtons } from './HeroButtons';
 import style from './HeroSection.module.scss';
-
-const SCROLL_OFFSET = 40;
-
-const handleSmoothScroll = (sectionId: string) => {
-  const targetElement = window.document.getElementById(sectionId);
-
-  if (targetElement) {
-    const elementPosition = targetElement.getBoundingClientRect().top;
-    const offsetPosition = elementPosition + window.scrollY - SCROLL_OFFSET;
-
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: 'smooth',
-    });
-  }
-};
 
 export const HeroSection: React.FC = () => (
   <Section className={style.heroSection}>
@@ -49,24 +32,7 @@ export const HeroSection: React.FC = () => (
         </div>
 
         <div className={style.buttonsStatsWrapper}>
-          <Row flexWrap gap="16px">
-            <Button
-              variant="aztecAtom"
-              onClick={() => {
-                handleSmoothScroll(SECTION_IDS.OUR_ACTIVITIES);
-              }}
-            >
-              {TRANSLATIONS.COMMUNITY_SECTION_BUTTON_JOIN}
-            </Button>
-            <Button
-              variant="explodingStar"
-              onClick={() => {
-                handleSmoothScroll(SECTION_IDS.PARTNERS);
-              }}
-            >
-              {TRANSLATIONS.COMMUNITY_SECTION_BUTTON_SUPPORT}
-            </Button>
-          </Row>
+          <HeroButtons />
 
           <div className={style.statsCardList}>
             <StatsCard
