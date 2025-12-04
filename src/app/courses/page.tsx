@@ -5,7 +5,7 @@ import { Section } from '@/src/components/Section';
 import { HeadingHighlight } from '@/src/components/HeadingHighlight';
 import { AreYouLostBanner } from '@/src/components/AreYouLostBanner/AreYouLostBanner';
 import { WhyChooseCoursesSection } from './components';
-import { RegistrationProcess } from '@/src/components/RegistrationProcess';
+import { StepProcess } from '@/src/components/StepProcess';
 
 const CoursesPage = () => (
   <>
@@ -56,7 +56,7 @@ const CoursesPage = () => (
       />
     </Section>
     <WhyChooseCoursesSection />
-    <RegistrationProcess
+    <StepProcess
       headingBefore={TRANSLATIONS.REGISTRATION_PROCESS_SECTION_HEADING_BEFORE}
       headingHighlight={
         TRANSLATIONS.REGISTRATION_PROCESS_SECTION_HEADING_HIGHLIGHT

@@ -8,17 +8,11 @@ import { Button } from '@/src/components/Button';
 import { TRANSLATIONS } from '@/src/constants/translations';
 import style from './CopyEmailButton.module.scss';
 
-type CopyEmailButtonProps = {
-  email: string;
-  copyText: string;
-  copiedText: string;
-};
+const email = 'reactgirlsprague@gmail.com';
+const copyText = TRANSLATIONS.CTA_COPY_EMAIL;
+const copiedText = TRANSLATIONS.CTA_COPIED_EMAIL;
 
-export const CopyEmailButton: React.FC<CopyEmailButtonProps> = ({
-  email,
-  copyText,
-  copiedText,
-}) => {
+export const CopyEmailButton: React.FC = () => {
   const [isCopied, setIsCopied] = useState(false);
   const [showAnimation, setShowAnimation] = useState(false);
 

@@ -3,23 +3,23 @@ import { CtaBanner } from '@/src/components/CtaBanner';
 import { Button } from '@/src/components/Button';
 import { CopyEmailButton } from '@/src/components/AreYouLostBanner/CopyEmailButton';
 import { TRANSLATIONS } from '@/src/constants/translations';
-import style from './MentoringCtaSection.module.scss';
+import style from './MeetupsCtaSection.module.scss';
 
-export const MentoringCtaSection = () => (
+export const MeetupsCtaSection = () => (
   <Section>
     <CtaBanner
-      title={TRANSLATIONS.MENTORING_CTA_TITLE}
-      description={TRANSLATIONS.MENTORING_CTA_DESCRIPTION}
+      title={TRANSLATIONS.MEETUPS_CTA_TITLE}
+      description={TRANSLATIONS.MEETUPS_CTA_DESCRIPTION}
       className={style.ctaBanner}
       buttonsContainerClassName={style.buttonsContainer}
     >
       <Button
-        variant="grapefruitPulp"
-        href="https://forms.gle/EdLmU3fv5rpMm4W88"
+        variant="explodingStar"
+        href="https://forms.gle/ob6V4nKuVKny3ALV8"
         target="_blank"
         rel="noopener noreferrer"
       >
-        {TRANSLATIONS.MENTORING_CTA_BUTTON_PRELIMINARY}
+        {TRANSLATIONS.MEETUPS_CTA_BUTTON}
       </Button>
       <CopyEmailButton />
     </CtaBanner>

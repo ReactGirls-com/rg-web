@@ -1,6 +1,6 @@
 import { Section } from '../Section';
 import { HeadingHighlight } from '../HeadingHighlight';
-import style from './RegistrationProcess.module.scss';
+import style from './StepProcess.module.scss';
 
 type StepData = {
   number: string;
@@ -9,11 +9,13 @@ type StepData = {
   color: string;
 };
 
-type RegistrationProcessProps = {
+type StepProcessProps = {
   headingBefore: string;
   headingHighlight: string;
   headingHighlightColor: string;
+  headingAfter?: string;
   steps: StepData[];
+  subheading?: string;
 };
 
 type StepProps = {
@@ -36,11 +38,13 @@ const Step = ({ number, title, description, color }: StepProps) => (
   </div>
 );
 
-export const RegistrationProcess: React.FC<RegistrationProcessProps> = ({
+export const StepProcess: React.FC<StepProcessProps> = ({
   headingBefore,
   headingHighlight,
   headingHighlightColor,
+  headingAfter,
   steps,
+  subheading,
 }) => (
   <Section
     heading={
@@ -49,8 +53,10 @@ export const RegistrationProcess: React.FC<RegistrationProcessProps> = ({
         <HeadingHighlight highlightColor={headingHighlightColor}>
           {headingHighlight}
         </HeadingHighlight>
+        {headingAfter && ` ${headingAfter}`}
       </>
     }
+    subheading={subheading}
   >
     <div className={style.stepsContainer}>
       {steps.map((step) => (

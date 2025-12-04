@@ -123,15 +123,10 @@ export const TRANSLATIONS = {
   MEETUPS_STATS_SPEAKERS_LABEL: 'Přednášejících z praxe',
   MEETUPS_STATS_RATING_LABEL: 'Hodnocení meetupů',
   CONTACT_SECTION_TITLE: 'Kontakt',
-  CONTACT_HERO_BUTTON_TEXT: 'Kontaktuj nás',
   CONTACT_HERO_HEADING_BEFORE: 'Kontakt',
   CONTACT_HERO_HEADING_HIGHLIGHT: 'ReactGirls',
   CONTACT_HERO_SUBHEADING:
     'Máš otázky? Chceš se zapojit? Rádi tě uslyšíme! Kontaktuj nás prostřednictvím některého z kanálů níže.',
-  CONTACT_SECTION_HEADING: 'Kontaktuj nás',
-  CONTACT_EMAIL_LABEL: 'Email',
-  CONTACT_ADDRESS_LABEL: 'Adresa',
-  CONTACT_SOCIAL_LABEL: 'Sleduj nás',
   TEAM_SECTION_TITLE: 'Náš tým',
   TEAM_SECTION_HEADING_BEFORE: 'Poznej',
   TEAM_SECTION_HEADING_HIGHLIGHT: 'ReactGirls',
@@ -143,7 +138,6 @@ export const TRANSLATIONS = {
   COURSES_REGISTRATION_SECTION_HEADING_AFTER: 'programování',
   COURSES_REGISTRATION_BANNER_DESCRIPTION:
     'Brzy otevřeme přihlašování na další ReactGirls kurzy. Sleduj nás na sociálních sítích, ať nic nepropásneš!',
-  COURSES_REGISTRATION_BANNER_BUTTON: 'Napiš nám',
   COURSES_WHY_SECTION_HEADING_BEFORE: 'Proč si vybrat naše',
   COURSES_WHY_SECTION_HEADING_HIGHLIGHT: 'kurzy?',
   COURSES_WHY_CARD_1_DESCRIPTION:
@@ -215,4 +209,24 @@ export const TRANSLATIONS = {
   MENTORING_CTA_DESCRIPTION:
     'Přihlašování na další běh mentoringu spustíme v létě. Pokud si chceš už teď zarezervovat své místo, můžeš se přihlásit předběžně a my se s tebou spojíme.',
   MENTORING_CTA_BUTTON_PRELIMINARY: 'Předběžně se přihlásit',
+  CONTACT_CTA_TITLE: 'Chceš sdílet své zkušenosti?',
+  CONTACT_CTA_DESCRIPTION:
+    'Připoj se do řad našich dobrovolníků, kteří chtějí pomáhat ženám udělat další krok na své cestě v IT. Zapojit se můžeš jako mentor/ka, lektor/ka nebo kouč/ka.',
+  CONTACT_CTA_BUTTON: 'Dej nám o sobě vědět pomocí formuláře',
+  MEETUPS_HOW_IT_WORKS_SECTION_HEADING_BEFORE: 'Jak naše',
+  MEETUPS_HOW_IT_WORKS_SECTION_HEADING_HIGHLIGHT: 'meetupy',
+  MEETUPS_HOW_IT_WORKS_SECTION_HEADING_AFTER: 'fungují',
+  MEETUPS_HOW_IT_WORKS_SECTION_SUBHEADING: 'Rádi tě na našem meetupu uvidíme.',
+  MEETUPS_HOW_IT_WORKS_STEP_1_TITLE: 'Vyber si meetup',
+  MEETUPS_HOW_IT_WORKS_STEP_1_DESCRIPTION: '',
+  MEETUPS_HOW_IT_WORKS_STEP_2_TITLE: 'Doraž na místo',
+  MEETUPS_HOW_IT_WORKS_STEP_2_DESCRIPTION: '',
+  MEETUPS_HOW_IT_WORKS_STEP_3_TITLE: 'Poslechni si přednášky',
+  MEETUPS_HOW_IT_WORKS_STEP_3_DESCRIPTION: '',
+  MEETUPS_HOW_IT_WORKS_STEP_4_TITLE: 'Networkuj',
+  MEETUPS_HOW_IT_WORKS_STEP_4_DESCRIPTION: '',
+  MEETUPS_CTA_TITLE: 'Chceš přednášet na našem meetupu?',
+  MEETUPS_CTA_DESCRIPTION:
+    'Zajímá tě, jaké to je přednášet před publikem? U nás si to můžeš vyzkoušet, i když zatím nemáš s přednášením zkušenosti. Vymysli si téma a vyplň nám formulář. My se ti brzy ozveme.',
+  MEETUPS_CTA_BUTTON: 'Staň se speakerem',
 };

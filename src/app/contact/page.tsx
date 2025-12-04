@@ -2,6 +2,7 @@ import { SecondaryHero } from '@/src/components/SecondaryHero';
 import { TRANSLATIONS } from '@/src/constants/translations';
 import { COLORS } from '@/src/styles/color';
 import { OurTeam } from './components/OurTeam';
+import { ContactCtaSection } from './components/ContactCtaSection';
 
 const ContactPage = () => (
   <>
@@ -13,6 +14,7 @@ const ContactPage = () => (
       subheading={TRANSLATIONS.CONTACT_HERO_SUBHEADING}
     />
     <OurTeam />
+    <ContactCtaSection />
   </>
 );
 

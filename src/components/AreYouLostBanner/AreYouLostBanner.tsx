@@ -12,10 +12,6 @@ export const AreYouLostBanner: React.FC<AreYouLostBannerProps> = ({
   description = TRANSLATIONS.CTA_DESCRIPTION,
 }) => (
   <CtaBanner title={title} description={description}>
-    <CopyEmailButton
-      email="reactgirlsprague@gmail.com"
-      copyText={TRANSLATIONS.CTA_BUTTON}
-      copiedText={TRANSLATIONS.CTA_COPIED_EMAIL}
-    />
+    <CopyEmailButton />
   </CtaBanner>
 );
