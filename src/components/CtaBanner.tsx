@@ -8,6 +8,7 @@ type CtaBannerProps = {
   title: string;
   description: string;
   className?: string;
+  buttonsContainerClassName?: string;
 };
 
 export const CtaBanner: ChildrenFC<CtaBannerProps> = ({
@@ -15,10 +16,11 @@ export const CtaBanner: ChildrenFC<CtaBannerProps> = ({
   description,
   children,
   className,
+  buttonsContainerClassName,
 }) => (
   <BorderBox className={clsx(style.ctaBanner, className)}>
     <h3 className={style.title}>{title}</h3>
     <p className={style.description}>{description}</p>
-    <div className={className}>{children}</div>
+    <div className={buttonsContainerClassName}>{children}</div>
   </BorderBox>
 );

@@ -1,0 +1,1 @@
+export { RegistrationProcess } from './RegistrationProcess';

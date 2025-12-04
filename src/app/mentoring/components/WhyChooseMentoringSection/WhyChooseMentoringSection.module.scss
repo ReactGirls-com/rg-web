@@ -1,0 +1,27 @@
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+
+  @media (min-width: $screen-md-min) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.iconTarget {
+  background-image: url('../../../../assets/target.svg');
+}
+
+.iconCalendar {
+  background-image: url('../../../../assets/calendar.svg');
+}
+
+.iconChat {
+  background-image: url('../../../../assets/chat.svg');
+}
+
+.iconMedal {
+  background-image: url('../../../../assets/medal.svg');
+}

@@ -1,0 +1,12 @@
+.ctaBanner {
+  background-color: $pale-lavender;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
