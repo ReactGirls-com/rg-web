@@ -2,13 +2,19 @@ import { Section } from '../../../components/Section';
 import { HeadingHighlight } from '../../../components/HeadingHighlight';
 import { TRANSLATIONS } from '@/src/constants/translations';
 import { COLORS } from '@/src/styles/color';
-import { COURSES_LINK, MENTORING_LINK, MEETUPS_LINK } from '@/src/constants';
+import {
+  COURSES_LINK,
+  MENTORING_LINK,
+  MEETUPS_LINK,
+  SECTION_IDS,
+} from '@/src/constants';
 import { ActivityCard } from './ActivityCard';
 import { AreYouLostBanner } from '@/src/components/AreYouLostBanner/AreYouLostBanner';
 import style from './OurActivities.module.scss';
 
 export const OurActivities = () => (
   <Section
+    id={SECTION_IDS.OUR_ACTIVITIES}
     titleText={TRANSLATIONS.OUR_ACTIVITIES_SECTION_TITLE}
     titleColor={COLORS.aztecAtom}
     heading={

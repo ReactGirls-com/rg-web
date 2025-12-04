@@ -13,6 +13,7 @@
 .content {
   display: flex;
   flex-direction: column;
+  gap: 32px;
   align-items: center;
   width: 100%;
   max-width: $max-screen-width;
@@ -24,25 +25,19 @@
   }
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  align-items: center;
-  margin-bottom: 32px;
-
-  @media (min-width: $screen-md-min) {
-    margin-bottom: 64px;
-  }
-}
-
 .title {
-  margin-bottom: 32px;
   border-bottom: 4px solid var(--title-color);
   color: $carbon-fiber;
   font-weight: 700;
   font-size: 1.5rem;
   white-space: nowrap;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
 }
 
 .heading {

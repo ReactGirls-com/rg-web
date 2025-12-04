@@ -5,6 +5,11 @@ import mediumIcon from '../assets/medium.svg';
 import facebookIcon from '../assets/facebook.svg';
 import meetupIcon from '../assets/meeetup.svg';
 
+export const SECTION_IDS = {
+  OUR_ACTIVITIES: 'our-activities',
+  PARTNERS: 'partners',
+};
+
 export const COURSES_LINK = '/courses';
 export const MENTORING_LINK = '/mentoring';
 export const MEETUPS_LINK = '/meetups';
@@ -45,7 +50,7 @@ export const SOCIAL_LINKS = [
   {
     icon: meetupIcon.src,
     label: 'Meetup',
-    href: 'https://www.meetup.com/reactgirls-prague/',
+    href: 'https://www.meetup.com/reactgirls/',
     ariaLabel: `${TRANSLATIONS.SOCIAL_ARIA_LABEL} Meetup`,
   },
   {
