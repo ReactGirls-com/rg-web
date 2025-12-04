@@ -8,7 +8,7 @@ export const TRANSLATIONS = {
   ABOUT_SECTION_HEADING_HIGHLIGHT: 'ženy v IT',
   ABOUT_SECTION_HEADING_AFTER: 'cítí dobře',
   ABOUT_SECTION_SUBHEADING:
-    'ReactGirls komunita vznikla s posláním, dát ženám znalosti, zkušenosti a sebevědomí k tomu, uspět v roli programátorky. Věříme, že díky komunitní podpoře dokážeme vytvořit bezpečné prostředí, kde se ženy nebojí posouvat v IT oboru.',
+    'ReactGirls komunita vznikla s posláním dát ženám znalosti, zkušenosti a sebevědomí k tomu, uspět v roli programátorky. Věříme, že díky komunitní podpoře dokážeme vytvořit bezpečné prostředí, kde se ženy nebojí posouvat v IT oboru.',
   CARD_MISSION_TITLE: 'Naše mise',
   CARD_MISSION_DESCRIPTION:
     'Vytvářet bezpečné prostředí, kde se ženy mohou učit a vzájemně podporovat na své cestě, stát se programátorkami, bez ohledu na jejich předchozí zkušenosti.',
@@ -24,7 +24,7 @@ export const TRANSLATIONS = {
   WHY_REACT_GIRLS_BULLET_POINTS_1:
     'Podporující komunitu, kde můžeš sdílet své úspěchy i překážky',
   WHY_REACT_GIRLS_BULLET_POINTS_2:
-    'Zkušené vývojáři a vývojářky, kteří ti opravdu chtějí pomoct',
+    'Zkušení vývojáři a vývojářky, kteří ti opravdu chtějí pomoct',
   WHY_REACT_GIRLS_BULLET_POINTS_3:
     'Individuální přístup, zaměřený na tvé aktuální cíle',
   WHY_REACT_GIRLS_STATS_SATISFACTION_LABEL: 'Spokojených absolventek',
@@ -75,7 +75,7 @@ export const TRANSLATIONS = {
   OUR_ACTIVITIES_MENTORING_BUTTON: 'Prozkoumat mentoring',
   OUR_ACTIVITIES_MEETUPS_TITLE: 'Meetupy',
   OUR_ACTIVITIES_MEETUPS_DESCRIPTION:
-    'Přidej se k naší komunitě na meetupeech, ať už jako publikum, nebo jako speaker/speakerka. Vytváříme bezpečný prostor k networkingu nejen pro ženy.',
+    'Přidej se k naší komunitě na meetupu, ať už jako publikum, nebo jako speaker/speakerka. Vytváříme bezpečný prostor k networkingu nejen pro ženy.',
   OUR_ACTIVITIES_MEETUPS_BULLET_1: 'Speakeři a speakerky z praxe',
   OUR_ACTIVITIES_MEETUPS_BULLET_2: 'Komunitní prostředí',
   OUR_ACTIVITIES_MEETUPS_BULLET_3: 'Příležitost k networkingu',
@@ -84,8 +84,8 @@ export const TRANSLATIONS = {
   CTA_DESCRIPTION:
     'Pokud máš nápad na tematickou oblast nebo program, který ti u nás chybí, dej nám vědět! Tvůj tip s týmem rádi prokonzultujeme.',
   CTA_BUTTON: 'Napiš nám',
-  CTA_COPY_EMAIL: 'Zkopirovat email',
-  CTA_COPIED_EMAIL: 'Zkopirovano',
+  CTA_COPY_EMAIL: 'Zkopírovat email',
+  CTA_COPIED_EMAIL: 'Zkopírováno',
   COURSES_SECTION_TITLE: 'Offline lekce',
   COURSES_SECTION_HEADING_BEFORE: 'Přihlas se do intenzivních kurzů',
   COURSES_SECTION_HEADING_HIGHLIGHT: 'programování',
@@ -138,4 +138,35 @@ export const TRANSLATIONS = {
   TEAM_SECTION_HEADING_AFTER: 'tým',
   TEAM_SECTION_DESCRIPTION:
     'Náš tým se skládá z lidí, které baví technologie a kteří ve sdílení svých zkušeností vidí smysl. Společně budujeme komunitu, která ženám dává bezpečné prostředí pro růst v IT.',
+  COURSES_REGISTRATION_SECTION_HEADING_BEFORE: 'Přihlas se na naše intenzivní',
+  COURSES_REGISTRATION_SECTION_HEADING_HIGHLIGHT: 'kurzy',
+  COURSES_REGISTRATION_SECTION_HEADING_AFTER: 'programování',
+  COURSES_REGISTRATION_BANNER_DESCRIPTION:
+    'Brzy otevřeme přihlašování na další ReactGirls kurzy. Sleduj nás na sociálních sítích, ať nic nepropásneš!',
+  COURSES_REGISTRATION_BANNER_BUTTON: 'Napiš nám',
+  COURSES_WHY_SECTION_HEADING_BEFORE: 'Proč si vybrat naše',
+  COURSES_WHY_SECTION_HEADING_HIGHLIGHT: 'kurzy?',
+  COURSES_WHY_CARD_1_DESCRIPTION:
+    'Lekce probíhají ve všední dny ve večerních hodinách, jsou proto vhodné i pro pracující',
+  COURSES_WHY_CARD_2_DESCRIPTION:
+    'Nižší počet účastnic na lekcích umožňuje lektorům věnovat všem individuální pozornost',
+  COURSES_WHY_CARD_3_DESCRIPTION:
+    'Nebudeš jen sedět a poslouchat, ale vyzkoušíš si sama programovat',
+  COURSES_WHY_CARD_4_DESCRIPTION: 'Dostaneš certifikát o absolvování kurzu',
+  COURSES_WHY_CARD_5_DESCRIPTION:
+    'Naši lektoři a lektorky jsou zkušení vývojáři z praxe',
+  COURSES_WHY_CARD_6_DESCRIPTION: 'Poskytneme ti podporu v plánování kariéry',
+  REGISTRATION_PROCESS_SECTION_HEADING_BEFORE: 'Jak probíhá',
+  REGISTRATION_PROCESS_SECTION_HEADING_HIGHLIGHT: 'přihlašování?',
+  REGISTRATION_PROCESS_STEP_1_TITLE: 'Vyber si kurz',
+  REGISTRATION_PROCESS_STEP_1_DESCRIPTION:
+    'Prohlédni si vypsané kurzy a vyber si ten, který ti sedne',
+  REGISTRATION_PROCESS_STEP_2_TITLE: 'Přihlas se',
+  REGISTRATION_PROCESS_STEP_2_DESCRIPTION: 'Vyplň přihlašovací formulář',
+  REGISTRATION_PROCESS_STEP_3_TITLE: 'Kontaktujeme tě',
+  REGISTRATION_PROCESS_STEP_3_DESCRIPTION:
+    'Počkej, než ti tvé místo v kurzu potvrdíme',
+  REGISTRATION_PROCESS_STEP_4_TITLE: 'Začínáme',
+  REGISTRATION_PROCESS_STEP_4_DESCRIPTION:
+    'Konkrétní informace zasíláme pár dní před začátkem kurzu',
 };
