@@ -12,7 +12,7 @@
 }
 
 .iconButtonPrimary {
-  background-color: var(--button-color, transparent);
+  background-color: var(--icon-button-background-color, transparent);
   box-shadow: 3px 3px 0 $carbon-fiber;
   transition:
     transform 0.1s ease,
@@ -55,7 +55,7 @@
   display: inline-block;
   width: 18px;
   height: 18px;
-  background-color: $carbon-fiber;
+  background-color: var(--icon-color, $carbon-fiber);
   mask-size: contain;
   mask-repeat: no-repeat;
   mask-position: center;

@@ -2,18 +2,17 @@ import { Section } from '../../components/Section';
 import { HeadingHighlight } from '../../components/HeadingHighlight';
 import { TRANSLATIONS } from '@/src/constants/translations';
 import { SECTION_IDS } from '@/src/constants';
-
-const PARTNERS_YELLOW = '#FAE05F';
+import { COLORS } from '@/src/styles/color';
 
 export const PartnersSection = () => (
   <Section
     id={SECTION_IDS.PARTNERS}
     titleText={TRANSLATIONS.PARTNERS_SECTION_TITLE}
-    titleColor={PARTNERS_YELLOW}
+    titleColor={COLORS.explodingStar}
     heading={
       <>
         {TRANSLATIONS.PARTNERS_SECTION_HEADING_BEFORE}{' '}
-        <HeadingHighlight highlightColor={PARTNERS_YELLOW}>
+        <HeadingHighlight highlightColor={COLORS.explodingStar}>
           {TRANSLATIONS.PARTNERS_SECTION_HEADING_HIGHLIGHT}
         </HeadingHighlight>{' '}
         {TRANSLATIONS.PARTNERS_SECTION_HEADING_AFTER}

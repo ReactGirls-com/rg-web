@@ -5,6 +5,7 @@ import style from './IconButton.module.scss';
 
 type IconButtonProps = {
   backgroundColor?: string;
+  iconColor?: string;
   href?: string;
   variant?: 'primary' | 'secondary';
   className?: string;
@@ -14,6 +15,7 @@ type IconButtonProps = {
 
 export const IconButton: React.FC<IconButtonProps> = ({
   backgroundColor,
+  iconColor,
   href,
   variant = 'primary',
   className,
@@ -30,9 +32,10 @@ export const IconButton: React.FC<IconButtonProps> = ({
     className,
   );
 
-  const buttonStyle = backgroundColor
-    ? ({ '--icon-button-color': backgroundColor } as React.CSSProperties)
-    : undefined;
+  const buttonStyle = {
+    '--icon-color': iconColor,
+    '--icon-button-background-color': backgroundColor,
+  } as React.CSSProperties;
 
   const iconProps = {
     className: clsx(style.icon, iconClassName),

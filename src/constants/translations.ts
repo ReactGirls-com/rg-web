@@ -229,4 +229,51 @@ export const TRANSLATIONS = {
   MEETUPS_CTA_DESCRIPTION:
     'Zajímá tě, jaké to je přednášet před publikem? U nás si to můžeš vyzkoušet, i když zatím nemáš s přednášením zkušenosti. Vymysli si téma a vyplň nám formulář. My se ti brzy ozveme.',
   MEETUPS_CTA_BUTTON: 'Staň se speakerem',
+  FAQ_SECTION_TITLE: 'Často kladené otázky',
+  FAQ_QUESTION_1: 'Jak se přihlásit do ReactGirls akademie?',
+  FAQ_ANSWER_1:
+    'Navštiv naši stránku s kurzy a klikni na "Přihlásit se". Vyplň přihlašovací formulář s informacemi o tvém pozadí a cílech. Přihlášky posuzujeme průběžně a o přijetí tě budeme informovat emailem.',
+  FAQ_QUESTION_2: 'Jaké technologie a dovednosti se naučím během mentoringu?',
+  FAQ_ANSWER_2:
+    'Během mentoringového programu pracuješ na vlastním projektu, který si sama navrhneš. Naučíš se pracovat s moderními technologiemi. Kromě technických dovedností se zaměřujeme i na soft skills, jako je prezentování před publikem a příprava na pracovní pohovory.',
+  FAQ_QUESTION_3: 'Mohu se zúčastnit meetupů na dálku?',
+  FAQ_ANSWER_3:
+    'Většina našich meetupů probíhá hybridně - můžeš se připojit osobně v naší kanceláři v Praze nebo virtuálně odkudkoliv ze světa. Informace o formátu konkrétního meetupu najdeš v popisu akce.',
+  FAQ_QUESTION_4: 'Potřebuji mít zkušenosti s programováním?',
+  FAQ_ANSWER_4:
+    'Vůbec ne! Vítáme úplné začátečnice. Naše akademie začínají od základů a naši mentoři a mentorky tě podpoří na jakékoliv úrovni. Důležité je hlavně nadšení a chuť učit se novým věcem.',
+  FAQ_QUESTION_5: 'Jak dlouho trvá mentoringový program?',
+  FAQ_ANSWER_5:
+    'Mentoringový program trvá 4 měsíce. Během této doby pracuješ na svém vlastním projektu s podporou zkušeného mentora nebo mentorky, účastníš se týdenních schůzek s code review a získáváš zkušenosti, které simulují reálné pracovní prostředí.',
+  FAQ_QUESTION_6: 'Kde se konají kurzy?',
+  FAQ_ANSWER_6:
+    'Všechny naše akademie a workshopy probíhají výhradně offline v Praze. Věříme, že osobní setkávání s dalšími členkami komunity je důležité pro tvůj růst. Konkrétní adresu a další informace ti zašleme několik dní před začátkem kurzu.',
+  TEAM_MEMBER_ZUZANA_ROLE: 'CEO',
+  TEAM_MEMBER_ZUZANA_DESCRIPTION:
+    'Zuzka má ReactGirls pod palcem, od meetupů až po workshopy.',
+  TEAM_MEMBER_TEREZA_ROLE: 'Zakladatelka & Partnership koordinátorka',
+  TEAM_MEMBER_TEREZA_DESCRIPTION:
+    'Terka v roce 2019 ReactGirls založila, teď se stará o partnership.',
+  TEAM_MEMBER_MARKETING_ROLE: 'Marketingový tým',
+  TEAM_MEMBER_ORGANIZATION_ROLE: 'Organizační tým',
+  TEAM_MEMBER_EDUCATION_ROLE: 'Edukační tým',
+  TEAM_MEMBER_CREATIVE_ROLE: 'Kreativní tým',
+  TEAM_MEMBER_MARKETA_DESCRIPTION:
+    'Markéta se naučila programovat s ReactGirls, teď pomáhá s obsahem.',
+  TEAM_MEMBER_ELISKA_DESCRIPTION:
+    'Eliška byla naší mentee, teď se stará o organizaci našich aktivit.',
+  TEAM_MEMBER_ONDREJ_DESCRIPTION:
+    'Ondra je naším lektorem a konzultantem pro vzdělávací kurzy.',
+  TEAM_MEMBER_LUKAS_DESCRIPTION:
+    'Lukáš je našim mentorem a jedním z pohovorujících v mock interviews.',
+  TEAM_MEMBER_HELENA_DESCRIPTION:
+    'Helča se zúčastnila našich akademií, teď nám pomáhá na našich akcích.',
+  TEAM_MEMBER_TONY_DESCRIPTION:
+    'Tony nám pomáhá jako fotograf a s kreativními nápady pro marketing.',
+  TEAM_MEMBER_EVA_DESCRIPTION:
+    'Evča byla naší mentee, teď nám pomáhá s kreativou a jako fotografka.',
+  TEAM_MEMBER_ADAM_DESCRIPTION:
+    'Adam pro vás pravidelně tvoří obsah na sociální sítě.',
+  TEAM_MEMBER_JAN_DESCRIPTION:
+    'Honza je naším mentorem, lektorem a pomáhá nám s edukačním obsahem.',
 };
