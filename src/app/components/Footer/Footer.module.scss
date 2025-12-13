@@ -120,7 +120,8 @@
 }
 
 .contactIconEmail,
-.contactIconPin {
+.contactIconPin,
+.contactIconCard {
   flex-shrink: 0;
   width: 18px;
   height: 18px;
@@ -136,6 +137,10 @@
 
 .contactIconPin {
   background-image: url('../../../assets/pin.svg');
+}
+
+.contactIconCard {
+  background-image: url('../../../assets/card.svg');
 }
 
 .socialIcon {

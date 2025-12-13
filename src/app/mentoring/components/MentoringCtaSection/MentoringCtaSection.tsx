@@ -14,12 +14,7 @@ export const MentoringCtaSection = () => (
       className={style.ctaBanner}
       buttonsContainerClassName={style.buttonsContainer}
     >
-      <Button
-        variant="aztecAtom"
-        href={MENTORING_FORM_LINK}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <Button variant="aztecAtom" href={MENTORING_FORM_LINK}>
         {TRANSLATIONS.MENTORING_CTA_BUTTON_PRELIMINARY}
       </Button>
       <CopyEmailButton />

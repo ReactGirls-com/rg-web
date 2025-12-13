@@ -67,8 +67,30 @@ export const Footer: React.FC = () => (
             value={
               <>
                 <div>ReactGirls z. s.</div>
-                <div>V jehličí 2106/2, Krč,</div> <div>Praha 4, 142 00,</div>{' '}
+                <div>V jehličí 2106/2, Krč,</div> <div>Praha 4, 142 00</div>
                 <div>{TRANSLATIONS.FOOTER_ADDRESS_COUNTRY}</div>
+                <div>IČO 09587535</div>
+                <div>DIČ CZ09587535</div>
+              </>
+            }
+          />
+        </address>
+      </section>
+      <section>
+        <h2 className={style.footerContactTitle}>
+          {TRANSLATIONS.FOOTER_BANK_TITLE}
+        </h2>
+        <address className={style.contactInfo}>
+          <ContactRow
+            iconClass={style.contactIconCard}
+            value={
+              <>
+                <div>Fio banka a. s.,</div>
+                <div>V Celnici 1028/10,</div>
+                <div>117 21 Praha 1</div>
+                <div>Č. ú.: 2001890593/2010</div>
+                <div>IBAN: CZ3020100000002001890593</div>
+                <div>BIC/SWIFT: FIOBCZPPXXX</div>
               </>
             }
           />
