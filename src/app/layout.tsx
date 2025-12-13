@@ -7,6 +7,7 @@ import { NavLinks } from './components/NavLinks';
 import { Header } from './components/Header';
 import { ChildrenFC } from '../utils/types';
 import { Footer } from './components/Footer/Footer';
+import { TRANSLATIONS } from '@/src/constants/translations';
 import style from './layout.module.scss';
 
 const inter = localFont({
@@ -35,13 +36,20 @@ const RootLayout: ChildrenFC = ({ children }) => (
   <html lang="cs" className={inter.variable}>
     <body className={style.body}>
       <header className={style.header}>
-        <Link href="/" className={style.logo} aria-label="ReactGirls - Home">
+        <Link
+          href="/"
+          className={style.logo}
+          aria-label={TRANSLATIONS.ARIA_REACTGIRLS_HOME}
+        >
           <span className="visually-hidden">ReactGirls</span>
         </Link>
 
         <Header logoClassName={style.logo} />
 
-        <nav aria-label="Main navigation" className={style.headerNav}>
+        <nav
+          aria-label={TRANSLATIONS.ARIA_MAIN_NAVIGATION}
+          className={style.headerNav}
+        >
           <NavLinks listClassName={style.headerNavLinks} />
         </nav>
       </header>

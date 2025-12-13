@@ -3,6 +3,7 @@
 import { useState } from 'react';
 
 import { BorderBox } from '@/src/components/BorderBox';
+import { TRANSLATIONS } from '@/src/constants/translations';
 import style from './FaqItem.module.scss';
 
 type FaqItemProps = {
@@ -33,7 +34,7 @@ export const FaqItem: React.FC<FaqItemProps> = ({
             className={style.questionButton}
             onClick={handleToggle}
             aria-expanded={isOpen}
-            aria-label={`${isOpen ? 'Skrýt' : 'Zobrazit'} odpověď na otázku: ${question}`}
+            aria-label={`${isOpen ? TRANSLATIONS.ARIA_FAQ_HIDE : TRANSLATIONS.ARIA_FAQ_SHOW} ${TRANSLATIONS.ARIA_FAQ_ANSWER_TO_QUESTION}: ${question}`}
             type="button"
           >
             <span className={style.questionText}>{question}</span>
