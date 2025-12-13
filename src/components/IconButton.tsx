@@ -46,11 +46,13 @@ export const IconButton: React.FC<IconButtonProps> = ({
   };
 
   if (href) {
+    const isExternalLink = href.startsWith('http');
+
     return (
       <Link
         href={href}
-        target="_blank"
-        rel="noopener noreferrer"
+        target={isExternalLink ? '_blank' : undefined}
+        rel={isExternalLink ? 'noopener noreferrer' : undefined}
         className={buttonClassName}
         style={buttonStyle}
         {...props}

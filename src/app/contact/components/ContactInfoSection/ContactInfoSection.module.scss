@@ -1,0 +1,82 @@
+.boxesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.emailLink {
+  color: $grapefruit-pulp;
+  font-weight: 500;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+}
+
+.infoRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+
+  dt {
+    font-weight: 600;
+  }
+
+  dd {
+    margin: 0;
+  }
+}
+
+.socialLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.socialIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.iconEmail {
+  background-color: #fff;
+  mask-image: url('../../../../assets/email.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.iconCorporate {
+  background-color: #fff;
+  mask-image: url('../../../../assets/corporate.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.iconCard {
+  background-color: #fff;
+  mask-image: url('../../../../assets/card.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.iconChat {
+  background-color: #fff;
+  mask-image: url('../../../../assets/chat.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}

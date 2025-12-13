@@ -16,8 +16,6 @@ export const MeetupsCtaSection = () => (
       <Button
         variant="explodingStar"
         href="https://forms.gle/ob6V4nKuVKny3ALV8"
-        target="_blank"
-        rel="noopener noreferrer"
       >
         {TRANSLATIONS.MEETUPS_CTA_BUTTON}
       </Button>

@@ -1,0 +1,28 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 24px;
+
+  @media (min-width: $screen-sm-min) {
+    flex-direction: row;
+  }
+}
+
+.iconWrapper {
+  flex-shrink: 0;
+}
+
+.boxContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.boxTitle {
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+}
