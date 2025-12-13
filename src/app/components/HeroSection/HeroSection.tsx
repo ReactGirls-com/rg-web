@@ -84,7 +84,10 @@ export const HeroSection: React.FC = () => (
     </div>
 
     <div className={style.socialSection}>
-      <nav className={style.socialLinks} aria-label="Social media links">
+      <nav
+        className={style.socialLinks}
+        aria-label={TRANSLATIONS.ARIA_SOCIAL_MEDIA_LINKS}
+      >
         {SOCIAL_LINKS.map(({ label, icon, href, ariaLabel }) => (
           <IconButton
             key={label}

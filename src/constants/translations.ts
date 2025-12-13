@@ -234,6 +234,10 @@ export const TRANSLATIONS = {
   MEETUPS_CTA_DESCRIPTION:
     'Zajímá tě, jaké to je přednášet před publikem? U nás si to můžeš vyzkoušet, i když zatím nemáš s přednášením zkušenosti. Vymysli si téma a vyplň nám formulář. My se ti brzy ozveme.',
   MEETUPS_CTA_BUTTON: 'Staň se speakerem',
+  PAST_MEETUPS_SECTION_HEADING_BEFORE: 'Proběhlé',
+  PAST_MEETUPS_SECTION_HEADING_HIGHLIGHT: 'meetupy',
+  PAST_MEETUPS_BY: 'od',
+  PAST_MEETUPS_WATCH_BUTTON: 'Sledovat záznam',
   FAQ_SECTION_TITLE: 'Často kladené otázky',
   FAQ_QUESTION_1: 'Jak se přihlásit do ReactGirls akademie?',
   FAQ_ANSWER_1:
@@ -281,4 +285,15 @@ export const TRANSLATIONS = {
     'Adam pro vás pravidelně tvoří obsah na sociální sítě.',
   TEAM_MEMBER_JAN_DESCRIPTION:
     'Honza je naším mentorem, lektorem a pomáhá nám s edukačním obsahem.',
+  ARIA_TOGGLE_MENU: 'Přepnout menu',
+  ARIA_CLOSE_MENU: 'Zavřít menu',
+  ARIA_REACTGIRLS_HOME: 'ReactGirls - Domů',
+  ARIA_MAIN_NAVIGATION: 'Hlavní navigace',
+  ARIA_FOOTER_NAVIGATION: 'Patička navigace',
+  ARIA_SOCIAL_MEDIA_LINKS: 'Odkazy na sociální sítě',
+  ARIA_SOCIAL_LINKS_SUFFIX: 'sociální sítě',
+  ARIA_FAQ_HIDE: 'Skrýt',
+  ARIA_FAQ_SHOW: 'Zobrazit',
+  ARIA_FAQ_ANSWER_TO_QUESTION: 'odpověď na otázku',
+  FOOTER_ADDRESS_COUNTRY: 'Česká republika',
 };

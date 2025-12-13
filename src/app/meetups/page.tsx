@@ -4,6 +4,7 @@ import { TRANSLATIONS } from '@/src/constants/translations';
 import { COLORS } from '@/src/styles/color';
 import { MeetupsHowItWorks } from './components/MeetupsHowItWorks';
 import { MeetupsCtaSection } from './components/MeetupsCtaSection';
+import { PastMeetupsSection } from './components/PastMeetupsSection';
 
 const MeetupsPage = () => (
   <>
@@ -44,6 +45,7 @@ const MeetupsPage = () => (
       </Button>
     </SecondaryHero>
     <MeetupsHowItWorks />
+    <PastMeetupsSection />
     <MeetupsCtaSection />
   </>
 );

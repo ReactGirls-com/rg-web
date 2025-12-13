@@ -14,12 +14,15 @@ export const Footer: React.FC = () => (
         <Link
           href="/"
           className={style.footerLogo}
-          aria-label="ReactGirls - Home"
+          aria-label={TRANSLATIONS.ARIA_REACTGIRLS_HOME}
         >
           <span className="visually-hidden">ReactGirls</span>
         </Link>
         <p className={style.footerDescription}>{TRANSLATIONS.FOOTER_CLAIM}</p>
-        <nav className={style.socialLinks} aria-label="Social media links">
+        <nav
+          className={style.socialLinks}
+          aria-label={TRANSLATIONS.ARIA_SOCIAL_MEDIA_LINKS}
+        >
           {SOCIAL_LINKS.map(({ label, icon, href, ariaLabel }) => (
             <IconButton
               key={label}
@@ -32,7 +35,7 @@ export const Footer: React.FC = () => (
           ))}
         </nav>
       </section>
-      <nav aria-label="Footer navigation">
+      <nav aria-label={TRANSLATIONS.ARIA_FOOTER_NAVIGATION}>
         <h2 className={style.footerNavTitle}>
           {TRANSLATIONS.FOOTER_NAV_TITLE}
         </h2>
@@ -65,7 +68,7 @@ export const Footer: React.FC = () => (
               <>
                 <div>ReactGirls z. s.</div>
                 <div>V jehličí 2106/2, Krč,</div> <div>Praha 4, 142 00,</div>{' '}
-                <div>Česká republika</div>
+                <div>{TRANSLATIONS.FOOTER_ADDRESS_COUNTRY}</div>
               </>
             }
           />
