@@ -61,6 +61,7 @@ export const OurActivities = () => (
         badgeText={TRANSLATIONS.OUR_ACTIVITIES_MENTORING_BADGE}
         cardClassName={style.cardMentoring}
         bulletListColor={COLORS.carbonFiber}
+        textColor={COLORS.carbonFiber}
       />
 
       <ActivityCard
@@ -72,10 +73,10 @@ export const OurActivities = () => (
           TRANSLATIONS.OUR_ACTIVITIES_MEETUPS_BULLET_2,
           TRANSLATIONS.OUR_ACTIVITIES_MEETUPS_BULLET_3,
         ]}
-        buttonVariant="aztecAtom"
+        buttonVariant="paleLavender"
         buttonHref={MEETUPS_LINK}
         buttonText={TRANSLATIONS.OUR_ACTIVITIES_MEETUPS_BUTTON}
-        bulletListColor={COLORS.aztecAtom}
+        bulletListColor={COLORS.paleLavender}
       />
     </div>
 

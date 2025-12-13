@@ -26,19 +26,19 @@ export const AboutSection = () => (
         iconClassName={style.iconTarget}
         title={TRANSLATIONS.CARD_MISSION_TITLE}
         description={TRANSLATIONS.CARD_MISSION_DESCRIPTION}
-        iconColor="grapefruitPulp"
+        iconColor={COLORS.grapefruitPulp}
       />
       <BasicCard
         iconClassName={style.iconHeart}
         title={TRANSLATIONS.CARD_VISION_TITLE}
         description={TRANSLATIONS.CARD_VISION_DESCRIPTION}
-        iconColor="aztecAtom"
+        iconColor={COLORS.aztecAtom}
       />
       <BasicCard
         iconClassName={style.iconPeople}
         title={TRANSLATIONS.CARD_UNIQUE_TITLE}
         description={TRANSLATIONS.CARD_UNIQUE_DESCRIPTION}
-        iconColor="paleLavender"
+        iconColor={COLORS.paleLavender}
       />
     </div>
 

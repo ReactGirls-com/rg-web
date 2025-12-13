@@ -25,7 +25,7 @@ type StepProps = {
   color: string;
 };
 
-const Step = ({ number, title, description, color }: StepProps) => (
+const Step: React.FC<StepProps> = ({ number, title, description, color }) => (
   <div className={style.step}>
     <div
       className={style.stepCircle}

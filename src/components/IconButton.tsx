@@ -11,6 +11,7 @@ type IconButtonProps = {
   className?: string;
   iconClassName?: string;
   icon?: string;
+  style?: React.CSSProperties;
 };
 
 export const IconButton: React.FC<IconButtonProps> = ({
@@ -21,6 +22,7 @@ export const IconButton: React.FC<IconButtonProps> = ({
   className,
   iconClassName,
   icon,
+  style: iconButtonStyle,
   ...props
 }) => {
   const buttonClassName = clsx(
@@ -35,6 +37,7 @@ export const IconButton: React.FC<IconButtonProps> = ({
   const buttonStyle = {
     '--icon-color': iconColor,
     '--icon-button-background-color': backgroundColor,
+    ...iconButtonStyle,
   } as React.CSSProperties;
 
   const iconProps = {

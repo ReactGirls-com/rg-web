@@ -13,12 +13,12 @@ type BaseButtonProps = {
 
 type ButtonWithHref = BaseButtonProps & {
   href: string;
-  onClick?: never;
+  onClick?: () => void;
 } & Omit<ComponentProps<typeof Link>, 'href' | 'className' | 'children'>;
 
 type ButtonWithOnClick = BaseButtonProps & {
   href?: never;
-  onClick?: () => void;
+  onClick: () => void;
 } & Omit<ComponentProps<'button'>, 'onClick' | 'className' | 'children'>;
 
 type ButtonProps = ButtonWithHref | ButtonWithOnClick;

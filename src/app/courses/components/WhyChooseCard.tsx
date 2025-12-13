@@ -1,12 +1,11 @@
-import clsx from 'clsx';
-
 import { BorderBox } from '@/src/components/BorderBox';
+import { IconWrapper } from '@/src/components/IconWrapper';
 import style from './WhyChooseCard.module.scss';
 
 type WhyChooseCardProps = {
   iconClassName: string;
   description: string;
-  iconColor: 'aztecAtom' | 'grapefruitPulp' | 'paleLavender' | 'explodingStar';
+  iconColor: string;
 };
 
 export const WhyChooseCard: React.FC<WhyChooseCardProps> = ({
@@ -15,16 +14,11 @@ export const WhyChooseCard: React.FC<WhyChooseCardProps> = ({
   iconColor,
 }) => (
   <BorderBox as="article" className={style.card}>
-    <div
-      className={clsx(style.iconWrapper, {
-        [style.iconAztecAtom]: iconColor === 'aztecAtom',
-        [style.iconGrapefruitPulp]: iconColor === 'grapefruitPulp',
-        [style.iconPaleLavender]: iconColor === 'paleLavender',
-        [style.iconExplodingStar]: iconColor === 'explodingStar',
-      })}
-    >
-      <div className={clsx(style.baseIcon, iconClassName)} />
-    </div>
+    <IconWrapper
+      iconClassName={iconClassName}
+      iconColor={iconColor}
+      className={style.iconWrapper}
+    />
     <p className={style.description}>{description}</p>
   </BorderBox>
 );

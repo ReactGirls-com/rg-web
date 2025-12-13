@@ -10,7 +10,6 @@ import { StepProcess } from '@/src/components/StepProcess';
 const CoursesPage = () => (
   <>
     <SecondaryHero
-      titleText={TRANSLATIONS.COURSES_SECTION_TITLE}
       titleColor={COLORS.grapefruitPulp}
       headingBefore={TRANSLATIONS.COURSES_SECTION_HEADING_BEFORE}
       headingHighlight={TRANSLATIONS.COURSES_SECTION_HEADING_HIGHLIGHT}

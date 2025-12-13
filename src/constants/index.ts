@@ -4,6 +4,9 @@ import linkedinIcon from '../assets/linkedin.svg';
 import mediumIcon from '../assets/medium.svg';
 import facebookIcon from '../assets/facebook.svg';
 import meetupIcon from '../assets/meeetup.svg';
+import slackIcon from '../assets/slack.svg';
+import youtubeIcon from '../assets/youtube.svg';
+import tiktokIcon from '../assets/tiktok.svg';
 
 export const SECTION_IDS = {
   OUR_ACTIVITIES: 'our-activities',
@@ -14,6 +17,8 @@ export const COURSES_LINK = '/courses';
 export const MENTORING_LINK = '/mentoring';
 export const MEETUPS_LINK = '/meetups';
 export const CONTACT_LINK = '/contact';
+export const MEDIUM_LINK = 'https://reactgirls.medium.com/';
+export const MENTORING_FORM_LINK = 'https://forms.gle/EdLmU3fv5rpMm4W88';
 
 export const NAV_LINKS = [
   {
@@ -56,7 +61,7 @@ export const SOCIAL_LINKS = [
   {
     icon: mediumIcon.src,
     label: 'Medium',
-    href: 'https://medium.com/@reactgirlsprague',
+    href: MEDIUM_LINK,
     ariaLabel: `${TRANSLATIONS.SOCIAL_ARIA_LABEL} Medium`,
   },
   {
@@ -66,21 +71,21 @@ export const SOCIAL_LINKS = [
     ariaLabel: `${TRANSLATIONS.SOCIAL_ARIA_LABEL} Facebook`,
   },
   {
-    icon: mediumIcon.src,
+    icon: slackIcon.src,
     label: 'Slack',
     href: 'https://join.slack.com/t/reactgirls/shared_invite/zt-13s227qut-vopmSvIsVjbIt_GNTHPetA',
     ariaLabel: `${TRANSLATIONS.SOCIAL_ARIA_LABEL} Slack`,
   },
   {
-    icon: mediumIcon.src,
+    icon: youtubeIcon.src,
     label: 'YouTube',
-    href: 'https://www.youtube.com/@reactgirlsprague',
+    href: 'https://www.youtube.com/@ReactGirls',
     ariaLabel: `${TRANSLATIONS.SOCIAL_ARIA_LABEL} YouTube`,
   },
   {
-    icon: mediumIcon.src,
+    icon: tiktokIcon.src,
     label: 'TikTok',
-    href: 'https://www.tiktok.com/@reactgirlsprague',
+    href: 'https://www.tiktok.com/@reactgirls_prague?_r=1&_t=ZN-92CJn2aa8Hu',
     ariaLabel: `${TRANSLATIONS.SOCIAL_ARIA_LABEL} TikTok`,
   },
 ] as const;

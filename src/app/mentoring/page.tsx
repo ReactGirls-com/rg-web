@@ -11,7 +11,6 @@ import {
 const MentoringPage = () => (
   <>
     <SecondaryHero
-      titleText={TRANSLATIONS.MENTORING_SECTION_TITLE}
       titleColor={COLORS.paleLavender}
       headingBefore={TRANSLATIONS.MENTORING_SECTION_HEADING_BEFORE}
       headingHighlight={TRANSLATIONS.MENTORING_SECTION_HEADING_HIGHLIGHT}

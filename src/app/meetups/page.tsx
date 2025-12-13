@@ -8,7 +8,6 @@ import { MeetupsCtaSection } from './components/MeetupsCtaSection';
 const MeetupsPage = () => (
   <>
     <SecondaryHero
-      titleText={TRANSLATIONS.MEETUPS_SECTION_TITLE}
       titleColor={COLORS.aztecAtom}
       headingBefore={TRANSLATIONS.MEETUPS_SECTION_HEADING_BEFORE}
       headingHighlight={TRANSLATIONS.MEETUPS_SECTION_HEADING_HIGHLIGHT}

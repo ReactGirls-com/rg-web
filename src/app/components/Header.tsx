@@ -12,7 +12,7 @@ type HeaderProps = {
   logoClassName?: string;
 };
 
-export const Header = ({ logoClassName }: HeaderProps) => {
+export const Header: React.FC<HeaderProps> = ({ logoClassName }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {

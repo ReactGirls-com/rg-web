@@ -11,8 +11,11 @@
 
 @media (prefers-reduced-motion: no-preference) {
   html {
-    scroll-behavior: smooth;
     interpolate-size: allow-keywords;
+  }
+
+  html:has(:target) {
+    scroll-behavior: smooth;
   }
 }
 

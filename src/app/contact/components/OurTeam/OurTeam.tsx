@@ -117,8 +117,8 @@ const TEAM_MEMBERS: TeamMember[] = [
     description: TRANSLATIONS.TEAM_MEMBER_TONY_DESCRIPTION,
     image: eliskaImage.src,
     socialLinks: {
-      instagram:
-        'https://www.instagram.com/the.amateur.at.everything?igsh=aXRhdDhsZm4xZXdv',
+      email: 'tonda.truong@seznam.cz',
+      instagram: 'https://www.instagram.com/luong.manh.truong',
     },
   },
   {
@@ -143,6 +143,7 @@ const TEAM_COLORS = {
 
 export const OurTeam = () => (
   <Section
+    id="our-team"
     titleText={TRANSLATIONS.TEAM_SECTION_TITLE}
     titleColor={COLORS.grapefruitPulp}
     heading={
@@ -156,8 +157,22 @@ export const OurTeam = () => (
     }
     subheading={TRANSLATIONS.TEAM_SECTION_DESCRIPTION}
   >
+    <div className={style.teamLeadership}>
+      {TEAM_MEMBERS.slice(0, 2).map((member) => (
+        <TeamCard
+          key={member.name}
+          name={member.name}
+          role={member.role}
+          description={member.description}
+          image={member.image}
+          socialLinks={member.socialLinks}
+          teamColor={TEAM_COLORS[member.role]}
+        />
+      ))}
+    </div>
+
     <div className={style.teamGrid}>
-      {TEAM_MEMBERS.map((member) => (
+      {TEAM_MEMBERS.slice(2).map((member) => (
         <TeamCard
           key={member.name}
           name={member.name}
