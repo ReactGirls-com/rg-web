@@ -4,7 +4,7 @@ import clsx from 'clsx';
 
 import { Button } from '@/src/components/Button';
 import { CustomLink } from '@/src/components/CustomLink';
-import { NAV_LINKS } from '@/src/constants';
+import { MENTORING_FORM_LINK, NAV_LINKS } from '@/src/constants';
 import { TRANSLATIONS } from '@/src/constants/translations';
 import style from './NavLinks.module.scss';
 
@@ -17,14 +17,14 @@ type NavLinksProps = {
   onLinkClick?: () => void;
 };
 
-export const NavLinks = ({
+export const NavLinks: React.FC<NavLinksProps> = ({
   listClassName,
   listItemClassName,
   linkClassName,
   linkActiveClassName,
   buttonWrapperClassName,
   onLinkClick,
-}: NavLinksProps) => (
+}) => (
   <ul className={clsx(style.list, listClassName)}>
     {NAV_LINKS.map(({ label, href }) => (
       <li key={href} className={clsx(style.listItem, listItemClassName)}>
@@ -40,7 +40,11 @@ export const NavLinks = ({
     ))}
 
     <li className={clsx(style.buttonWrapper, buttonWrapperClassName)}>
-      <Button variant="grapefruitPulp" onClick={onLinkClick}>
+      <Button
+        variant="grapefruitPulp"
+        onClick={onLinkClick}
+        href={MENTORING_FORM_LINK}
+      >
         {TRANSLATIONS.JOIN_BUTTON_TEXT}
       </Button>
     </li>

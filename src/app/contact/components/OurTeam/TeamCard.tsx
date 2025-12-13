@@ -55,29 +55,35 @@ export const TeamCard: React.FC<TeamCardProps> = ({
         <nav className={style.socialLinks} aria-label={`${name} social links`}>
           {socialLinks.linkedin && (
             <IconButton
+              className={style.icon}
               href={socialLinks.linkedin}
               variant="primary"
               iconColor={teamColor}
               aria-label={`${name} LinkedIn profile`}
               icon={linkedinIcon.src}
+              style={{ '--team-color': teamColor } as React.CSSProperties}
             />
           )}
           {socialLinks.email && (
             <IconButton
+              className={style.icon}
               href={`mailto:${socialLinks.email}`}
               variant="primary"
               iconColor={teamColor}
               aria-label={`${name} email`}
               icon={emailIcon.src}
+              style={{ '--team-color': teamColor } as React.CSSProperties}
             />
           )}
           {socialLinks.instagram && (
             <IconButton
+              className={style.icon}
               href={socialLinks.instagram}
               variant="primary"
               iconColor={teamColor}
               aria-label={`${name} Instagram profile`}
               icon={instagramIcon.src}
+              style={{ '--team-color': teamColor } as React.CSSProperties}
             />
           )}
         </nav>

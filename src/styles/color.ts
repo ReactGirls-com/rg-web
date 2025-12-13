@@ -2,7 +2,7 @@ export const COLORS = {
   aztecAtom: '#05cddd',
   crystalCut: '#faf5ed',
   grapefruitPulp: '#fe7160',
-  paleLavender: '#ddd4ff',
+  paleLavender: '#704dff',
   carbonFiber: '#2d2d2d',
   explodingStar: '#ffda3c',
   cursedGray: '#666',

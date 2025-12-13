@@ -9,7 +9,7 @@ type ActivityCardProps = {
   title: string;
   description: string;
   bullets: string[];
-  buttonVariant: 'grapefruitPulp' | 'explodingStar' | 'aztecAtom';
+  buttonVariant: 'grapefruitPulp' | 'explodingStar' | 'paleLavender';
   buttonHref: string;
   buttonText: string;
   showStarBadge?: boolean;
@@ -17,6 +17,7 @@ type ActivityCardProps = {
   badgeText?: string;
   cardClassName?: string;
   bulletListColor?: string;
+  textColor?: string;
 };
 
 export const ActivityCard: React.FC<ActivityCardProps> = ({
@@ -32,6 +33,7 @@ export const ActivityCard: React.FC<ActivityCardProps> = ({
   badgeText,
   cardClassName,
   bulletListColor,
+  textColor,
 }) => (
   <BorderBox as="article" className={clsx(style.card, cardClassName)}>
     {showStarBadge && <div className={style.starBadge} aria-hidden="true" />}
@@ -48,13 +50,23 @@ export const ActivityCard: React.FC<ActivityCardProps> = ({
         </span>
       </div>
     )}
-    <p className={style.description}>{description}</p>
+    <p
+      className={style.description}
+      style={{ '--text-color': textColor } as React.CSSProperties}
+    >
+      {description}
+    </p>
     <ul
       className={clsx(style.bulletList)}
       style={{ '--bullet-list-color': bulletListColor } as React.CSSProperties}
     >
       {bullets.map((bullet, index) => (
-        <li key={index}>{bullet}</li>
+        <li
+          key={index}
+          style={{ '--text-color': textColor } as React.CSSProperties}
+        >
+          {bullet}
+        </li>
       ))}
     </ul>
     <Button variant={buttonVariant} href={buttonHref} className={style.button}>

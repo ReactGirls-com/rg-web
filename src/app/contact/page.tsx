@@ -8,7 +8,6 @@ import { FaqSection } from './components/FaqSection';
 const ContactPage = () => (
   <>
     <SecondaryHero
-      titleText={TRANSLATIONS.CONTACT_SECTION_TITLE}
       titleColor={COLORS.aztecAtom}
       headingBefore={TRANSLATIONS.CONTACT_HERO_HEADING_BEFORE}
       headingHighlight={TRANSLATIONS.CONTACT_HERO_HEADING_HIGHLIGHT}

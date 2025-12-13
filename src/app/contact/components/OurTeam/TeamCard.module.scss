@@ -2,6 +2,17 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  max-width: 320px;
+  max-height: 560px;
+
+  @media (min-width: $screen-sm-min) {
+    max-width: min(40vw, 450px);
+    max-height: unset;
+  }
+
+  @media (min-width: $screen-md-min) {
+    max-width: min(30vw, 420px);
+  }
 }
 
 .imageWrapper {
@@ -30,10 +41,10 @@
 }
 
 .role {
-  color: var(--team-color, $aztec-atom);
   font-weight: 500;
   font-size: 0.9rem;
   line-height: 1.4;
+  text-shadow: 1px 1px 0 var(--team-color, $aztec-atom);
 }
 
 .description {
@@ -46,4 +57,9 @@
   display: flex;
   gap: 12px;
   margin-top: auto;
+}
+
+.icon {
+  border-color: var(--team-color, $aztec-atom);
+  background-color: $carbon-fiber;
 }

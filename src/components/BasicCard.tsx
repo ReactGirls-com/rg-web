@@ -1,32 +1,27 @@
-import clsx from 'clsx';
-
+import { COLORS } from '@/src/styles/color';
 import { BorderBox } from './BorderBox';
+import { IconWrapper } from './IconWrapper';
 import style from './BasicCard.module.scss';
 
 type BasicCardProps = {
   iconClassName: string;
   title: string;
   description: string;
-  iconColor?: 'aztecAtom' | 'grapefruitPulp' | 'paleLavender' | 'explodingStar';
+  iconColor?: string;
 };
 
 export const BasicCard: React.FC<BasicCardProps> = ({
   iconClassName,
   title,
   description,
-  iconColor = 'aztecAtom',
+  iconColor = COLORS.aztecAtom,
 }) => (
   <BorderBox as="article" className={style.basicCard}>
-    <div
-      className={clsx(style.iconWrapper, {
-        [style.iconAztecAtom]: iconColor === 'aztecAtom',
-        [style.iconGrapefruitPulp]: iconColor === 'grapefruitPulp',
-        [style.iconPaleLavender]: iconColor === 'paleLavender',
-        [style.iconExplodingStar]: iconColor === 'explodingStar',
-      })}
-    >
-      <div className={clsx(style.baseIcon, iconClassName)} />
-    </div>
+    <IconWrapper
+      iconClassName={iconClassName}
+      iconColor={iconColor}
+      className={style.iconWrapper}
+    />
     <h3 className={style.title}>{title}</h3>
     <p className={style.description}>{description}</p>
   </BorderBox>

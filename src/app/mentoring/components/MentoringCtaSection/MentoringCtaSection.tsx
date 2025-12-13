@@ -3,6 +3,7 @@ import { CtaBanner } from '@/src/components/CtaBanner';
 import { Button } from '@/src/components/Button';
 import { CopyEmailButton } from '@/src/components/AreYouLostBanner/CopyEmailButton';
 import { TRANSLATIONS } from '@/src/constants/translations';
+import { MENTORING_FORM_LINK } from '@/src/constants';
 import style from './MentoringCtaSection.module.scss';
 
 export const MentoringCtaSection = () => (
@@ -14,8 +15,8 @@ export const MentoringCtaSection = () => (
       buttonsContainerClassName={style.buttonsContainer}
     >
       <Button
-        variant="grapefruitPulp"
-        href="https://forms.gle/EdLmU3fv5rpMm4W88"
+        variant="aztecAtom"
+        href={MENTORING_FORM_LINK}
         target="_blank"
         rel="noopener noreferrer"
       >

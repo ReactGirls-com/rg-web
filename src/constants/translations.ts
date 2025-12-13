@@ -86,7 +86,6 @@ export const TRANSLATIONS = {
   CTA_BUTTON: 'Napiš nám',
   CTA_COPY_EMAIL: 'Zkopírovat email',
   CTA_COPIED_EMAIL: 'Zkopírováno',
-  COURSES_SECTION_TITLE: 'Offline lekce',
   COURSES_SECTION_HEADING_BEFORE: 'Přihlas se do intenzivních kurzů',
   COURSES_SECTION_HEADING_HIGHLIGHT: 'programování',
   COURSES_SECTION_SUBHEADING:
@@ -101,7 +100,15 @@ export const TRANSLATIONS = {
   PARTNERS_SECTION_HEADING_AFTER: 'pomáháme ženám růst v IT',
   PARTNERS_SECTION_SUBHEADING:
     'Díky partnerům můžeme držet naše aktivity dostupné, komunita může růst a více žen má tak šanci udělat další krok k tomu, stát se úspěšnými a sebevědomými programátorkami.',
-  MENTORING_SECTION_TITLE: 'Náš hlavní program',
+  PARTNERS_CTA_TITLE: 'Staňte se jedním z našich partnerů',
+  PARTNERS_CTA_DESCRIPTION:
+    'Pomozte nám otevírat více příležitostí pro ženy v IT. Partnerstvím s ReactGirls můžete podpořit aktivity komunity pro začínající i pokročilé programátorky.',
+  PARTNERS_CTA_BUTTON_PRIMARY: 'Dejte nám o sobě vědět pomocí formuláře',
+  PARTNERS_CTA_BUTTON_SECONDARY: 'Kontaktujte nás',
+  PARTNERS_MEDIUM_TITLE: 'Přečtěte si příběhy z naší komunity',
+  PARTNERS_MEDIUM_DESCRIPTION:
+    'Nahlédněte pod pokličku komunity ReactGirls. Zjistěte, jak probíhal závěrečný večer loňského mentoringu, prohlédněte si projekty našich mentees, přečtěte si rozhovory s členy komunity, nebo poznejte členy ReactGirls týmu. To vše, ale i spoustu dalšího, najdete mezi články na našem blogu.',
+  PARTNERS_MEDIUM_BUTTON: 'Číst na Medium',
   MENTORING_SECTION_HEADING_BEFORE: 'Naprogramuj svůj první',
   MENTORING_SECTION_HEADING_HIGHLIGHT: 'projekt',
   MENTORING_SECTION_SUBHEADING:
@@ -111,7 +118,6 @@ export const TRANSLATIONS = {
   MENTORING_STATS_DURATION_LABEL: 'Délka trvání programu',
   MENTORING_STATS_RECOMMENDATION_LABEL:
     'Mentees by mentoring doporučilo kamarádce',
-  MEETUPS_SECTION_TITLE: 'Komunitní akce',
   MEETUPS_SECTION_HEADING_BEFORE: 'Užij si s námi',
   MEETUPS_SECTION_HEADING_HIGHLIGHT: 'komunitní',
   MEETUPS_SECTION_HEADING_AFTER: 'atmosféru',
@@ -122,7 +128,6 @@ export const TRANSLATIONS = {
   MEETUPS_STATS_MEMBERS_LABEL: 'Členů',
   MEETUPS_STATS_SPEAKERS_LABEL: 'Přednášejících z praxe',
   MEETUPS_STATS_RATING_LABEL: 'Hodnocení meetupů',
-  CONTACT_SECTION_TITLE: 'Kontakt',
   CONTACT_HERO_HEADING_BEFORE: 'Kontakt',
   CONTACT_HERO_HEADING_HIGHLIGHT: 'ReactGirls',
   CONTACT_HERO_SUBHEADING:

@@ -1,11 +1,7 @@
 .faqItem {
   width: 100%;
   padding: 24px 32px;
-}
-
-.faqList {
-  margin: 0;
-  padding: 0;
+  box-shadow: 4px 4px 0 var(--question-color);
 }
 
 .questionButton {
@@ -23,7 +19,7 @@
 
 .questionText {
   flex: 1;
-  color: var(--question-color);
+  color: $carbon-fiber;
   font-weight: 700;
   font-size: 1.1rem;
   line-height: 1.4;

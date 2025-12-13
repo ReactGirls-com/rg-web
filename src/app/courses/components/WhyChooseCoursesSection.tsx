@@ -20,32 +20,32 @@ export const WhyChooseCoursesSection = () => (
       <WhyChooseCard
         iconClassName={style.iconClock}
         description={TRANSLATIONS.COURSES_WHY_CARD_1_DESCRIPTION}
-        iconColor="grapefruitPulp"
+        iconColor={COLORS.grapefruitPulp}
       />
       <WhyChooseCard
         iconClassName={style.iconPeople}
         description={TRANSLATIONS.COURSES_WHY_CARD_2_DESCRIPTION}
-        iconColor="aztecAtom"
+        iconColor={COLORS.aztecAtom}
       />
       <WhyChooseCard
         iconClassName={style.iconCode}
         description={TRANSLATIONS.COURSES_WHY_CARD_3_DESCRIPTION}
-        iconColor="paleLavender"
+        iconColor={COLORS.paleLavender}
       />
       <WhyChooseCard
         iconClassName={style.iconStar}
         description={TRANSLATIONS.COURSES_WHY_CARD_4_DESCRIPTION}
-        iconColor="explodingStar"
+        iconColor={COLORS.explodingStar}
       />
       <WhyChooseCard
         iconClassName={style.iconBook}
         description={TRANSLATIONS.COURSES_WHY_CARD_5_DESCRIPTION}
-        iconColor="grapefruitPulp"
+        iconColor={COLORS.grapefruitPulp}
       />
       <WhyChooseCard
         iconClassName={style.iconTarget}
         description={TRANSLATIONS.COURSES_WHY_CARD_6_DESCRIPTION}
-        iconColor="aztecAtom"
+        iconColor={COLORS.aztecAtom}
       />
     </div>
   </Section>

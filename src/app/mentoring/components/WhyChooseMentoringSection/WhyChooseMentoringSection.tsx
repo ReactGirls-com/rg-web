@@ -23,25 +23,25 @@ export const WhyChooseMentoringSection = () => (
         iconClassName={style.iconTarget}
         title={TRANSLATIONS.MENTORING_WHY_CHOOSE_CARD_1_TITLE}
         description={TRANSLATIONS.MENTORING_WHY_CHOOSE_CARD_1_DESCRIPTION}
-        iconColor="grapefruitPulp"
+        iconColor={COLORS.grapefruitPulp}
       />
       <BasicCard
         iconClassName={style.iconCalendar}
         title={TRANSLATIONS.MENTORING_WHY_CHOOSE_CARD_2_TITLE}
         description={TRANSLATIONS.MENTORING_WHY_CHOOSE_CARD_2_DESCRIPTION}
-        iconColor="aztecAtom"
+        iconColor={COLORS.aztecAtom}
       />
       <BasicCard
         iconClassName={style.iconChat}
         title={TRANSLATIONS.MENTORING_WHY_CHOOSE_CARD_3_TITLE}
         description={TRANSLATIONS.MENTORING_WHY_CHOOSE_CARD_3_DESCRIPTION}
-        iconColor="paleLavender"
+        iconColor={COLORS.paleLavender}
       />
       <BasicCard
         iconClassName={style.iconMedal}
         title={TRANSLATIONS.MENTORING_WHY_CHOOSE_CARD_4_TITLE}
         description={TRANSLATIONS.MENTORING_WHY_CHOOSE_CARD_4_DESCRIPTION}
-        iconColor="explodingStar"
+        iconColor={COLORS.explodingStar}
       />
     </div>
   </Section>

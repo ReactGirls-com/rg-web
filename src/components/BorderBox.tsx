@@ -8,6 +8,7 @@ type BorderBoxProps = {
   className?: string;
   as?: ElementType;
   ref?: RefObject<any>;
+  style?: Record<string, string>;
 };
 
 export const BorderBox: ChildrenFC<BorderBoxProps> = ({
@@ -15,8 +16,13 @@ export const BorderBox: ChildrenFC<BorderBoxProps> = ({
   className,
   as: Component = 'div',
   ref,
+  style: borderBoxStyle,
 }) => (
-  <Component ref={ref} className={clsx(style.borderBox, className)}>
+  <Component
+    ref={ref}
+    className={clsx(style.borderBox, className)}
+    style={borderBoxStyle as React.CSSProperties}
+  >
     {children}
   </Component>
 );

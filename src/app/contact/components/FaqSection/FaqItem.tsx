@@ -11,7 +11,11 @@ type FaqItemProps = {
   questionColor: string;
 };
 
-export const FaqItem = ({ question, answer, questionColor }: FaqItemProps) => {
+export const FaqItem: React.FC<FaqItemProps> = ({
+  question,
+  answer,
+  questionColor,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {
@@ -19,8 +23,11 @@ export const FaqItem = ({ question, answer, questionColor }: FaqItemProps) => {
   };
 
   return (
-    <BorderBox className={style.faqItem}>
-      <dl className={style.faqList}>
+    <BorderBox
+      className={style.faqItem}
+      style={{ '--question-color': questionColor }}
+    >
+      <dl>
         <dt>
           <button
             className={style.questionButton}
@@ -28,7 +35,6 @@ export const FaqItem = ({ question, answer, questionColor }: FaqItemProps) => {
             aria-expanded={isOpen}
             aria-label={`${isOpen ? 'Skrýt' : 'Zobrazit'} odpověď na otázku: ${question}`}
             type="button"
-            style={{ '--question-color': questionColor } as React.CSSProperties}
           >
             <span className={style.questionText}>{question}</span>
             <span className={style.toggleIcon} aria-hidden="true">

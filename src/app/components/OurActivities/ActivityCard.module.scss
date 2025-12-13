@@ -35,7 +35,7 @@
 }
 
 .description {
-  color: $cursed-gray;
+  color: var(--text-color, $cursed-gray);
   font-size: 1.1rem;
   line-height: 1.7;
 }
@@ -50,7 +50,7 @@
 .bulletList li {
   position: relative;
   padding-left: 24px;
-  color: $cursed-gray;
+  color: var(--text-color, $cursed-gray);
   line-height: 1.6;
 
   &::before {

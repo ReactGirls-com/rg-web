@@ -20,7 +20,7 @@ type DataCardItem = {
 };
 
 type SecondaryHeroProps = {
-  titleText: string;
+  titleText?: string;
   titleColor: string;
   headingBefore: string;
   headingHighlight: string;

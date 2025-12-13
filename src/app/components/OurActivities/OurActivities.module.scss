@@ -18,7 +18,7 @@
 }
 
 .iconPeople {
-  background-color: $pale-lavender;
+  background-color: $aztec-atom;
   mask-image: url('../../../assets/people.svg');
   mask-repeat: no-repeat;
   mask-position: center;
@@ -26,10 +26,10 @@
 
 .iconCalendar {
   background: url('../../../assets/calendar.svg') no-repeat center center;
-  background-color: $aztec-atom;
+  background-color: $pale-lavender;
   background-size: 32px 32px;
 }
 
 .cardMentoring {
-  background-color: $pale-lavender;
+  background-color: $aztec-atom;
 }
