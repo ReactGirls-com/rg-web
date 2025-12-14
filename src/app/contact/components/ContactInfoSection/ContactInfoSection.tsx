@@ -46,7 +46,7 @@ export const ContactInfoSection = () => (
           </div>
           <div className={style.infoRow}>
             <dt>{TRANSLATIONS.CONTACT_INFO_ORGANIZATION_ID_LABEL}</dt>
-            <dd>08892911</dd>
+            <dd>09587535</dd>
           </div>
           <div className={style.infoRow}>
             <dt>{TRANSLATIONS.CONTACT_INFO_ORGANIZATION_ADDRESS_LABEL}</dt>
@@ -67,11 +67,11 @@ export const ContactInfoSection = () => (
           </div>
           <div className={style.infoRow}>
             <dt>{TRANSLATIONS.CONTACT_INFO_BANK_ACCOUNT_LABEL}</dt>
-            <dd>2201872429/2010</dd>
+            <dd>2001890593/2010</dd>
           </div>
           <div className={style.infoRow}>
             <dt>{TRANSLATIONS.CONTACT_INFO_BANK_IBAN_LABEL}</dt>
-            <dd>CZ4120100000002201872429</dd>
+            <dd>CZ3020100000002001890593</dd>
           </div>
           <div className={style.infoRow}>
             <dt>{TRANSLATIONS.CONTACT_INFO_BANK_SWIFT_LABEL}</dt>
