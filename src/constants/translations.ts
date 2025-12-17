@@ -33,7 +33,11 @@ export const TRANSLATIONS = {
   WHY_REACT_GIRLS_STATS_SUPPORT_LABEL: 'Komunitní podpora',
   JOIN_BUTTON_TEXT: 'Přihlásit se',
   COMMUNITY_SECTION_HEADING_BEFORE: 'V IT',
-  COMMUNITY_SECTION_HEADING_HIGHLIGHT: 'jsme správně,',
+  COMMUNITY_SECTION_HEADING_HIGHLIGHT_1: 'jsme správně,',
+  COMMUNITY_SECTION_HEADING_HIGHLIGHT_2: 'rosteme,',
+  COMMUNITY_SECTION_HEADING_HIGHLIGHT_3: 'sdílíme,',
+  COMMUNITY_SECTION_HEADING_HIGHLIGHT_4: 'boříme mýty,',
+  COMMUNITY_SECTION_HEADING_HIGHLIGHT_5: 'tvoříme,',
   COMMUNITY_SECTION_HEADING_AFTER: 'společně',
   COMMUNITY_SECTION_PARAGRAPH:
     'Jsme komunita, která ženám nabízí bezpečné prostředí pro růst v IT. Společně se zkušenými vývojáři a vývojářkami podporujeme ženy na cestě k tomu, stát se sebevědomými programátorkami.',
