@@ -59,9 +59,9 @@ export const OurActivities = () => (
         showStarBadge
         showBadge
         badgeText={TRANSLATIONS.OUR_ACTIVITIES_MENTORING_BADGE}
-        cardClassName={style.cardMentoring}
         bulletListColor={COLORS.carbonFiber}
         textColor={COLORS.carbonFiber}
+        backgroundColor={COLORS.aztecAtom}
       />
 
       <ActivityCard

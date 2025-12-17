@@ -15,9 +15,9 @@ type ActivityCardProps = {
   showStarBadge?: boolean;
   showBadge?: boolean;
   badgeText?: string;
-  cardClassName?: string;
   bulletListColor?: string;
   textColor?: string;
+  backgroundColor?: string;
 };
 
 export const ActivityCard: React.FC<ActivityCardProps> = ({
@@ -31,11 +31,15 @@ export const ActivityCard: React.FC<ActivityCardProps> = ({
   showStarBadge = false,
   showBadge = false,
   badgeText,
-  cardClassName,
   bulletListColor,
   textColor,
+  backgroundColor = '',
 }) => (
-  <BorderBox as="article" className={clsx(style.card, cardClassName)}>
+  <BorderBox
+    as="article"
+    className={style.card}
+    style={{ '--card-background-color': backgroundColor }}
+  >
     {showStarBadge && <div className={style.starBadge} aria-hidden="true" />}
     <div className={style.iconWrapper}>
       <div className={clsx(style.icon, iconClassName)} />
