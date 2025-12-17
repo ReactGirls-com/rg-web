@@ -1,5 +1,4 @@
 import { CopyEmailButton } from './CopyEmailButton';
-import { TRANSLATIONS } from '../../constants/translations';
 import { CtaBanner } from '../CtaBanner';
 
 type AreYouLostBannerProps = {
@@ -8,8 +7,8 @@ type AreYouLostBannerProps = {
 };
 
 export const AreYouLostBanner: React.FC<AreYouLostBannerProps> = ({
-  title = TRANSLATIONS.CTA_TITLE,
-  description = TRANSLATIONS.CTA_DESCRIPTION,
+  title,
+  description,
 }) => (
   <CtaBanner title={title} description={description}>
     <CopyEmailButton />

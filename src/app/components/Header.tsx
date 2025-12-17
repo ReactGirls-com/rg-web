@@ -6,7 +6,7 @@ import Link from 'next/link';
 import clsx from 'clsx';
 
 import { NavLinks } from '@/src/app/components/NavLinks';
-import { TRANSLATIONS } from '@/src/constants/translations';
+import { useTranslations } from '@/src/context';
 import style from './Header.module.scss';
 
 type HeaderProps = {
@@ -14,6 +14,8 @@ type HeaderProps = {
 };
 
 export const Header: React.FC<HeaderProps> = ({ logoClassName }) => {
+  const t = useTranslations();
+
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -45,7 +47,7 @@ export const Header: React.FC<HeaderProps> = ({ logoClassName }) => {
       <button
         className={style.burgerButton}
         onClick={handleToggle}
-        aria-label={TRANSLATIONS.ARIA_TOGGLE_MENU}
+        aria-label={t.ARIA_TOGGLE_MENU}
         aria-expanded={isOpen}
         type="button"
       >
@@ -65,7 +67,7 @@ export const Header: React.FC<HeaderProps> = ({ logoClassName }) => {
             <Link
               href="/"
               className={clsx(style.menuLogo, logoClassName)}
-              aria-label={TRANSLATIONS.ARIA_REACTGIRLS_HOME}
+              aria-label={t.ARIA_REACTGIRLS_HOME}
               onClick={handleClose}
             >
               <span className="visually-hidden">ReactGirls</span>
@@ -73,7 +75,7 @@ export const Header: React.FC<HeaderProps> = ({ logoClassName }) => {
             <button
               className={style.closeButton}
               onClick={handleClose}
-              aria-label={TRANSLATIONS.ARIA_CLOSE_MENU}
+              aria-label={t.ARIA_CLOSE_MENU}
               type="button"
             >
               <span className={style.closeIcon} aria-hidden="true" />
@@ -81,6 +83,7 @@ export const Header: React.FC<HeaderProps> = ({ logoClassName }) => {
           </div>
 
           <NavLinks
+            t={t}
             listClassName={style.menuLinks}
             linkClassName={style.menuLink}
             buttonWrapperClassName={style.menuButtonWrapper}

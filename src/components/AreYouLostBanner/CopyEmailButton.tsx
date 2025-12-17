@@ -5,16 +5,19 @@ import clsx from 'clsx';
 
 import { ParticleAnimation } from '@/src/components/ParticleAnimation';
 import { Button } from '@/src/components/Button';
-import { TRANSLATIONS } from '@/src/constants/translations';
+import { useTranslations } from '@/src/context';
 import style from './CopyEmailButton.module.scss';
 
 const email = 'reactgirlsprague@gmail.com';
-const copyText = TRANSLATIONS.CTA_COPY_EMAIL;
-const copiedText = TRANSLATIONS.CTA_COPIED_EMAIL;
 
 export const CopyEmailButton: React.FC = () => {
+  const t = useTranslations();
+
   const [isCopied, setIsCopied] = useState(false);
   const [showAnimation, setShowAnimation] = useState(false);
+
+  const copyText = t.CTA_COPY_EMAIL;
+  const copiedText = t.CTA_COPIED_EMAIL;
 
   const handleClick = async () => {
     try {
@@ -37,9 +40,9 @@ export const CopyEmailButton: React.FC = () => {
         variant="explodingStar"
         href={`mailto:${email}`}
         className={style.mobileEmailButton}
-        aria-label={TRANSLATIONS.CTA_BUTTON}
+        aria-label={t.CTA_BUTTON}
       >
-        {TRANSLATIONS.CTA_BUTTON}
+        {t.CTA_BUTTON}
       </Button>
 
       <Button

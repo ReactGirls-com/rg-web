@@ -1,1 +1,0 @@
-export { MentoringRegistrationProcess } from './MentoringRegistrationProcess';
