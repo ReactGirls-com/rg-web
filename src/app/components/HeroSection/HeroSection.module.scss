@@ -25,6 +25,7 @@
   width: 100%;
 
   @media (min-width: $screen-md-min) {
+    min-width: 500px;
     max-width: 590px;
   }
 }
@@ -135,4 +136,34 @@
 
 .explodingStar {
   color: $exploding-star;
+}
+
+.typewriterText {
+  display: inline-block;
+  min-width: 280px;
+
+  @media (min-width: $screen-md-min) {
+    min-width: 380px;
+  }
+}
+
+.cursor {
+  display: inline-block;
+  vertical-align: text-bottom;
+  width: 3px;
+  height: 1em;
+  margin-left: 2px;
+  background-color: $grapefruit-pulp;
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }
