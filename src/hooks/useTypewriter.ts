@@ -1,15 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
 
-import { TRANSLATIONS } from '../constants/translations';
-
-const words = [
-  TRANSLATIONS.COMMUNITY_SECTION_HEADING_HIGHLIGHT_1,
-  TRANSLATIONS.COMMUNITY_SECTION_HEADING_HIGHLIGHT_2,
-  TRANSLATIONS.COMMUNITY_SECTION_HEADING_HIGHLIGHT_3,
-  TRANSLATIONS.COMMUNITY_SECTION_HEADING_HIGHLIGHT_4,
-  TRANSLATIONS.COMMUNITY_SECTION_HEADING_HIGHLIGHT_5,
-];
-
 const typingSpeed = 80;
 const deletingSpeed = 40;
 const pauseAfterType = 2000;
@@ -17,18 +7,22 @@ const pauseAfterDelete = 300;
 
 type TypewriterPhase = 'typing' | 'pausing' | 'deleting' | 'waiting';
 
-export const useTypewriter = () => {
+export const useTypewriter = (words: string[]) => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState('');
   const [phase, setPhase] = useState<TypewriterPhase>('typing');
 
-  const currentWord = words[currentWordIndex];
+  const currentWord = words[currentWordIndex] || '';
 
   const moveToNextWord = useCallback(() => {
     setCurrentWordIndex((prev) => (prev + 1) % words.length);
   }, [words.length]);
 
   useEffect(() => {
+    if (words.length === 0) {
+      return;
+    }
+
     let timeout: NodeJS.Timeout;
 
     switch (phase) {
@@ -76,16 +70,7 @@ export const useTypewriter = () => {
     }
 
     return () => clearTimeout(timeout);
-  }, [
-    phase,
-    displayedText,
-    currentWord,
-    typingSpeed,
-    deletingSpeed,
-    pauseAfterType,
-    pauseAfterDelete,
-    moveToNextWord,
-  ]);
+  }, [phase, displayedText, currentWord, moveToNextWord, words.length]);
 
   return { displayedText, isDeleting: phase === 'deleting' };
 };

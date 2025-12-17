@@ -5,8 +5,8 @@ import { BorderBox } from './BorderBox';
 import style from './CtaBanner.module.scss';
 
 type CtaBannerProps = {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
   className?: string;
   buttonsContainerClassName?: string;
 };

@@ -1,22 +1,27 @@
-'use client';
-
 import Image from 'next/image';
 
 import { StatsCard } from './StatsCard';
-import { TRANSLATIONS } from '@/src/constants/translations';
+import { getTranslationsWithLocale } from '@/src/utils/getTranslations';
 import { SOCIAL_LINKS } from '@/src/constants';
 import { IconButton } from '@/src/components/IconButton';
 import { HeadingHighlight } from '@/src/components/HeadingHighlight';
 import { COLORS } from '@/src/styles/color';
 import { Section } from '@/src/components/Section';
 import { BorderBox } from '@/src/components/BorderBox';
-import { useTypewriter } from '@/src/hooks/useTypewriter';
 import heroImage from '../../../assets/hero-image.png';
 import { HeroButtons } from './HeroButtons';
+import { HeroTypewriter } from './HeroTypewriter';
 import style from './HeroSection.module.scss';
 
-export const HeroSection: React.FC = () => {
-  const { displayedText } = useTypewriter();
+export const HeroSection: React.FC = async () => {
+  const { t } = await getTranslationsWithLocale();
+  const typewriterWords = [
+    t.COMMUNITY_SECTION_HEADING_HIGHLIGHT_1,
+    t.COMMUNITY_SECTION_HEADING_HIGHLIGHT_2,
+    t.COMMUNITY_SECTION_HEADING_HIGHLIGHT_3,
+    t.COMMUNITY_SECTION_HEADING_HIGHLIGHT_4,
+    t.COMMUNITY_SECTION_HEADING_HIGHLIGHT_5,
+  ];
 
   return (
     <Section className={style.heroSection}>
@@ -24,51 +29,43 @@ export const HeroSection: React.FC = () => {
         <div className={style.leftContentWrapper}>
           <div className={style.headingWrapper}>
             <h2 className={style.heading}>
-              {TRANSLATIONS.COMMUNITY_SECTION_HEADING_BEFORE}{' '}
+              {t.COMMUNITY_SECTION_HEADING_BEFORE}{' '}
               <HeadingHighlight highlightColor={COLORS.grapefruitPulp}>
-                <span className={style.typewriterText}>
-                  {displayedText}
-                  <span className={style.cursor} aria-hidden="true" />
-                </span>
+                <HeroTypewriter words={typewriterWords} />
               </HeadingHighlight>{' '}
-              <div>{TRANSLATIONS.COMMUNITY_SECTION_HEADING_AFTER}</div>
+              <div>{t.COMMUNITY_SECTION_HEADING_AFTER}</div>
             </h2>
-            <p className={style.paragraph}>
-              {TRANSLATIONS.COMMUNITY_SECTION_PARAGRAPH}
-            </p>
+            <p className={style.paragraph}>{t.COMMUNITY_SECTION_PARAGRAPH}</p>
           </div>
 
           <div className={style.buttonsStatsWrapper}>
-            <HeroButtons />
+            <HeroButtons
+              joinText={t.COMMUNITY_SECTION_BUTTON_JOIN}
+              supportText={t.COMMUNITY_SECTION_BUTTON_SUPPORT}
+            />
 
             <div className={style.statsCardList}>
               <StatsCard
                 value={500}
                 valueSuffix="+"
-                label={TRANSLATIONS.COMMUNITY_SECTION_STATS_SUPPORTED_LABEL}
-                underLabel={
-                  TRANSLATIONS.COMMUNITY_SECTION_STATS_SUPPORTED_UNDER_LABEL
-                }
+                label={t.COMMUNITY_SECTION_STATS_SUPPORTED_LABEL}
+                underLabel={t.COMMUNITY_SECTION_STATS_SUPPORTED_UNDER_LABEL}
                 colorClassName={style.grapefruitPulp}
                 shouldAnimate
               />
               <StatsCard
                 value={80}
                 valueSuffix="+"
-                label={TRANSLATIONS.COMMUNITY_SECTION_STATS_JOINED_LABEL}
-                underLabel={
-                  TRANSLATIONS.COMMUNITY_SECTION_STATS_JOINED_UNDER_LABEL
-                }
+                label={t.COMMUNITY_SECTION_STATS_JOINED_LABEL}
+                underLabel={t.COMMUNITY_SECTION_STATS_JOINED_UNDER_LABEL}
                 colorClassName={style.aztecAtom}
                 shouldAnimate
               />
               <StatsCard
                 value={60}
                 valueSuffix="+"
-                label={TRANSLATIONS.COMMUNITY_SECTION_STATS_EVENTS_LABEL}
-                underLabel={
-                  TRANSLATIONS.COMMUNITY_SECTION_STATS_EVENTS_UNDER_LABEL
-                }
+                label={t.COMMUNITY_SECTION_STATS_EVENTS_LABEL}
+                underLabel={t.COMMUNITY_SECTION_STATS_EVENTS_UNDER_LABEL}
                 colorClassName={style.explodingStar}
                 shouldAnimate
               />
@@ -93,7 +90,7 @@ export const HeroSection: React.FC = () => {
       <div className={style.socialSection}>
         <nav
           className={style.socialLinks}
-          aria-label={TRANSLATIONS.ARIA_SOCIAL_MEDIA_LINKS}
+          aria-label={t.ARIA_SOCIAL_MEDIA_LINKS}
         >
           {SOCIAL_LINKS.map(({ label, icon, href, ariaLabel }) => (
             <IconButton

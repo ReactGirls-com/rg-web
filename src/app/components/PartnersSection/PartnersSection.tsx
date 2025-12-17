@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import { Section } from '@/src/components/Section';
 import { HeadingHighlight } from '@/src/components/HeadingHighlight';
-import { TRANSLATIONS } from '@/src/constants/translations';
+import { getTranslationsWithLocale } from '@/src/utils/getTranslations';
 import { SECTION_IDS } from '@/src/constants';
 import { COLORS } from '@/src/styles/color';
 import { PartnersCta } from './PartnersCta';
@@ -22,37 +22,50 @@ const PARTNERS = [
   { name: 'EDU PUNKS', logo: eduPunksLogo },
 ];
 
-export const PartnersSection = () => (
-  <Section
-    id={SECTION_IDS.PARTNERS}
-    titleText={TRANSLATIONS.PARTNERS_SECTION_TITLE}
-    titleColor={COLORS.explodingStar}
-    heading={
-      <>
-        {TRANSLATIONS.PARTNERS_SECTION_HEADING_BEFORE}{' '}
-        <HeadingHighlight highlightColor={COLORS.explodingStar}>
-          {TRANSLATIONS.PARTNERS_SECTION_HEADING_HIGHLIGHT}
-        </HeadingHighlight>{' '}
-        {TRANSLATIONS.PARTNERS_SECTION_HEADING_AFTER}
-      </>
-    }
-    subheading={TRANSLATIONS.PARTNERS_SECTION_SUBHEADING}
-  >
-    <div className={style.partnersLogos}>
-      {PARTNERS.map((partner) => (
-        <div key={partner.name} className={style.partnerLogo}>
-          <Image
-            src={partner.logo}
-            alt={partner.name}
-            className={style.partnerLogoImage}
-            width={150}
-            height={100}
-          />
-        </div>
-      ))}
-    </div>
+export const PartnersSection: React.FC = async () => {
+  const { t } = await getTranslationsWithLocale();
 
-    <PartnersCta />
-    <MediumBanner />
-  </Section>
-);
+  return (
+    <Section
+      id={SECTION_IDS.PARTNERS}
+      titleText={t.PARTNERS_SECTION_TITLE}
+      titleColor={COLORS.explodingStar}
+      heading={
+        <>
+          {t.PARTNERS_SECTION_HEADING_BEFORE}{' '}
+          <HeadingHighlight highlightColor={COLORS.explodingStar}>
+            {t.PARTNERS_SECTION_HEADING_HIGHLIGHT}
+          </HeadingHighlight>{' '}
+          {t.PARTNERS_SECTION_HEADING_AFTER}
+        </>
+      }
+      subheading={t.PARTNERS_SECTION_SUBHEADING}
+    >
+      <div className={style.partnersLogos}>
+        {PARTNERS.map((partner) => (
+          <div key={partner.name} className={style.partnerLogo}>
+            <Image
+              src={partner.logo}
+              alt={partner.name}
+              className={style.partnerLogoImage}
+              width={150}
+              height={100}
+            />
+          </div>
+        ))}
+      </div>
+
+      <PartnersCta
+        title={t.PARTNERS_CTA_TITLE}
+        description={t.PARTNERS_CTA_DESCRIPTION}
+        primaryButtonText={t.PARTNERS_CTA_BUTTON_PRIMARY}
+        secondaryButtonText={t.PARTNERS_CTA_BUTTON_SECONDARY}
+      />
+      <MediumBanner
+        title={t.PARTNERS_MEDIUM_TITLE}
+        description={t.PARTNERS_MEDIUM_DESCRIPTION}
+        buttonText={t.PARTNERS_MEDIUM_BUTTON}
+      />
+    </Section>
+  );
+};

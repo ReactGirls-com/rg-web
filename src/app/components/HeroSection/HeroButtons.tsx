@@ -1,7 +1,8 @@
+'use client';
+
 import { Button } from '@/src/components/Button';
 import { Row } from '@/src/components/Row';
 import { SECTION_IDS } from '@/src/constants';
-import { TRANSLATIONS } from '@/src/constants/translations';
 
 const SCROLL_OFFSET = 40;
 
@@ -18,7 +19,16 @@ const handleSmoothScroll = (sectionId: string) => {
     });
   }
 };
-export const HeroButtons: React.FC = () => (
+
+type HeroButtonsProps = {
+  joinText: string;
+  supportText: string;
+};
+
+export const HeroButtons: React.FC<HeroButtonsProps> = ({
+  joinText,
+  supportText,
+}) => (
   <Row flexWrap gap="16px">
     <Button
       variant="aztecAtom"
@@ -26,7 +36,7 @@ export const HeroButtons: React.FC = () => (
         handleSmoothScroll(SECTION_IDS.OUR_ACTIVITIES);
       }}
     >
-      {TRANSLATIONS.COMMUNITY_SECTION_BUTTON_JOIN}
+      {joinText}
     </Button>
     <Button
       variant="explodingStar"
@@ -34,7 +44,7 @@ export const HeroButtons: React.FC = () => (
         handleSmoothScroll(SECTION_IDS.PARTNERS);
       }}
     >
-      {TRANSLATIONS.COMMUNITY_SECTION_BUTTON_SUPPORT}
+      {supportText}
     </Button>
   </Row>
 );

@@ -1,47 +1,51 @@
 import { Section } from '../../../components/Section';
 import { HeadingHighlight } from '../../../components/HeadingHighlight';
-import { TRANSLATIONS } from '@/src/constants/translations';
+import { getTranslationsWithLocale } from '@/src/utils/getTranslations';
 import { YellowSection } from './YellowSection';
 import { COLORS } from '@/src/styles/color';
 import { BasicCard } from '@/src/components/BasicCard';
 import style from './AboutSection.module.scss';
 
-export const AboutSection = () => (
-  <Section
-    titleText={TRANSLATIONS.ABOUT_SECTION_TITLE}
-    titleColor={COLORS.paleLavender}
-    heading={
-      <>
-        {TRANSLATIONS.ABOUT_SECTION_HEADING_BEFORE}{' '}
-        <HeadingHighlight highlightColor={COLORS.paleLavender}>
-          {TRANSLATIONS.ABOUT_SECTION_HEADING_HIGHLIGHT}
-        </HeadingHighlight>{' '}
-        {TRANSLATIONS.ABOUT_SECTION_HEADING_AFTER}
-      </>
-    }
-    subheading={TRANSLATIONS.ABOUT_SECTION_SUBHEADING}
-  >
-    <div className={style.cardsContainer}>
-      <BasicCard
-        iconClassName={style.iconTarget}
-        title={TRANSLATIONS.CARD_MISSION_TITLE}
-        description={TRANSLATIONS.CARD_MISSION_DESCRIPTION}
-        iconColor={COLORS.grapefruitPulp}
-      />
-      <BasicCard
-        iconClassName={style.iconHeart}
-        title={TRANSLATIONS.CARD_VISION_TITLE}
-        description={TRANSLATIONS.CARD_VISION_DESCRIPTION}
-        iconColor={COLORS.aztecAtom}
-      />
-      <BasicCard
-        iconClassName={style.iconPeople}
-        title={TRANSLATIONS.CARD_UNIQUE_TITLE}
-        description={TRANSLATIONS.CARD_UNIQUE_DESCRIPTION}
-        iconColor={COLORS.paleLavender}
-      />
-    </div>
+export const AboutSection: React.FC = async () => {
+  const { t } = await getTranslationsWithLocale();
 
-    <YellowSection />
-  </Section>
-);
+  return (
+    <Section
+      titleText={t.ABOUT_SECTION_TITLE}
+      titleColor={COLORS.paleLavender}
+      heading={
+        <>
+          {t.ABOUT_SECTION_HEADING_BEFORE}{' '}
+          <HeadingHighlight highlightColor={COLORS.paleLavender}>
+            {t.ABOUT_SECTION_HEADING_HIGHLIGHT}
+          </HeadingHighlight>{' '}
+          {t.ABOUT_SECTION_HEADING_AFTER}
+        </>
+      }
+      subheading={t.ABOUT_SECTION_SUBHEADING}
+    >
+      <div className={style.cardsContainer}>
+        <BasicCard
+          iconClassName={style.iconTarget}
+          title={t.CARD_MISSION_TITLE}
+          description={t.CARD_MISSION_DESCRIPTION}
+          iconColor={COLORS.grapefruitPulp}
+        />
+        <BasicCard
+          iconClassName={style.iconHeart}
+          title={t.CARD_VISION_TITLE}
+          description={t.CARD_VISION_DESCRIPTION}
+          iconColor={COLORS.aztecAtom}
+        />
+        <BasicCard
+          iconClassName={style.iconPeople}
+          title={t.CARD_UNIQUE_TITLE}
+          description={t.CARD_UNIQUE_DESCRIPTION}
+          iconColor={COLORS.paleLavender}
+        />
+      </div>
+
+      <YellowSection />
+    </Section>
+  );
+};

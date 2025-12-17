@@ -1,0 +1,48 @@
+.languageSwitcher {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.flagButton {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 12px;
+  border: 1px solid $white-20;
+  border-radius: 8px;
+  background: transparent;
+  color: $white-80;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+
+  &:hover {
+    border-color: $aztec-atom;
+    background-color: $white-20;
+    color: #fff;
+  }
+
+  &:focus-visible {
+    border-radius: 8px;
+    outline: 2px solid $aztec-atom;
+    outline-offset: 2px;
+  }
+}
+
+.flagIcon {
+  flex-shrink: 0;
+  object-fit: cover;
+  width: 24px;
+  height: 16px;
+  border-radius: 2px;
+}
+
+.languageLabel {
+  white-space: nowrap;
+}
