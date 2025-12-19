@@ -1,6 +1,9 @@
 import { Section } from '../../../components/Section';
 import { HeadingHighlight } from '../../../components/HeadingHighlight';
-import { getTranslationsWithLocale } from '@/src/utils/getTranslations';
+import {
+  getLocale,
+  getTranslationsWithLocale,
+} from '@/src/utils/getTranslations';
 import { COLORS } from '@/src/styles/color';
 import {
   COURSES_LINK,
@@ -10,10 +13,12 @@ import {
 } from '@/src/constants';
 import { ActivityCard } from './ActivityCard';
 import { AreYouLostBanner } from '@/src/components/AreYouLostBanner/AreYouLostBanner';
+import { getLocaleAwareLink } from '@/src/utils/getNavLinks';
 import style from './OurActivities.module.scss';
 
 export const OurActivities: React.FC = async () => {
   const { t } = await getTranslationsWithLocale();
+  const locale = await getLocale();
 
   return (
     <Section
@@ -41,7 +46,7 @@ export const OurActivities: React.FC = async () => {
             t.OUR_ACTIVITIES_COURSES_BULLET_3,
           ]}
           buttonVariant="grapefruitPulp"
-          buttonHref={COURSES_LINK}
+          buttonHref={getLocaleAwareLink(COURSES_LINK, locale)}
           buttonText={t.OUR_ACTIVITIES_COURSES_BUTTON}
           bulletListColor={COLORS.grapefruitPulp}
         />
@@ -57,7 +62,7 @@ export const OurActivities: React.FC = async () => {
             t.OUR_ACTIVITIES_MENTORING_BULLET_4,
           ]}
           buttonVariant="explodingStar"
-          buttonHref={MENTORING_LINK}
+          buttonHref={getLocaleAwareLink(MENTORING_LINK, locale)}
           buttonText={t.OUR_ACTIVITIES_MENTORING_BUTTON}
           showStarBadge
           showBadge
@@ -77,7 +82,7 @@ export const OurActivities: React.FC = async () => {
             t.OUR_ACTIVITIES_MEETUPS_BULLET_3,
           ]}
           buttonVariant="paleLavender"
-          buttonHref={MEETUPS_LINK}
+          buttonHref={getLocaleAwareLink(MEETUPS_LINK, locale)}
           buttonText={t.OUR_ACTIVITIES_MEETUPS_BUTTON}
           bulletListColor={COLORS.paleLavender}
         />

@@ -54,8 +54,12 @@
   }
 
   &.open {
-    max-height: 400px;
+    max-height: 500px;
     padding-top: 16px;
+
+    @media (min-width: $screen-md-min) {
+      max-height: 400px;
+    }
   }
 }
 

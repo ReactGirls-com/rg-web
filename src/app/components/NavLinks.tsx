@@ -4,7 +4,8 @@ import { Button } from '@/src/components/Button';
 import { CustomLink } from '@/src/components/CustomLink';
 import { MENTORING_FORM_LINK } from '@/src/constants';
 import { getNavLinks } from '@/src/utils/getNavLinks';
-import type { Translations } from '@/src/utils/getTranslations';
+import { type Translations } from '@/src/utils/getTranslations';
+import { Locale } from '@/src/context/LanguageContext';
 import style from './NavLinks.module.scss';
 
 type NavLinksProps = {
@@ -15,6 +16,7 @@ type NavLinksProps = {
   linkActiveClassName?: string;
   buttonWrapperClassName?: string;
   onLinkClick?: () => void;
+  locale: Locale;
 };
 
 export const NavLinks: React.FC<NavLinksProps> = ({
@@ -25,8 +27,9 @@ export const NavLinks: React.FC<NavLinksProps> = ({
   linkActiveClassName,
   buttonWrapperClassName,
   onLinkClick,
+  locale,
 }) => {
-  const navLinks = getNavLinks(t);
+  const navLinks = getNavLinks(t, locale);
 
   return (
     <ul className={clsx(style.list, listClassName)}>
@@ -45,7 +48,7 @@ export const NavLinks: React.FC<NavLinksProps> = ({
 
       <li className={clsx(style.buttonWrapper, buttonWrapperClassName)}>
         <Button
-          variant="grapefruitPulp"
+          variant="aztecAtom"
           onClick={onLinkClick}
           href={MENTORING_FORM_LINK}
         >

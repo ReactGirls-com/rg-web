@@ -15,6 +15,7 @@ import {
 } from '@/src/utils/getTranslations';
 import { LOCALES, DEFAULT_LOCALE } from '@/src/constants/translations';
 import style from '../layout.module.scss';
+import { getLocaleAwareLink } from '@/src/utils/getNavLinks';
 
 const inter = localFont({
   src: [
@@ -92,25 +93,29 @@ const LocaleLayout: ChildrenFC<LocaleLayoutProps> = async ({
         <LanguageProvider locale={locale}>
           <header className={style.header}>
             <Link
-              href="/"
+              href={getLocaleAwareLink('/', locale)}
               className={style.logo}
               aria-label={t.ARIA_REACTGIRLS_HOME}
             >
               <span className="visually-hidden">ReactGirls</span>
             </Link>
 
-            <Header logoClassName={style.logo} />
+            <Header logoClassName={style.logo} locale={locale} />
 
             <nav
               aria-label={t.ARIA_MAIN_NAVIGATION}
               className={style.headerNav}
             >
-              <NavLinks t={t} listClassName={style.headerNavLinks} />
+              <NavLinks
+                t={t}
+                listClassName={style.headerNavLinks}
+                locale={locale}
+              />
             </nav>
           </header>
           <main className={style.content}>{children}</main>
 
-          <Footer t={t} />
+          <Footer />
         </LanguageProvider>
       </body>
     </html>

@@ -138,7 +138,7 @@ export const TRANSLATIONS_EN: Record<TranslationKey, string> = {
   CONTACT_HERO_HEADING_BEFORE: 'Contact',
   CONTACT_HERO_HEADING_HIGHLIGHT: 'ReactGirls',
   CONTACT_HERO_SUBHEADING:
-    "Have questions? Want to get involved? We'd love to hear from you! Contact us through one of the channels below.",
+    "Do you have questions? Want to get involved? We'd love to hear from you! Contact us through one of the channels below.",
   TEAM_SECTION_TITLE: 'Our team',
   TEAM_SECTION_HEADING_BEFORE: 'Meet the',
   TEAM_SECTION_HEADING_HIGHLIGHT: 'ReactGirls',
@@ -248,25 +248,27 @@ export const TRANSLATIONS_EN: Record<TranslationKey, string> = {
   PAST_MEETUPS_SECTION_HEADING_HIGHLIGHT: 'meetups',
   PAST_MEETUPS_BY: 'by',
   PAST_MEETUPS_WATCH_BUTTON: 'Watch recording',
-  FAQ_SECTION_TITLE: 'Frequently asked questions',
-  FAQ_QUESTION_1: 'How to sign up for ReactGirls academy?',
+  FAQ_SECTION_TITLE: 'Frequently asked',
+  FAQ_SECTION_HEADING_HIGHLIGHT: 'questions',
+  FAQ_QUESTION_1: 'Where do ReactGirls activities take place?',
   FAQ_ANSWER_1:
-    'Visit our courses page and click "Sign up". Fill out the registration form with information about your background and goals. We review applications on an ongoing basis and will inform you of acceptance by email.',
-  FAQ_QUESTION_2: 'What technologies and skills will I learn during mentoring?',
+    'We organize all our events exclusively in person in Prague. We will send you the specific address and other information in time before the start of the course or mentoring. You can find meetup information on the event page on Meetup.com.',
+  FAQ_QUESTION_2:
+    'Is it possible to participate in ReactGirls activities online?',
   FAQ_ANSWER_2:
-    'During the mentoring program, you work on your own project that you design yourself. You will learn to work with modern technologies. In addition to technical skills, we also focus on soft skills such as presenting in front of an audience and preparing for job interviews.',
-  FAQ_QUESTION_3: 'Can I participate in meetups remotely?',
+    'We believe that community and mutual sharing of experiences outside the online environment is an indispensable part of development. Therefore, we organize all our activities exclusively in person. However, our mentoring takes place (except for a few joint meetings) asynchronously and it is only up to agreement with your mentor, whether you will meet in person or plan online calls.',
+  FAQ_QUESTION_3: 'Is participation in activities limited to women only?',
   FAQ_ANSWER_3:
-    'Most of our meetups are hybrid - you can join in person at our office in Prague or virtually from anywhere in the world. Information about the format of a specific meetup can be found in the event description.',
-  FAQ_QUESTION_4: 'Do I need programming experience?',
+    'While ReactGirls focuses on women, we are happy to welcome men in our community who share our vision.',
+  FAQ_QUESTION_4: 'Is joining the community paid?',
   FAQ_ANSWER_4:
-    'Not at all! We welcome complete beginners. Our academies start from the basics and our mentors will support you at any level. The most important thing is enthusiasm and willingness to learn new things.',
-  FAQ_QUESTION_5: 'How long is the mentoring program?',
+    'Participation in community meetups is free, as well as joining our communication channels. We keep the prices for our educational activities (courses and mentoring) as low as possible and cover community operating costs from them.',
+  FAQ_QUESTION_5: 'How long does the mentoring program last?',
   FAQ_ANSWER_5:
-    'The mentoring program lasts 4 months. During this time, you work on your own project with the support of an experienced mentor, attend weekly meetings with code review, and gain experiences that simulate a real work environment.',
-  FAQ_QUESTION_6: 'Where do courses take place?',
+    'The mentoring program lasts approximately 4 months. During this time, you work on your own project with the support of an experienced mentor, participate in weekly meetings with code review, and gain experience that simulates a real work environment.',
+  FAQ_QUESTION_6: 'How can I sign up for ReactGirls?',
   FAQ_ANSWER_6:
-    'All our academies and workshops take place exclusively offline in Prague. We believe that meeting in person with other community members is important for your growth. We will send you the specific address and other information a few days before the course starts.',
+    'Choose from our activities between courses, mentoring, and meetups. On our website, you will find a separate page for each activity with information that will guide you through the registration. We look forward to seeing you!',
   TEAM_MEMBER_ZUZANA_ROLE: 'CEO',
   TEAM_MEMBER_ZUZANA_DESCRIPTION:
     'Zuzka has ReactGirls under control, from meetups to workshops.',
@@ -315,6 +317,7 @@ export const TRANSLATIONS_EN: Record<TranslationKey, string> = {
   CONTACT_INFO_ORGANIZATION_TITLE: 'Organization details',
   CONTACT_INFO_ORGANIZATION_NAME_LABEL: 'Name:',
   CONTACT_INFO_ORGANIZATION_ID_LABEL: 'ID:',
+  CONTACT_INFO_ORGANIZATION_VAT_LABEL: 'VAT:',
   CONTACT_INFO_ORGANIZATION_ADDRESS_LABEL: 'Address:',
   CONTACT_INFO_BANK_TITLE: 'Bank details',
   CONTACT_INFO_BANK_NAME_LABEL: 'Bank name:',

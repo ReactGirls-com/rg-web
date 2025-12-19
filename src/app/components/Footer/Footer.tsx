@@ -5,23 +5,21 @@ import { CustomLink } from '../../../components/CustomLink';
 import { IconButton } from '@/src/components/IconButton';
 import { ContactRow } from './ContactRow';
 import { LanguageSwitcher } from '@/src/components/LanguageSwitcher';
-import { getNavLinks } from '@/src/utils/getNavLinks';
-import type { Translations } from '@/src/utils/getTranslations';
+import { getLocaleAwareLink, getNavLinks } from '@/src/utils/getNavLinks';
+import { getTranslationsWithLocale } from '@/src/utils/getTranslations';
 import style from './Footer.module.scss';
 
-type FooterProps = {
-  t: Translations;
-};
+export const Footer: React.FC = async () => {
+  const { t, locale } = await getTranslationsWithLocale();
 
-export const Footer: React.FC<FooterProps> = ({ t }) => {
-  const navLinks = getNavLinks(t);
+  const navLinks = getNavLinks(t, locale);
 
   return (
     <footer className={style.footer}>
       <div className={style.footerContent}>
         <section>
           <Link
-            href="/"
+            href={getLocaleAwareLink('/', locale)}
             className={style.footerLogo}
             aria-label={t.ARIA_REACTGIRLS_HOME}
           >
