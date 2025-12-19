@@ -5,22 +5,26 @@ import {
   MEETUPS_LINK,
   CONTACT_LINK,
 } from '../constants';
+import { DEFAULT_LOCALE, Locale } from '../constants/translations';
 
-export const getNavLinks = (t: Translations) => [
+export const getLocaleAwareLink = (href: string, locale: Locale) =>
+  locale === DEFAULT_LOCALE ? href : href.replace('/', `/${locale}/`);
+
+export const getNavLinks = (t: Translations, locale: Locale) => [
   {
     label: t.COURSES_LINK_TEXT,
-    href: COURSES_LINK,
+    href: getLocaleAwareLink(COURSES_LINK, locale),
   },
   {
     label: t.MENTORING_LINK_TEXT,
-    href: MENTORING_LINK,
+    href: getLocaleAwareLink(MENTORING_LINK, locale),
   },
   {
     label: t.MEETUPS_LINK_TEXT,
-    href: MEETUPS_LINK,
+    href: getLocaleAwareLink(MEETUPS_LINK, locale),
   },
   {
     label: t.CONTACT_LINK_TEXT,
-    href: CONTACT_LINK,
+    href: getLocaleAwareLink(CONTACT_LINK, locale),
   },
 ];

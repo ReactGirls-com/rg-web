@@ -6,14 +6,16 @@ import Link from 'next/link';
 import clsx from 'clsx';
 
 import { NavLinks } from '@/src/app/components/NavLinks';
-import { useTranslations } from '@/src/context';
+import { Locale, useTranslations } from '@/src/context';
+import { getLocaleAwareLink } from '@/src/utils/getNavLinks';
 import style from './Header.module.scss';
 
 type HeaderProps = {
   logoClassName?: string;
+  locale: Locale;
 };
 
-export const Header: React.FC<HeaderProps> = ({ logoClassName }) => {
+export const Header: React.FC<HeaderProps> = ({ logoClassName, locale }) => {
   const t = useTranslations();
 
   const [isOpen, setIsOpen] = useState(false);
@@ -65,7 +67,7 @@ export const Header: React.FC<HeaderProps> = ({ logoClassName }) => {
         <div>
           <div className={style.menuHeader}>
             <Link
-              href="/"
+              href={getLocaleAwareLink('/', locale)}
               className={clsx(style.menuLogo, logoClassName)}
               aria-label={t.ARIA_REACTGIRLS_HOME}
               onClick={handleClose}
@@ -84,6 +86,7 @@ export const Header: React.FC<HeaderProps> = ({ logoClassName }) => {
 
           <NavLinks
             t={t}
+            locale={locale}
             listClassName={style.menuLinks}
             linkClassName={style.menuLink}
             buttonWrapperClassName={style.menuButtonWrapper}

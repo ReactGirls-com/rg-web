@@ -52,6 +52,10 @@ export const ContactInfoSection: React.FC = async () => {
               <dd>09587535</dd>
             </div>
             <div className={style.infoRow}>
+              <dt>{t.CONTACT_INFO_ORGANIZATION_VAT_LABEL}</dt>
+              <dd>CZ09587535</dd>
+            </div>
+            <div className={style.infoRow}>
               <dt>{t.CONTACT_INFO_ORGANIZATION_ADDRESS_LABEL}</dt>
               <dd>V jehličí 2106/2, Krč, 142 00 Praha 4</dd>
             </div>
@@ -66,7 +70,7 @@ export const ContactInfoSection: React.FC = async () => {
           <dl className={style.infoList}>
             <div className={style.infoRow}>
               <dt>{t.CONTACT_INFO_BANK_NAME_LABEL}</dt>
-              <dd>Fio banka, a.s.</dd>
+              <dd>Fio banka a.s.</dd>
             </div>
             <div className={style.infoRow}>
               <dt>{t.CONTACT_INFO_BANK_ACCOUNT_LABEL}</dt>
