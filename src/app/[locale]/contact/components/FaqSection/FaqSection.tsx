@@ -2,6 +2,7 @@ import { Section } from '@/src/components/Section';
 import { getTranslationsWithLocale } from '@/src/utils/getTranslations';
 import { COLORS } from '@/src/styles/color';
 import { FaqItem } from './FaqItem';
+import { HeadingHighlight } from '@/src/components/HeadingHighlight';
 import style from './FaqSection.module.scss';
 
 export const FaqSection: React.FC = async () => {
@@ -40,7 +41,16 @@ export const FaqSection: React.FC = async () => {
   ];
 
   return (
-    <Section titleText={t.FAQ_SECTION_TITLE} titleColor={COLORS.carbonFiber}>
+    <Section
+      heading={
+        <>
+          {t.FAQ_SECTION_TITLE}{' '}
+          <HeadingHighlight highlightColor={COLORS.paleLavender}>
+            {t.FAQ_SECTION_HEADING_HIGHLIGHT}
+          </HeadingHighlight>
+        </>
+      }
+    >
       <div className={style.faqContainer}>
         {faqItems.map((item, index) => (
           <FaqItem

@@ -239,7 +239,7 @@ export const TRANSLATIONS_CS = {
   MEETUPS_CTA_TITLE: 'Chceš přednášet na našem meetupu?',
   MEETUPS_CTA_DESCRIPTION:
     'Zajímá tě, jaké to je přednášet před publikem? U nás si to můžeš vyzkoušet, i když zatím nemáš s přednášením zkušenosti. Vymysli si téma a vyplň nám formulář. My se ti brzy ozveme.',
-  MEETUPS_CTA_BUTTON: 'Staň se speakerem',
+  MEETUPS_CTA_BUTTON: 'Přihlas svou přednášku',
   PAST_MEETUPS_SECTION_HEADING_BEFORE: 'Proběhlé',
   PAST_MEETUPS_SECTION_HEADING_HIGHLIGHT: 'meetupy',
   PAST_MEETUPS_BY: 'od',
@@ -303,8 +303,8 @@ export const TRANSLATIONS_CS = {
   ARIA_FAQ_SHOW: 'Zobrazit',
   ARIA_FAQ_ANSWER_TO_QUESTION: 'odpověď na otázku',
   FOOTER_ADDRESS_COUNTRY: 'Česká republika',
-  CONTACT_INFO_SECTION_HEADING_BEFORE: 'Kontaktní',
-  CONTACT_INFO_SECTION_HEADING_HIGHLIGHT: 'informace',
+  CONTACT_INFO_SECTION_HEADING_BEFORE: 'Fakturační',
+  CONTACT_INFO_SECTION_HEADING_HIGHLIGHT: 'údaje',
   CONTACT_INFO_SECTION_SUBHEADING:
     'Zde najdete všechny způsoby, jak nás kontaktovat, a důležité informace o naší organizaci.',
   CONTACT_INFO_EMAIL_TITLE: 'Email',

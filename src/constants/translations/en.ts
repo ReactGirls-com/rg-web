@@ -47,7 +47,7 @@ export const TRANSLATIONS_EN: Record<TranslationKey, string> = {
   COMMUNITY_SECTION_BUTTON_SUPPORT: 'Support us',
   COMMUNITY_SECTION_STATS_SUPPORTED_LABEL: 'We have supported',
   COMMUNITY_SECTION_STATS_SUPPORTED_UNDER_LABEL: 'women',
-  COMMUNITY_SECTION_STATS_JOINED_LABEL: 'Joined us',
+  COMMUNITY_SECTION_STATS_JOINED_LABEL: 'Joined by',
   COMMUNITY_SECTION_STATS_JOINED_UNDER_LABEL: 'developers',
   COMMUNITY_SECTION_STATS_EVENTS_LABEL: 'We organized',
   COMMUNITY_SECTION_STATS_EVENTS_UNDER_LABEL: 'community events',
@@ -243,7 +243,7 @@ export const TRANSLATIONS_EN: Record<TranslationKey, string> = {
   MEETUPS_CTA_TITLE: 'Want to speak at our meetup?',
   MEETUPS_CTA_DESCRIPTION:
     "Curious what it's like to present in front of an audience? You can try it with us, even if you don't have presentation experience yet. Come up with a topic and fill out our form. We will get back to you soon.",
-  MEETUPS_CTA_BUTTON: 'Become a speaker',
+  MEETUPS_CTA_BUTTON: 'Sign up your talk',
   PAST_MEETUPS_SECTION_HEADING_BEFORE: 'Past',
   PAST_MEETUPS_SECTION_HEADING_HIGHLIGHT: 'meetups',
   PAST_MEETUPS_BY: 'by',
@@ -308,8 +308,8 @@ export const TRANSLATIONS_EN: Record<TranslationKey, string> = {
   ARIA_FAQ_SHOW: 'Show',
   ARIA_FAQ_ANSWER_TO_QUESTION: 'answer to question',
   FOOTER_ADDRESS_COUNTRY: 'Czech Republic',
-  CONTACT_INFO_SECTION_HEADING_BEFORE: 'Contact',
-  CONTACT_INFO_SECTION_HEADING_HIGHLIGHT: 'information',
+  CONTACT_INFO_SECTION_HEADING_BEFORE: 'Invoice',
+  CONTACT_INFO_SECTION_HEADING_HIGHLIGHT: 'details',
   CONTACT_INFO_SECTION_SUBHEADING:
     'Here you will find all the ways to contact us and important information about our organization.',
   CONTACT_INFO_EMAIL_TITLE: 'Email',

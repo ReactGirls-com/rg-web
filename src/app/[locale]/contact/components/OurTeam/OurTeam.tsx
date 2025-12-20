@@ -6,12 +6,17 @@ import {
 } from '@/src/utils/getTranslations';
 import { COLORS } from '@/src/styles/color';
 import { TeamCard } from './TeamCard';
-import zuzkaImage from '@/src/assets/profileImages/zuzka-avatar.jpg';
-import marketaImage from '@/src/assets/profileImages/marketa-avatar.jpg';
-import eliskaImage from '@/src/assets/profileImages/eliska-avatar.jpg';
-import ondraImage from '@/src/assets/profileImages/ondra-avatar.jpg';
-import helcaImage from '@/src/assets/profileImages/helca-avatar.jpg';
-import adamImage from '@/src/assets/profileImages/adam-avatar.jpg';
+import zuzkaImage from '@/src/assets/profileImages/zuzka.webp';
+import eliskaImage from '@/src/assets/profileImages/eliska.webp';
+import ondraImage from '@/src/assets/profileImages/ondra.webp';
+import helcaImage from '@/src/assets/profileImages/helca.webp';
+import adamImage from '@/src/assets/profileImages/adam.webp';
+import terkaImage from '@/src/assets/profileImages/terka.webp';
+import lukasImage from '@/src/assets/profileImages/lukas.webp';
+import honzaImage from '@/src/assets/profileImages/honza.webp';
+import evaImage from '@/src/assets/profileImages/eva.webp';
+import tonyImage from '@/src/assets/profileImages/tony.webp';
+import marketaImage from '@/src/assets/profileImages/marketa.webp';
 import style from './OurTeam.module.scss';
 
 type RoleType =
@@ -49,7 +54,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     name: 'Tereza Vaňková',
     role: 'founder',
     descriptionKey: 'TEAM_MEMBER_TEREZA_DESCRIPTION',
-    image: eliskaImage.src,
+    image: terkaImage.src,
     socialLinks: {
       email: 'terka@reactgirls.com',
       linkedin: 'https://www.linkedin.com/in/tereza-vankova/',
@@ -89,7 +94,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     name: 'Lukáš Čížek',
     role: 'education',
     descriptionKey: 'TEAM_MEMBER_LUKAS_DESCRIPTION',
-    image: eliskaImage.src,
+    image: lukasImage.src,
     socialLinks: {
       linkedin: 'https://www.linkedin.com/in/lukascizek/',
     },
@@ -107,7 +112,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     name: 'Eva Čechová',
     role: 'creative',
     descriptionKey: 'TEAM_MEMBER_EVA_DESCRIPTION',
-    image: eliskaImage.src,
+    image: evaImage.src,
     socialLinks: {
       linkedin: 'https://www.linkedin.com/in/evacechova/',
     },
@@ -126,7 +131,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     name: 'Tony Truong',
     role: 'creative',
     descriptionKey: 'TEAM_MEMBER_TONY_DESCRIPTION',
-    image: eliskaImage.src,
+    image: tonyImage.src,
     socialLinks: {
       email: 'tonda.truong@seznam.cz',
       instagram: 'https://www.instagram.com/luong.manh.truong',
@@ -136,7 +141,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     name: 'Jan Čuma',
     role: 'education',
     descriptionKey: 'TEAM_MEMBER_JAN_DESCRIPTION',
-    image: eliskaImage.src,
+    image: honzaImage.src,
     socialLinks: {
       linkedin: 'https://www.linkedin.com/in/jan-czuma/',
     },

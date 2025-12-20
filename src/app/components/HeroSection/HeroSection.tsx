@@ -8,7 +8,7 @@ import { HeadingHighlight } from '@/src/components/HeadingHighlight';
 import { COLORS } from '@/src/styles/color';
 import { Section } from '@/src/components/Section';
 import { BorderBox } from '@/src/components/BorderBox';
-import heroImage from '../../../assets/hero-image.png';
+import heroImage from '../../../assets/main.webp';
 import { HeroButtons } from './HeroButtons';
 import { HeroTypewriter } from './HeroTypewriter';
 import style from './HeroSection.module.scss';
