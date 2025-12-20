@@ -5,6 +5,7 @@ import { IconButton } from '@/src/components/IconButton';
 import linkedinIcon from '@/src/assets/linkedin.svg';
 import instagramIcon from '@/src/assets/instagram.svg';
 import emailIcon from '@/src/assets/email.svg';
+import { COLORS } from '@/src/styles/color';
 import style from './TeamCard.module.scss';
 
 type TeamMemberSocialLinks = {
@@ -58,7 +59,7 @@ export const TeamCard: React.FC<TeamCardProps> = ({
               className={style.icon}
               href={socialLinks.linkedin}
               variant="primary"
-              iconColor={teamColor}
+              iconColor={COLORS.carbonFiber}
               aria-label={`${name} LinkedIn profile`}
               icon={linkedinIcon.src}
               style={{ '--team-color': teamColor } as React.CSSProperties}
@@ -69,7 +70,7 @@ export const TeamCard: React.FC<TeamCardProps> = ({
               className={style.icon}
               href={`mailto:${socialLinks.email}`}
               variant="primary"
-              iconColor={teamColor}
+              iconColor={COLORS.carbonFiber}
               aria-label={`${name} email`}
               icon={emailIcon.src}
               style={{ '--team-color': teamColor } as React.CSSProperties}
@@ -80,7 +81,7 @@ export const TeamCard: React.FC<TeamCardProps> = ({
               className={style.icon}
               href={socialLinks.instagram}
               variant="primary"
-              iconColor={teamColor}
+              iconColor={COLORS.carbonFiber}
               aria-label={`${name} Instagram profile`}
               icon={instagramIcon.src}
               style={{ '--team-color': teamColor } as React.CSSProperties}

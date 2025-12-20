@@ -14,10 +14,10 @@ export const ContactInfoSection: React.FC = async () => {
     <Section
       heading={
         <>
-          {t.CONTACT_INFO_SECTION_HEADING_BEFORE}{' '}
           <HeadingHighlight highlightColor={COLORS.aztecAtom}>
-            {t.CONTACT_INFO_SECTION_HEADING_HIGHLIGHT}
+            {t.CONTACT_INFO_SECTION_HEADING_BEFORE}{' '}
           </HeadingHighlight>
+          {t.CONTACT_INFO_SECTION_HEADING_HIGHLIGHT}
         </>
       }
       subheading={t.CONTACT_INFO_SECTION_SUBHEADING}
