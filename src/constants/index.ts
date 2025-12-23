@@ -19,6 +19,8 @@ export const CONTACT_LINK = '/contact';
 export const MEDIUM_LINK = 'https://reactgirls.medium.com/';
 export const MENTORING_FORM_LINK = 'https://forms.gle/EdLmU3fv5rpMm4W88';
 
+export const YOUTUBE_CHANNEL_URL = 'https://www.youtube.com/@ReactGirls';
+
 export const SOCIAL_LINKS = [
   {
     icon: instagramIcon.src,
@@ -59,7 +61,7 @@ export const SOCIAL_LINKS = [
   {
     icon: youtubeIcon.src,
     label: 'YouTube',
-    href: 'https://www.youtube.com/@ReactGirls',
+    href: YOUTUBE_CHANNEL_URL,
     ariaLabel: 'YouTube',
   },
   {

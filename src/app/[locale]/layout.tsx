@@ -8,6 +8,7 @@ import { NavLinks } from '../components/NavLinks';
 import { Header } from '../components/Header';
 import { ChildrenFC } from '../../utils/types';
 import { Footer } from '../components/Footer/Footer';
+import { HashScrollHandler } from '@/src/components/HashScrollHandler';
 import { LanguageProvider } from '@/src/context';
 import {
   getTranslations,
@@ -113,7 +114,10 @@ const LocaleLayout: ChildrenFC<LocaleLayoutProps> = async ({
               />
             </nav>
           </header>
-          <main className={style.content}>{children}</main>
+          <main className={style.content}>
+            <HashScrollHandler />
+            {children}
+          </main>
 
           <Footer />
         </LanguageProvider>

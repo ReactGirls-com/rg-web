@@ -244,6 +244,7 @@ export const TRANSLATIONS_CS = {
   PAST_MEETUPS_SECTION_HEADING_HIGHLIGHT: 'meetupy',
   PAST_MEETUPS_BY: 'od',
   PAST_MEETUPS_WATCH_BUTTON: 'Sledovat záznam',
+  PAST_MEETUPS_GO_TO_YOUTUBE: 'Přejít na Youtube',
   FAQ_SECTION_TITLE: 'Často kladené',
   FAQ_SECTION_HEADING_HIGHLIGHT: 'otázky',
   FAQ_QUESTION_1: 'Kde se konají ReactGirls aktivity?',

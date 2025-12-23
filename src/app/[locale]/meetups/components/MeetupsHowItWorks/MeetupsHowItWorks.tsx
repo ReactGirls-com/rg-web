@@ -1,6 +1,7 @@
 import { StepProcess } from '@/src/components/StepProcess';
 import { getTranslationsWithLocale } from '@/src/utils/getTranslations';
 import { COLORS } from '@/src/styles/color';
+import style from './MeetupsHowItWorks.module.scss';
 
 export const MeetupsHowItWorks: React.FC = async () => {
   const { t } = await getTranslationsWithLocale();
@@ -14,25 +15,25 @@ export const MeetupsHowItWorks: React.FC = async () => {
       subheading={t.MEETUPS_HOW_IT_WORKS_SECTION_SUBHEADING}
       steps={[
         {
-          number: '01',
+          iconClassName: style.iconMagnifyingGlass,
           title: t.MEETUPS_HOW_IT_WORKS_STEP_1_TITLE,
           description: t.MEETUPS_HOW_IT_WORKS_STEP_1_DESCRIPTION,
           color: COLORS.grapefruitPulp,
         },
         {
-          number: '02',
+          iconClassName: style.iconPin,
           title: t.MEETUPS_HOW_IT_WORKS_STEP_2_TITLE,
           description: t.MEETUPS_HOW_IT_WORKS_STEP_2_DESCRIPTION,
           color: COLORS.aztecAtom,
         },
         {
-          number: '03',
+          iconClassName: style.iconMic,
           title: t.MEETUPS_HOW_IT_WORKS_STEP_3_TITLE,
           description: t.MEETUPS_HOW_IT_WORKS_STEP_3_DESCRIPTION,
           color: COLORS.paleLavender,
         },
         {
-          number: '04',
+          iconClassName: style.iconChat,
           title: t.MEETUPS_HOW_IT_WORKS_STEP_4_TITLE,
           description: t.MEETUPS_HOW_IT_WORKS_STEP_4_DESCRIPTION,
           color: COLORS.explodingStar,

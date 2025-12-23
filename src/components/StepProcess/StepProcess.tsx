@@ -1,9 +1,12 @@
+import clsx from 'clsx';
+
 import { Section } from '../Section';
 import { HeadingHighlight } from '../HeadingHighlight';
 import style from './StepProcess.module.scss';
 
 type StepData = {
-  number: string;
+  number?: string;
+  iconClassName?: string;
   title: string;
   description: string;
   color: string;
@@ -19,19 +22,30 @@ type StepProcessProps = {
 };
 
 type StepProps = {
-  number: string;
+  number?: string;
+  iconClassName?: string;
   title: string;
   description: string;
   color: string;
 };
 
-const Step: React.FC<StepProps> = ({ number, title, description, color }) => (
+const Step: React.FC<StepProps> = ({
+  number,
+  iconClassName,
+  title,
+  description,
+  color,
+}) => (
   <div className={style.step}>
     <div
       className={style.stepCircle}
       style={{ '--step-color': color } as React.CSSProperties}
     >
-      {number}
+      {iconClassName ? (
+        <div className={clsx(style.stepIcon, iconClassName)} />
+      ) : (
+        number
+      )}
     </div>
     <h3 className={style.stepTitle}>{title}</h3>
     <p className={style.stepDescription}>{description}</p>
@@ -59,10 +73,11 @@ export const StepProcess: React.FC<StepProcessProps> = ({
     subheading={subheading}
   >
     <div className={style.stepsContainer}>
-      {steps.map((step) => (
+      {steps.map((step, index) => (
         <Step
-          key={step.number}
+          key={step.number || step.iconClassName || index}
           number={step.number}
+          iconClassName={step.iconClassName}
           title={step.title}
           description={step.description}
           color={step.color}

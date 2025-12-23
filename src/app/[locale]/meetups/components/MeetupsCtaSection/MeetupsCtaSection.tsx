@@ -1,7 +1,7 @@
 import { Section } from '@/src/components/Section';
 import { CtaBanner } from '@/src/components/CtaBanner';
 import { Button } from '@/src/components/Button';
-import { CopyEmailButton } from '@/src/components/AreYouLostBanner/CopyEmailButton';
+import { WriteToUsButton } from '@/src/components/AreYouLostBanner/WriteToUsButton';
 import { getTranslationsWithLocale } from '@/src/utils/getTranslations';
 import style from './MeetupsCtaSection.module.scss';
 
@@ -22,7 +22,7 @@ export const MeetupsCtaSection: React.FC = async () => {
         >
           {t.MEETUPS_CTA_BUTTON}
         </Button>
-        <CopyEmailButton />
+        <WriteToUsButton />
       </CtaBanner>
     </Section>
   );

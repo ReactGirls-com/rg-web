@@ -12,6 +12,7 @@ import machovaThumb from '@/src/assets/thumbnails/machova.jpg';
 import nagyThumb from '@/src/assets/thumbnails/nagy.jpg';
 import voberanmuzThumb from '@/src/assets/thumbnails/voberanmuz.jpg';
 import rudolfovaThumb from '@/src/assets/thumbnails/rudolfova.jpg';
+import { YOUTUBE_CHANNEL_URL } from '@/src/constants';
 import style from './PastMeetupsSection.module.scss';
 
 const PAST_MEETUPS = [
@@ -92,6 +93,11 @@ export const PastMeetupsSection: React.FC = async () => {
             </div>
           </BorderBox>
         ))}
+      </div>
+      <div className={style.buttonWrapper}>
+        <Button variant="aztecAtom" href={YOUTUBE_CHANNEL_URL}>
+          {t.PAST_MEETUPS_GO_TO_YOUTUBE}
+        </Button>
       </div>
     </Section>
   );

@@ -2,7 +2,6 @@ import { Section } from '@/src/components/Section';
 import { CtaBanner } from '@/src/components/CtaBanner';
 import { Button } from '@/src/components/Button';
 import { getTranslationsWithLocale } from '@/src/utils/getTranslations';
-import { CopyEmailButton } from '@/src/components/AreYouLostBanner/CopyEmailButton';
 import style from './ContactCtaSection.module.scss';
 
 export const ContactCtaSection: React.FC = async () => {
@@ -19,8 +18,6 @@ export const ContactCtaSection: React.FC = async () => {
         <Button variant="aztecAtom" href="https://forms.gle/uz9xhZWEWLTwLqGr9">
           {t.CONTACT_CTA_BUTTON}
         </Button>
-
-        <CopyEmailButton />
       </CtaBanner>
     </Section>
   );
