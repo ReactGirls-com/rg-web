@@ -1,7 +1,7 @@
 import { Section } from '@/src/components/Section';
 import { CtaBanner } from '@/src/components/CtaBanner';
 import { Button } from '@/src/components/Button';
-import { CopyEmailButton } from '@/src/components/AreYouLostBanner/CopyEmailButton';
+import { WriteToUsButton } from '@/src/components/AreYouLostBanner/WriteToUsButton';
 import { getTranslationsWithLocale } from '@/src/utils/getTranslations';
 import { MENTORING_FORM_LINK } from '@/src/constants';
 import style from './MentoringCtaSection.module.scss';
@@ -20,7 +20,7 @@ export const MentoringCtaSection: React.FC = async () => {
         <Button variant="aztecAtom" href={MENTORING_FORM_LINK}>
           {t.MENTORING_CTA_BUTTON_PRELIMINARY}
         </Button>
-        <CopyEmailButton />
+        <WriteToUsButton />
       </CtaBanner>
     </Section>
   );

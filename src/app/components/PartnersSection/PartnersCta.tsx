@@ -32,7 +32,7 @@ export const PartnersCta: React.FC<PartnersCtaProps> = async ({
 
       <Button
         variant="explodingStar"
-        href={getLocaleAwareLink(CONTACT_LINK, locale)}
+        href={`${getLocaleAwareLink(CONTACT_LINK, locale)}#our-team`}
       >
         {secondaryButtonText}
       </Button>

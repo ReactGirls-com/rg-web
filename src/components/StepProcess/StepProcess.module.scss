@@ -25,12 +25,21 @@
   width: 80px;
   height: 80px;
   border: 3px solid $carbon-fiber;
-  border-radius: 50%;
+  border-radius: 12px;
   background-color: var(--step-color);
   color: white;
   box-shadow: 4px 4px 0 $carbon-fiber;
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+.stepIcon {
+  width: 36px;
+  height: 36px;
+  background-color: #fff;
+  mask-position: center;
+  mask-size: contain;
+  mask-repeat: no-repeat;
 }
 
 .stepTitle {

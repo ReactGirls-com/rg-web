@@ -2,8 +2,8 @@ import clsx from 'clsx';
 
 import { Button } from '@/src/components/Button';
 import { CustomLink } from '@/src/components/CustomLink';
-import { MENTORING_FORM_LINK } from '@/src/constants';
-import { getNavLinks } from '@/src/utils/getNavLinks';
+import { SECTION_IDS } from '@/src/constants';
+import { getNavLinks, getLocaleAwareLink } from '@/src/utils/getNavLinks';
 import { type Translations } from '@/src/utils/getTranslations';
 import { Locale } from '@/src/context/LanguageContext';
 import style from './NavLinks.module.scss';
@@ -50,7 +50,7 @@ export const NavLinks: React.FC<NavLinksProps> = ({
         <Button
           variant="aztecAtom"
           onClick={onLinkClick}
-          href={MENTORING_FORM_LINK}
+          href={`${getLocaleAwareLink('/', locale)}#${SECTION_IDS.OUR_ACTIVITIES}`}
         >
           {t.JOIN_BUTTON_TEXT}
         </Button>

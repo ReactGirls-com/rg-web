@@ -248,6 +248,7 @@ export const TRANSLATIONS_EN: Record<TranslationKey, string> = {
   PAST_MEETUPS_SECTION_HEADING_HIGHLIGHT: 'meetups',
   PAST_MEETUPS_BY: 'by',
   PAST_MEETUPS_WATCH_BUTTON: 'Watch recording',
+  PAST_MEETUPS_GO_TO_YOUTUBE: 'Go to Youtube',
   FAQ_SECTION_TITLE: 'Frequently asked',
   FAQ_SECTION_HEADING_HIGHLIGHT: 'questions',
   FAQ_QUESTION_1: 'Where do ReactGirls activities take place?',

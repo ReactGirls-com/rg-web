@@ -1,4 +1,4 @@
-import { CopyEmailButton } from './CopyEmailButton';
+import { WriteToUsButton } from './WriteToUsButton';
 import { CtaBanner } from '../CtaBanner';
 
 type AreYouLostBannerProps = {
@@ -11,6 +11,6 @@ export const AreYouLostBanner: React.FC<AreYouLostBannerProps> = ({
   description,
 }) => (
   <CtaBanner title={title} description={description}>
-    <CopyEmailButton />
+    <WriteToUsButton />
   </CtaBanner>
 );
