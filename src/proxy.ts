@@ -9,7 +9,9 @@ const isStaticPath = (pathname: string) =>
   pathname.startsWith('/_next') ||
   pathname.startsWith('/api') ||
   pathname.includes('.') ||
-  pathname.startsWith('/favicon');
+  pathname.startsWith('/favicon') ||
+  pathname === '/sitemap.xml' ||
+  pathname === '/robots.txt';
 
 export const proxy = (request: NextRequest) => {
   const { pathname } = request.nextUrl;

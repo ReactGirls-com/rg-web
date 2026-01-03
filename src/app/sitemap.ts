@@ -1,128 +1,30 @@
-import type { MetadataRoute } from 'next';
+import { MetadataRoute } from 'next';
+
+import { LOCALES, DEFAULT_LOCALE } from '@/src/constants/translations';
 
 const baseUrl = 'https://reactgirls.com';
 
+const routes = ['', 'meetups', 'mentoring', 'courses', 'contact'];
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 1,
-      alternates: {
-        languages: {
-          cs: baseUrl,
-          en: `${baseUrl}/en`,
-        },
-      },
-    },
-    {
-      url: `${baseUrl}/en`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 1,
-      alternates: {
-        languages: {
-          cs: baseUrl,
-          en: `${baseUrl}/en`,
-        },
-      },
-    },
-    {
-      url: `${baseUrl}/contact`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-      alternates: {
-        languages: {
-          cs: `${baseUrl}/contact`,
-          en: `${baseUrl}/en/contact`,
-        },
-      },
-    },
-    {
-      url: `${baseUrl}/en/contact`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-      alternates: {
-        languages: {
-          cs: `${baseUrl}/contact`,
-          en: `${baseUrl}/en/contact`,
-        },
-      },
-    },
-    {
-      url: `${baseUrl}/courses`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-      alternates: {
-        languages: {
-          cs: `${baseUrl}/courses`,
-          en: `${baseUrl}/en/courses`,
-        },
-      },
-    },
-    {
-      url: `${baseUrl}/en/courses`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-      alternates: {
-        languages: {
-          cs: `${baseUrl}/courses`,
-          en: `${baseUrl}/en/courses`,
-        },
-      },
-    },
-    {
-      url: `${baseUrl}/meetups`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-      alternates: {
-        languages: {
-          cs: `${baseUrl}/meetups`,
-          en: `${baseUrl}/en/meetups`,
-        },
-      },
-    },
-    {
-      url: `${baseUrl}/en/meetups`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-      alternates: {
-        languages: {
-          cs: `${baseUrl}/meetups`,
-          en: `${baseUrl}/en/meetups`,
-        },
-      },
-    },
-    {
-      url: `${baseUrl}/mentoring`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-      alternates: {
-        languages: {
-          cs: `${baseUrl}/mentoring`,
-          en: `${baseUrl}/en/mentoring`,
-        },
-      },
-    },
-    {
-      url: `${baseUrl}/en/mentoring`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-      alternates: {
-        languages: {
-          cs: `${baseUrl}/mentoring`,
-          en: `${baseUrl}/en/mentoring`,
-        },
-      },
-    },
-  ];
+  const sitemapEntries: MetadataRoute.Sitemap = [];
+
+  LOCALES.forEach((locale) => {
+    routes.forEach((route) => {
+      const path = route === '' ? '' : `/${route}`;
+      const url =
+        locale === DEFAULT_LOCALE
+          ? `${baseUrl}${path}`
+          : `${baseUrl}/${locale}${path}`;
+
+      sitemapEntries.push({
+        url,
+        lastModified: new Date(),
+        changeFrequency: route === '' ? 'weekly' : 'monthly',
+        priority: route === '' ? 1 : 0.8,
+      });
+    });
+  });
+
+  return sitemapEntries;
 }
