@@ -1,6 +1,7 @@
 .typewriterText {
   display: inline-block;
   min-width: 280px;
+  will-change: transform;
 
   @media (min-width: $screen-md-min) {
     min-width: 390px;

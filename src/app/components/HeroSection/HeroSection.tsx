@@ -29,7 +29,8 @@ export const HeroSection: React.FC = async () => {
         <div className={style.leftContentWrapper}>
           <div className={style.headingWrapper}>
             <h2 className={style.heading}>
-              {t.COMMUNITY_SECTION_HEADING_BEFORE}{' '}
+              {t.COMMUNITY_SECTION_HEADING_BEFORE_IN}&nbsp;
+              {t.COMMUNITY_SECTION_HEADING_BEFORE_IT}{' '}
               <HeadingHighlight highlightColor={COLORS.grapefruitPulp}>
                 <HeroTypewriter words={typewriterWords} />
               </HeadingHighlight>{' '}
