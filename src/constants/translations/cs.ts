@@ -1,4 +1,19 @@
 export const TRANSLATIONS_CS = {
+  META_HOME_TITLE: 'ReactGirls | Komunita pro ženy v IT',
+  META_HOME_DESCRIPTION:
+    'ReactGirls je komunita, která ženám nabízí bezpečné prostředí pro růst v IT. Nabízíme kurzy programování, mentoring a meetupy.',
+  META_COURSES_TITLE: 'Kurzy | ReactGirls',
+  META_COURSES_DESCRIPTION:
+    'Intenzivní kurzy programování pro ženy. Offline lekce v Praze vedené zkušenými lektory. Workshopy i dlouhodobé akademie s certifikátem.',
+  META_MENTORING_TITLE: 'Mentoring | ReactGirls',
+  META_MENTORING_DESCRIPTION:
+    '4-měsíční mentoringový program pro ženy. Naprogramuj svůj vlastní projekt s podporou zkušeného mentora. Týdenní schůzky, code review a kariérní podpora.',
+  META_MEETUPS_TITLE: 'Meetupy | ReactGirls',
+  META_MEETUPS_DESCRIPTION:
+    'Komunitní meetupy pro ženy v IT. Přednášky od speakerů z praxe, networking a bezpečný prostor pro sdílení zkušeností. Přidej se k nám v Praze.',
+  META_CONTACT_TITLE: 'Kontakt | ReactGirls',
+  META_CONTACT_DESCRIPTION:
+    'Kontaktujte ReactGirls tým. Najdete zde náš tým, fakturační údaje, FAQ a způsoby, jak se s námi spojit nebo se zapojit jako dobrovolník.',
   COURSES_LINK_TEXT: 'Kurzy',
   MENTORING_LINK_TEXT: 'Mentoring',
   MEETUPS_LINK_TEXT: 'Meetupy',

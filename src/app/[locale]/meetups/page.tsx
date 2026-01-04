@@ -1,10 +1,25 @@
-import { getTranslationsWithLocale } from '@/src/utils/getTranslations';
+import {
+  getTranslationsWithLocale,
+  getTranslations,
+  getLocaleFromParams,
+} from '@/src/utils/getTranslations';
 import { SecondaryHero } from '@/src/components/SecondaryHero';
 import { Button } from '@/src/components/Button';
 import { COLORS } from '@/src/styles/color';
 import { MeetupsHowItWorks } from './components/MeetupsHowItWorks';
 import { MeetupsCtaSection } from './components/MeetupsCtaSection';
 import { PastMeetupsSection } from './components/PastMeetupsSection';
+import { AppLocalePageProps } from '@/src/utils/types';
+
+export const generateMetadata = async ({ params }: AppLocalePageProps) => {
+  const locale = await getLocaleFromParams(params);
+  const t = getTranslations(locale);
+
+  return {
+    title: t.META_MEETUPS_TITLE,
+    description: t.META_MEETUPS_DESCRIPTION,
+  };
+};
 
 const MeetupsPage: React.FC = async () => {
   const { t } = await getTranslationsWithLocale();

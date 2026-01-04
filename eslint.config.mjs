@@ -93,6 +93,8 @@ export default [
       'react/no-unused-prop-types': 2, // Forbid unused types for component props
       'react/prop-types': 0, // Allow prop-types to be used for components
 
+      'react-refresh/only-export-components': 0, // Allow only export components/functions that are used in the component
+
       // React Hooks rules
       ...reactHooks.configs.recommended.rules,
       'react-hooks/exhaustive-deps': 0, // Allow missing dependencies in useEffect
