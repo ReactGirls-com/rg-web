@@ -1,6 +1,21 @@
 import type { TranslationKey } from './cs';
 
 export const TRANSLATIONS_EN: Record<TranslationKey, string> = {
+  META_HOME_TITLE: 'ReactGirls | Community for Women in IT',
+  META_HOME_DESCRIPTION:
+    'ReactGirls is a community that offers women a safe environment for growth in IT. We offer programming courses, mentoring, and meetups.',
+  META_COURSES_TITLE: 'Courses | ReactGirls',
+  META_COURSES_DESCRIPTION:
+    'Intensive programming courses for women. Offline lessons in Prague led by experienced instructors. Workshops and long-term academies with certification.',
+  META_MENTORING_TITLE: 'Mentoring | ReactGirls',
+  META_MENTORING_DESCRIPTION:
+    '4-month mentoring program for women. Program your own project with the support of an experienced mentor. Weekly meetings, code review, and career support.',
+  META_MEETUPS_TITLE: 'Meetups | ReactGirls',
+  META_MEETUPS_DESCRIPTION:
+    'Community meetups for women in IT. Talks from speakers in practice, networking, and a safe space for sharing experiences. Join us in Prague.',
+  META_CONTACT_TITLE: 'Contact | ReactGirls',
+  META_CONTACT_DESCRIPTION:
+    'Contact the ReactGirls team. Find our team, billing details, FAQ, and ways to connect with us or get involved as a volunteer.',
   COURSES_LINK_TEXT: 'Courses',
   MENTORING_LINK_TEXT: 'Mentoring',
   MEETUPS_LINK_TEXT: 'Meetups',

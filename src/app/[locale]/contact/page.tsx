@@ -1,10 +1,25 @@
-import { getTranslationsWithLocale } from '@/src/utils/getTranslations';
+import {
+  getTranslationsWithLocale,
+  getTranslations,
+  getLocaleFromParams,
+} from '@/src/utils/getTranslations';
 import { SecondaryHero } from '@/src/components/SecondaryHero';
 import { COLORS } from '@/src/styles/color';
 import { OurTeam } from './components/OurTeam';
 import { ContactInfoSection } from './components/ContactInfoSection';
 import { ContactCtaSection } from './components/ContactCtaSection';
 import { FaqSection } from './components/FaqSection';
+import { AppLocalePageProps } from '@/src/utils/types';
+
+export const generateMetadata = async ({ params }: AppLocalePageProps) => {
+  const locale = await getLocaleFromParams(params);
+  const t = getTranslations(locale);
+
+  return {
+    title: t.META_CONTACT_TITLE,
+    description: t.META_CONTACT_DESCRIPTION,
+  };
+};
 
 const ContactPage: React.FC = async () => {
   const { t } = await getTranslationsWithLocale();

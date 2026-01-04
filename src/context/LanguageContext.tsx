@@ -47,7 +47,6 @@ export const LanguageProvider: ChildrenFC<LanguageProviderProps> = ({
   );
 };
 
-// eslint-disable-next-line react-refresh/only-export-components
 export const useLanguage = (): LanguageContextType => {
   const context = useContext(LanguageContext);
 
@@ -58,7 +57,6 @@ export const useLanguage = (): LanguageContextType => {
   return context;
 };
 
-// eslint-disable-next-line react-refresh/only-export-components
 export const useTranslations = (): Translations => {
   const { t } = useLanguage();
 

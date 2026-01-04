@@ -40,10 +40,8 @@ const inter = localFont({
   display: 'swap',
 });
 
-// eslint-disable-next-line react-refresh/only-export-components
 export const generateStaticParams = () => LOCALES.map((locale) => ({ locale }));
 
-// eslint-disable-next-line react-refresh/only-export-components
 export const generateMetadata = async ({
   params,
 }: {

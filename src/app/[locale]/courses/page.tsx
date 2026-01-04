@@ -1,4 +1,8 @@
-import { getTranslationsWithLocale } from '@/src/utils/getTranslations';
+import {
+  getTranslationsWithLocale,
+  getTranslations,
+  getLocaleFromParams,
+} from '@/src/utils/getTranslations';
 import { SecondaryHero } from '@/src/components/SecondaryHero';
 import { COLORS } from '@/src/styles/color';
 import { Section } from '@/src/components/Section';
@@ -6,6 +10,17 @@ import { HeadingHighlight } from '@/src/components/HeadingHighlight';
 import { AreYouLostBanner } from '@/src/components/AreYouLostBanner/AreYouLostBanner';
 import { WhyChooseCoursesSection } from './components';
 import { StepProcess } from '@/src/components/StepProcess';
+import { AppLocalePageProps } from '@/src/utils/types';
+
+export const generateMetadata = async ({ params }: AppLocalePageProps) => {
+  const locale = await getLocaleFromParams(params);
+  const t = getTranslations(locale);
+
+  return {
+    title: t.META_COURSES_TITLE,
+    description: t.META_COURSES_DESCRIPTION,
+  };
+};
 
 const CoursesPage: React.FC = async () => {
   const { t } = await getTranslationsWithLocale();
