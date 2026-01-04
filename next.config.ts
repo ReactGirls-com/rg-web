@@ -22,6 +22,11 @@ const nextConfig: NextConfig = {
         destination: '/courses',
         permanent: true,
       },
+      {
+        source: '/kontakt',
+        destination: '/contact',
+        permanent: true,
+      },
     ];
   },
 };
