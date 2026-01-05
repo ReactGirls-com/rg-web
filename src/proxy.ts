@@ -7,8 +7,11 @@ const LOCALE_COOKIE = 'NEXT_LOCALE';
 
 const LEGACY_REDIRECTS: Record<string, string> = {
   '/onas': '/contact',
+  '/onas/': '/contact',
   '/akademie': '/courses',
+  '/akademie/': '/courses',
   '/kontakt': '/contact',
+  '/kontakt/': '/contact',
 };
 
 const isStaticPath = (pathname: string) =>
