@@ -9,6 +9,7 @@ import { COLORS } from '@/src/styles/color';
 import { MeetupsHowItWorks } from './components/MeetupsHowItWorks';
 import { MeetupsCtaSection } from './components/MeetupsCtaSection';
 import { PastMeetupsSection } from './components/PastMeetupsSection';
+import { getPageAlternates } from '@/src/utils/getCanonicalUrl';
 import { AppLocalePageProps } from '@/src/utils/types';
 
 export const generateMetadata = async ({ params }: AppLocalePageProps) => {
@@ -18,6 +19,7 @@ export const generateMetadata = async ({ params }: AppLocalePageProps) => {
   return {
     title: t.META_MEETUPS_TITLE,
     description: t.META_MEETUPS_DESCRIPTION,
+    alternates: getPageAlternates('/meetups', locale),
   };
 };
 

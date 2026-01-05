@@ -9,6 +9,7 @@ import { OurTeam } from './components/OurTeam';
 import { ContactInfoSection } from './components/ContactInfoSection';
 import { ContactCtaSection } from './components/ContactCtaSection';
 import { FaqSection } from './components/FaqSection';
+import { getPageAlternates } from '@/src/utils/getCanonicalUrl';
 import { AppLocalePageProps } from '@/src/utils/types';
 
 export const generateMetadata = async ({ params }: AppLocalePageProps) => {
@@ -18,6 +19,7 @@ export const generateMetadata = async ({ params }: AppLocalePageProps) => {
   return {
     title: t.META_CONTACT_TITLE,
     description: t.META_CONTACT_DESCRIPTION,
+    alternates: getPageAlternates('/contact', locale),
   };
 };
 

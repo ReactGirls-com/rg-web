@@ -10,6 +10,7 @@ import { HeadingHighlight } from '@/src/components/HeadingHighlight';
 import { AreYouLostBanner } from '@/src/components/AreYouLostBanner/AreYouLostBanner';
 import { WhyChooseCoursesSection } from './components';
 import { StepProcess } from '@/src/components/StepProcess';
+import { getPageAlternates } from '@/src/utils/getCanonicalUrl';
 import { AppLocalePageProps } from '@/src/utils/types';
 
 export const generateMetadata = async ({ params }: AppLocalePageProps) => {
@@ -19,6 +20,7 @@ export const generateMetadata = async ({ params }: AppLocalePageProps) => {
   return {
     title: t.META_COURSES_TITLE,
     description: t.META_COURSES_DESCRIPTION,
+    alternates: getPageAlternates('/courses', locale),
   };
 };
 

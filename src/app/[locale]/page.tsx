@@ -6,6 +6,7 @@ import {
   getTranslations,
   getLocaleFromParams,
 } from '@/src/utils/getTranslations';
+import { getPageAlternates } from '@/src/utils/getCanonicalUrl';
 import { AppLocalePageProps } from '@/src/utils/types';
 
 export const generateMetadata = async ({ params }: AppLocalePageProps) => {
@@ -15,6 +16,7 @@ export const generateMetadata = async ({ params }: AppLocalePageProps) => {
   return {
     title: t.META_HOME_TITLE,
     description: t.META_HOME_DESCRIPTION,
+    alternates: getPageAlternates('/', locale),
   };
 };
 

@@ -11,6 +11,7 @@ import {
   MentoringBenefitsSection,
   MentoringCtaSection,
 } from './components';
+import { getPageAlternates } from '@/src/utils/getCanonicalUrl';
 import { AppLocalePageProps } from '@/src/utils/types';
 
 export const generateMetadata = async ({ params }: AppLocalePageProps) => {
@@ -20,6 +21,7 @@ export const generateMetadata = async ({ params }: AppLocalePageProps) => {
   return {
     title: t.META_MENTORING_TITLE,
     description: t.META_MENTORING_DESCRIPTION,
+    alternates: getPageAlternates('/mentoring', locale),
   };
 };
 
