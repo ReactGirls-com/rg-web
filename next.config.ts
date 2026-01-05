@@ -14,17 +14,17 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/onas',
-        destination: '/contact',
+        destination: '/cs/contact',
         permanent: true,
       },
       {
         source: '/akademie',
-        destination: '/courses',
+        destination: '/cs/courses',
         permanent: true,
       },
       {
         source: '/kontakt',
-        destination: '/contact',
+        destination: '/cs/contact',
         permanent: true,
       },
     ];
