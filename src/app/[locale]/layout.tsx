@@ -14,7 +14,7 @@ import {
   getTranslations,
   getLocaleFromParams,
 } from '@/src/utils/getTranslations';
-import { LOCALES, DEFAULT_LOCALE } from '@/src/constants/translations';
+import { LOCALES } from '@/src/constants/translations';
 import style from '../layout.module.scss';
 import { getLocaleAwareLink } from '@/src/utils/getNavLinks';
 
@@ -48,17 +48,9 @@ export const generateMetadata = async ({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> => {
   const locale = await getLocaleFromParams(params);
-  const baseUrl = 'https://reactgirls.com';
 
   return {
-    alternates: {
-      canonical: locale === DEFAULT_LOCALE ? baseUrl : `${baseUrl}/${locale}`,
-      languages: {
-        cs: baseUrl,
-        en: `${baseUrl}/en`,
-        'x-default': baseUrl,
-      },
-    },
+    metadataBase: new URL('https://reactgirls.com'),
     openGraph: {
       locale: locale === 'cs' ? 'cs_CZ' : 'en_US',
       alternateLocale: locale === 'cs' ? 'en_US' : 'cs_CZ',
@@ -79,15 +71,6 @@ const LocaleLayout: ChildrenFC<LocaleLayoutProps> = async ({
 
   return (
     <html lang={locale} className={inter.variable}>
-      <head>
-        <link rel="alternate" hrefLang="cs" href="https://reactgirls.com" />
-        <link rel="alternate" hrefLang="en" href="https://reactgirls.com/en" />
-        <link
-          rel="alternate"
-          hrefLang="x-default"
-          href="https://reactgirls.com"
-        />
-      </head>
       <body className={style.body}>
         <LanguageProvider locale={locale}>
           <header className={style.header}>
