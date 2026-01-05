@@ -5,6 +5,12 @@ import { DEFAULT_LOCALE, LOCALES, type Locale } from './constants/translations';
 
 const LOCALE_COOKIE = 'NEXT_LOCALE';
 
+const LEGACY_REDIRECTS: Record<string, string> = {
+  '/onas': '/contact',
+  '/akademie': '/courses',
+  '/kontakt': '/contact',
+};
+
 const isStaticPath = (pathname: string) =>
   pathname.startsWith('/_next') ||
   pathname.startsWith('/api') ||
@@ -15,6 +21,11 @@ const isStaticPath = (pathname: string) =>
 
 export const proxy = (request: NextRequest) => {
   const { pathname } = request.nextUrl;
+
+  const redirectTo = LEGACY_REDIRECTS[pathname];
+  if (redirectTo) {
+    return NextResponse.redirect(new URL(redirectTo, request.url), 301);
+  }
 
   if (isStaticPath(pathname)) {
     return NextResponse.next();

@@ -10,25 +10,6 @@ const nextConfig: NextConfig = {
       @use "${path.join(process.cwd(), 'src/styles/constant.scss')}" as *;
     `,
   },
-  async redirects() {
-    return [
-      {
-        source: '/onas',
-        destination: '/cs/contact',
-        permanent: true,
-      },
-      {
-        source: '/akademie',
-        destination: '/cs/courses',
-        permanent: true,
-      },
-      {
-        source: '/kontakt',
-        destination: '/cs/contact',
-        permanent: true,
-      },
-    ];
-  },
 };
 
 export default nextConfig;
