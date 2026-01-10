@@ -28,14 +28,14 @@ export const HeroSection: React.FC = async () => {
       <div className={style.content}>
         <div className={style.leftContentWrapper}>
           <div className={style.headingWrapper}>
-            <h2 className={style.heading}>
+            <h1 className={style.heading}>
               {t.COMMUNITY_SECTION_HEADING_BEFORE_IN}&nbsp;
               {t.COMMUNITY_SECTION_HEADING_BEFORE_IT}{' '}
               <HeadingHighlight highlightColor={COLORS.grapefruitPulp}>
                 <HeroTypewriter words={typewriterWords} />
               </HeadingHighlight>{' '}
               <div>{t.COMMUNITY_SECTION_HEADING_AFTER}</div>
-            </h2>
+            </h1>
             <p className={style.paragraph}>{t.COMMUNITY_SECTION_PARAGRAPH}</p>
           </div>
 

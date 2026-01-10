@@ -54,6 +54,7 @@ export const SecondaryHero: React.FC<SecondaryHeroProps> = ({
     }
     headingClassName={style.heading}
     subheading={subheading}
+    mainHeading
   >
     {children}
 
