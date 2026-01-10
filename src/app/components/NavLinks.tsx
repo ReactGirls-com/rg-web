@@ -1,11 +1,11 @@
 import clsx from 'clsx';
 
-import { Button } from '@/src/components/Button';
 import { CustomLink } from '@/src/components/CustomLink';
-import { SECTION_IDS } from '@/src/constants';
-import { getNavLinks, getLocaleAwareLink } from '@/src/utils/getNavLinks';
+import { getLocaleAwareLink, getNavLinks } from '@/src/utils/getNavLinks';
 import { type Translations } from '@/src/utils/getTranslations';
 import { Locale } from '@/src/context/LanguageContext';
+import { Button } from '@/src/components/Button';
+import { SECTION_IDS } from '@/src/constants';
 import style from './NavLinks.module.scss';
 
 type NavLinksProps = {

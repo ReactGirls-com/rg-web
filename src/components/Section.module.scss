@@ -1,5 +1,6 @@
 .section {
   border-bottom: 3px solid $carbon-fiber;
+  scroll-margin-top: 100px;
 
   &:nth-child(even) {
     background-color: white;
