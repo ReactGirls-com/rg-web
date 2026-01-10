@@ -12,6 +12,7 @@ type SectionProps = {
   headingClassName?: string;
   subheading?: string;
   className?: string;
+  mainHeading?: boolean;
 };
 
 export const Section: ChildrenFC<SectionProps> = ({
@@ -23,27 +24,34 @@ export const Section: ChildrenFC<SectionProps> = ({
   subheading,
   children,
   className,
-}) => (
-  <section id={id} className={style.section}>
-    <div className={clsx(style.content, className)}>
-      {titleText && (
-        <div
-          style={{ '--title-color': titleColor } as React.CSSProperties}
-          className={style.title}
-        >
-          {titleText}
-        </div>
-      )}
+  mainHeading,
+}) => {
+  const HeadingTag = mainHeading ? 'h1' : 'h2';
 
-      {(heading || subheading) && (
-        <div className={style.header}>
-          {heading && (
-            <h2 className={clsx(style.heading, headingClassName)}>{heading}</h2>
-          )}
-          {subheading && <p className={style.subheading}>{subheading}</p>}
-        </div>
-      )}
-      {children}
-    </div>
-  </section>
-);
+  return (
+    <section id={id} className={style.section}>
+      <div className={clsx(style.content, className)}>
+        {titleText && (
+          <div
+            style={{ '--title-color': titleColor } as React.CSSProperties}
+            className={style.title}
+          >
+            {titleText}
+          </div>
+        )}
+
+        {(heading || subheading) && (
+          <div className={style.header}>
+            {heading && (
+              <HeadingTag className={clsx(style.heading, headingClassName)}>
+                {heading}
+              </HeadingTag>
+            )}
+            {subheading && <p className={style.subheading}>{subheading}</p>}
+          </div>
+        )}
+        {children}
+      </div>
+    </section>
+  );
+};
