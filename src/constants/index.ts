@@ -71,3 +71,5 @@ export const SOCIAL_LINKS = [
     ariaLabel: 'TikTok',
   },
 ] as const;
+
+export * from './typography';

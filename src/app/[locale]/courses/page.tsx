@@ -12,6 +12,7 @@ import { WhyChooseCoursesSection } from './components';
 import { StepProcess } from '@/src/components/StepProcess';
 import { getPageAlternates } from '@/src/utils/getCanonicalUrl';
 import { AppLocalePageProps } from '@/src/utils/types';
+import { SUFFIX } from '@/src/constants';
 
 export const generateMetadata = async ({ params }: AppLocalePageProps) => {
   const locale = await getLocaleFromParams(params);
@@ -37,22 +38,22 @@ const CoursesPage: React.FC = async () => {
         dataCards={[
           {
             value: 350,
-            valueSuffix: '+',
+            valueSuffix: SUFFIX.plus,
             label: t.COURSES_STATS_GRADUATES_LABEL,
           },
           {
             value: 96,
-            valueSuffix: '%',
+            valueSuffix: SUFFIX.percent,
             label: t.COURSES_STATS_COMPLETION_LABEL,
           },
           {
             value: 10,
-            valueSuffix: '+',
+            valueSuffix: SUFFIX.plus,
             label: t.COURSES_STATS_LECTURERS_LABEL,
           },
           {
             value: 80,
-            valueSuffix: '+',
+            valueSuffix: SUFFIX.plus,
             label: t.COURSES_STATS_LESSONS_LABEL,
           },
         ]}

@@ -11,6 +11,7 @@ import { BorderBox } from '@/src/components/BorderBox';
 import heroImage from '../../../assets/main.webp';
 import { HeroButtons } from './HeroButtons';
 import { HeroTypewriter } from './HeroTypewriter';
+import { SUFFIX } from '@/src/constants';
 import style from './HeroSection.module.scss';
 
 export const HeroSection: React.FC = async () => {
@@ -48,7 +49,7 @@ export const HeroSection: React.FC = async () => {
             <div className={style.statsCardList}>
               <StatsCard
                 value={500}
-                valueSuffix="+"
+                valueSuffix={SUFFIX.plus}
                 label={t.COMMUNITY_SECTION_STATS_SUPPORTED_LABEL}
                 underLabel={t.COMMUNITY_SECTION_STATS_SUPPORTED_UNDER_LABEL}
                 colorClassName={style.grapefruitPulp}
@@ -56,7 +57,7 @@ export const HeroSection: React.FC = async () => {
               />
               <StatsCard
                 value={80}
-                valueSuffix="+"
+                valueSuffix={SUFFIX.plus}
                 label={t.COMMUNITY_SECTION_STATS_JOINED_LABEL}
                 underLabel={t.COMMUNITY_SECTION_STATS_JOINED_UNDER_LABEL}
                 colorClassName={style.aztecAtom}
@@ -64,7 +65,7 @@ export const HeroSection: React.FC = async () => {
               />
               <StatsCard
                 value={60}
-                valueSuffix="+"
+                valueSuffix={SUFFIX.plus}
                 label={t.COMMUNITY_SECTION_STATS_EVENTS_LABEL}
                 underLabel={t.COMMUNITY_SECTION_STATS_EVENTS_UNDER_LABEL}
                 colorClassName={style.explodingStar}

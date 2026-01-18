@@ -13,6 +13,7 @@ import {
 } from './components';
 import { getPageAlternates } from '@/src/utils/getCanonicalUrl';
 import { AppLocalePageProps } from '@/src/utils/types';
+import { SUFFIX } from '@/src/constants';
 
 export const generateMetadata = async ({ params }: AppLocalePageProps) => {
   const locale = await getLocaleFromParams(params);
@@ -38,12 +39,12 @@ const MentoringPage: React.FC = async () => {
         dataCards={[
           {
             value: 45,
-            valueSuffix: '+',
+            valueSuffix: SUFFIX.plus,
             label: t.MENTORING_STATS_GRADUATES_LABEL,
           },
           {
             value: 15,
-            valueSuffix: '+',
+            valueSuffix: SUFFIX.plus,
             label: t.MENTORING_STATS_MENTORS_LABEL,
           },
           {
@@ -53,7 +54,7 @@ const MentoringPage: React.FC = async () => {
           },
           {
             value: 97,
-            valueSuffix: '%',
+            valueSuffix: SUFFIX.percent,
             label: t.MENTORING_STATS_RECOMMENDATION_LABEL,
           },
         ]}
