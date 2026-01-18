@@ -11,6 +11,7 @@ import { MeetupsCtaSection } from './components/MeetupsCtaSection';
 import { PastMeetupsSection } from './components/PastMeetupsSection';
 import { getPageAlternates } from '@/src/utils/getCanonicalUrl';
 import { AppLocalePageProps } from '@/src/utils/types';
+import { SUFFIX } from '@/src/constants';
 
 export const generateMetadata = async ({ params }: AppLocalePageProps) => {
   const locale = await getLocaleFromParams(params);
@@ -37,17 +38,17 @@ const MeetupsPage: React.FC = async () => {
         dataCards={[
           {
             value: 40,
-            valueSuffix: '+',
+            valueSuffix: SUFFIX.plus,
             label: t.MEETUPS_STATS_PAST_MEETUPS_LABEL,
           },
           {
             value: 1200,
-            valueSuffix: '+',
+            valueSuffix: SUFFIX.plus,
             label: t.MEETUPS_STATS_MEMBERS_LABEL,
           },
           {
             value: 70,
-            valueSuffix: '+',
+            valueSuffix: SUFFIX.plus,
             label: t.MEETUPS_STATS_SPEAKERS_LABEL,
           },
           {
