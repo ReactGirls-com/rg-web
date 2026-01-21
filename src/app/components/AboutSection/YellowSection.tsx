@@ -2,10 +2,11 @@ import { DataCard } from '@/src/components/DataCard';
 import { getTranslationsWithLocale } from '@/src/utils/getTranslations';
 import { BorderBox } from '../../../components/BorderBox';
 import { SUFFIX } from '@/src/constants';
+import { getLocalizedPercentSuffix } from '@/src/utils/getTranslations';
 import style from './YellowSection.module.scss';
 
 export const YellowSection: React.FC = async () => {
-  const { t } = await getTranslationsWithLocale();
+  const { locale, t } = await getTranslationsWithLocale();
 
   return (
     <BorderBox as="section" className={style.container}>
@@ -28,7 +29,7 @@ export const YellowSection: React.FC = async () => {
       <div className={style.dataGrid}>
         <DataCard
           value={97}
-          valueSuffix={SUFFIX.percent}
+          valueSuffix={getLocalizedPercentSuffix(locale)}
           label={t.WHY_REACT_GIRLS_STATS_SATISFACTION_LABEL}
           colorClassName={style.grapefruitPulp}
           shouldAnimate

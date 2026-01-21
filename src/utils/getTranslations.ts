@@ -1,5 +1,6 @@
 import { cookies } from 'next/headers';
 
+import { NNBSP } from '@/src/constants';
 import {
   TRANSLATIONS_CS,
   TRANSLATIONS_EN,
@@ -34,3 +35,6 @@ export const getTranslationsWithLocale = async () => {
 
   return { locale, t: getTranslations(locale) };
 };
+
+export const getLocalizedPercentSuffix = (locale: string) =>
+  locale.startsWith(DEFAULT_LOCALE) ? `${NNBSP}%` : '%';

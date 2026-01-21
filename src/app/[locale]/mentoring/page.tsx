@@ -14,6 +14,7 @@ import {
 import { getPageAlternates } from '@/src/utils/getCanonicalUrl';
 import { AppLocalePageProps } from '@/src/utils/types';
 import { SUFFIX } from '@/src/constants';
+import { getLocalizedPercentSuffix } from '@/src/utils/getTranslations';
 
 export const generateMetadata = async ({ params }: AppLocalePageProps) => {
   const locale = await getLocaleFromParams(params);
@@ -27,7 +28,7 @@ export const generateMetadata = async ({ params }: AppLocalePageProps) => {
 };
 
 const MentoringPage: React.FC = async () => {
-  const { t } = await getTranslationsWithLocale();
+  const { locale, t } = await getTranslationsWithLocale();
 
   return (
     <>
@@ -54,7 +55,7 @@ const MentoringPage: React.FC = async () => {
           },
           {
             value: 97,
-            valueSuffix: SUFFIX.percent,
+            valueSuffix: getLocalizedPercentSuffix(locale),
             label: t.MENTORING_STATS_RECOMMENDATION_LABEL,
           },
         ]}
