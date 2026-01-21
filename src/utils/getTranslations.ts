@@ -36,5 +36,5 @@ export const getTranslationsWithLocale = async () => {
   return { locale, t: getTranslations(locale) };
 };
 
-export const getLocalizedPercentSuffix = (locale: string) =>
+export const getLocalizedPercentSuffix = (locale: Locale) =>
   locale.startsWith(DEFAULT_LOCALE) ? `${NNBSP}%` : '%';
