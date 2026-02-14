@@ -298,7 +298,7 @@ export const TRANSLATIONS_CS = {
   TEAM_MEMBER_ONDREJ_DESCRIPTION:
     'Ondra je naším lektorem a konzultantem pro vzdělávací kurzy.',
   TEAM_MEMBER_LUKAS_DESCRIPTION:
-    'Lukáš je našim mentorem a jedním z pohovorujících v mock interviews.',
+    'Lukáš je naším mentorem a jedním z pohovorujících v mock interviews.',
   TEAM_MEMBER_HELENA_DESCRIPTION:
     'Helča se zúčastnila našich akademií, teď nám pomáhá na našich akcích.',
   TEAM_MEMBER_TONY_DESCRIPTION:

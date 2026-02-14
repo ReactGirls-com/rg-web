@@ -10,6 +10,7 @@ import { MediumBanner } from './MediumBanner';
 import ackeeLogo from '@/src/assets/partners/ackee.png';
 import signageOsLogo from '@/src/assets/partners/signage-os.png';
 import mewsLogo from '@/src/assets/partners/mews.png';
+import genForFutureLogo from '@/src/assets/partners/genforfuture.png';
 import accoladeLogo from '@/src/assets/partners/accolade.png';
 import eduPunksLogo from '@/src/assets/partners/edu-punks.png';
 import style from './PartnersSection.module.scss';
@@ -20,6 +21,7 @@ const PARTNERS = [
   { name: 'MEWS', logo: mewsLogo },
   { name: 'Accolade', logo: accoladeLogo },
   { name: 'EDU PUNKS', logo: eduPunksLogo },
+  { name: 'Gen For Future', logo: genForFutureLogo },
 ];
 
 export const PartnersSection: React.FC = async () => {
