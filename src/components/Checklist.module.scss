@@ -22,19 +22,11 @@
   flex-shrink: 0;
   width: 24px;
   height: 24px;
-  background-image: url('../assets/circleCheck.svg');
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .iconCoral {
   background-color: $grapefruit-pulp;
   background-image: none;
-  mask-image: url('../assets/checkmark.svg');
-  mask-size: contain;
-  mask-repeat: no-repeat;
-  mask-position: center;
   mask-image: url('../assets/checkmark.svg');
   mask-size: contain;
   mask-repeat: no-repeat;

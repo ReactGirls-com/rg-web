@@ -350,7 +350,7 @@ export const TRANSLATIONS_EN: Record<TranslationKey, string> = {
   LANGUAGE_ENGLISH: 'English',
   META_REACT_ACADEMY_TITLE: 'React Academy | ReactGirls',
   META_REACT_ACADEMY_DESCRIPTION:
-    'Intensive React course for women. 12 lessons in Prague, 45 hours of instruction. Learn React, TypeScript, and Git with experienced instructors.',
+    'If you are considering participating in our autumn mentoring, React Academy is the perfect preparation phase! You’ll feel confident working with the technologies you’ll use in your mentoring project in the autumn, ensuring greater progress and a smoother journey through the program.',
   META_AI_JAM_TITLE: 'Regular AI Jam | ReactGirls',
   META_AI_JAM_DESCRIPTION:
     'Regular workshops on AI tools in programming. We will help you navigate the latest tools and use them in development.',
@@ -430,7 +430,7 @@ export const TRANSLATIONS_EN: Record<TranslationKey, string> = {
   REACT_ACADEMY_TIP_CTA_TITLE: 'Our tip',
   REACT_ACADEMY_TIP_CTA_DESCRIPTION:
     'If you want to continue your development after completing the academy, sign up for our mentoring program. An experienced mentor will guide you through creating your own project.',
-  REACT_ACADEMY_TIP_CTA_BUTTON: 'Explore mentoring',
+  REACT_ACADEMY_TIP_CTA_BUTTON: 'Find out more about mentoring',
   REACT_ACADEMY_TEST_CTA_TITLE: 'Test your knowledge',
   REACT_ACADEMY_TEST_CTA_DESCRIPTION:
     'Not sure if you have sufficient knowledge to enter React Academy? Try our short test and find out if you are ready.',

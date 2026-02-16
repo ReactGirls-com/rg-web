@@ -421,8 +421,8 @@ export const TRANSLATIONS_CS = {
   REACT_ACADEMY_PREREQUISITES_CSS_CHECKLIST_3: 'Responzivní design',
   REACT_ACADEMY_TIP_CTA_TITLE: 'Náš tip',
   REACT_ACADEMY_TIP_CTA_DESCRIPTION:
-    'Pokud chceš po absolvování akademie pokračovat ve svém rozvoji, přihlas se do našeho mentoringového programu. Zkušený mentor nebo mentorka tě provede tvorbou vlastního projektu.',
-  REACT_ACADEMY_TIP_CTA_BUTTON: 'Prozkoumat mentoring',
+    'Pokud přemýšlíš nad účastí v našem podzimním mentoringu, React akademie je ideální jako přípravná fáze! Budeš si totiž jistá při práci s technologiemi, které ve svém projektu v mentoringu budeš na podzim používat a zajistíš si tak větší posun a plynulejší průběh programem.',
+  REACT_ACADEMY_TIP_CTA_BUTTON: 'Zjisti víc o mentoringu',
   REACT_ACADEMY_TEST_CTA_TITLE: 'Otestuj si své znalosti',
   REACT_ACADEMY_TEST_CTA_DESCRIPTION:
     'Nejsi si jistá, jestli máš dostatečné znalosti pro vstup do React akademie? Vyzkoušej si náš krátký test a zjisti, jestli jsi připravená.',
