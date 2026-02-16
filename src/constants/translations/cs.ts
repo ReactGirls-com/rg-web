@@ -341,6 +341,91 @@ export const TRANSLATIONS_CS = {
   LANGUAGE_SWITCH_LABEL: 'Změnit jazyk',
   LANGUAGE_CZECH: 'Čeština',
   LANGUAGE_ENGLISH: 'English',
+  META_REACT_ACADEMY_TITLE: 'React akademie | ReactGirls',
+  META_REACT_ACADEMY_DESCRIPTION:
+    'Intenzivní kurz Reactu pro ženy. 12 lekcí v Praze, 45 hodin výuky. Nauč se React, TypeScript a Git s podporou zkušených lektorů.',
+  META_AI_JAM_TITLE: 'Pravidelný AI jam | ReactGirls',
+  META_AI_JAM_DESCRIPTION:
+    'Pravidelné workshopy o AI nástrojích v programování. Pomůžeme ti se vyznat v nejnovějších nástrojích a používat je při vývoji.',
+  META_BACKEND_ACADEMY_TITLE: 'Backend akademie | ReactGirls',
+  META_BACKEND_ACADEMY_DESCRIPTION:
+    'Zajímá tě propojení frontendu s backendem? Připravujeme Backend akademii, kde tě se základy backendu seznámíme.',
+  REACT_ACADEMY_HERO_HEADING_BEFORE: 'Nauč se',
+  REACT_ACADEMY_HERO_HEADING_HIGHLIGHT: 'React',
+  REACT_ACADEMY_HERO_HEADING_AFTER: 's námi',
+  REACT_ACADEMY_HERO_SUBHEADING:
+    'Intenzivní kurz Reactu pro ženy, které chtějí posunout své frontendové dovednosti na další úroveň. Během 12 lekcí tě provedeme základy Reactu, TypeScriptu a Gitu.',
+  REACT_ACADEMY_STATS_HOURS: 'Hodin výuky',
+  REACT_ACADEMY_STATS_LOCATION: 'Praha',
+  REACT_ACADEMY_STATS_LOCATION_SUFFIX: 'lekcí',
+  REACT_ACADEMY_STATS_LESSONS: 'plných intezivního programovaní',
+  REACT_ACADEMY_STATS_PRICE: 'díky podpoře našich partnerů',
+  REACT_ACADEMY_LEARN_HEADING_BEFORE: 'Co se v React akademii',
+  REACT_ACADEMY_LEARN_HEADING_HIGHLIGHT: 'naučíš?',
+  REACT_ACADEMY_LEARN_CARD_1_TITLE: 'React',
+  REACT_ACADEMY_LEARN_CARD_1_DESCRIPTION:
+    'Naučíš se základy Reactu, komponenty, props, state a hooks. Budeš schopná vytvořit vlastní React aplikaci.',
+  REACT_ACADEMY_LEARN_CARD_2_TITLE: 'Git',
+  REACT_ACADEMY_LEARN_CARD_2_DESCRIPTION:
+    'Osvojíš si práci s verzovacím systémem Git, který je nezbytný pro týmovou spolupráci na projektech.',
+  REACT_ACADEMY_LEARN_CARD_3_TITLE: 'TypeScript',
+  REACT_ACADEMY_LEARN_CARD_3_DESCRIPTION:
+    'Poznáš TypeScript, který ti pomůže psát bezpečnější a lépe udržovatelný kód.',
+  REACT_ACADEMY_PREREQUISITES_HEADING_BEFORE: 'Co bys měla',
+  REACT_ACADEMY_PREREQUISITES_HEADING_HIGHLIGHT: 'znát?',
+  REACT_ACADEMY_PREREQUISITES_DESCRIPTION:
+    'Abys z kurzu vytěžila maximum, měla bys mít základní znalosti HTML, CSS a JavaScriptu. Pokud si nejsi jistá, zda máš dostatečné znalosti, vyzkoušej si náš test.',
+  REACT_ACADEMY_TIP_CTA_TITLE: 'Náš tip',
+  REACT_ACADEMY_TIP_CTA_DESCRIPTION:
+    'Pokud chceš po absolvování akademie pokračovat ve svém rozvoji, přihlas se do našeho mentoringového programu. Zkušený mentor nebo mentorka tě provede tvorbou vlastního projektu.',
+  REACT_ACADEMY_TIP_CTA_BUTTON: 'Prozkoumat mentoring',
+  REACT_ACADEMY_TEST_CTA_TITLE: 'Otestuj si své znalosti',
+  REACT_ACADEMY_TEST_CTA_DESCRIPTION:
+    'Nejsi si jistá, jestli máš dostatečné znalosti pro vstup do React akademie? Vyzkoušej si náš krátký test a zjisti, jestli jsi připravená.',
+  REACT_ACADEMY_TEST_CTA_BUTTON: 'Spustit test',
+  REACT_ACADEMY_SCHEDULE_HEADING_BEFORE: 'Jak a kdy akademie',
+  REACT_ACADEMY_SCHEDULE_HEADING_HIGHLIGHT: 'probíhá?',
+  REACT_ACADEMY_SCHEDULE_DESCRIPTION:
+    'Lekce probíhají ve všední dny ve večerních hodinách v Praze. Konkrétní termíny zveřejníme před začátkem přihlašování.',
+  AI_JAM_HERO_HEADING_BEFORE: 'Pravidelný',
+  AI_JAM_HERO_HEADING_HIGHLIGHT: 'AI jam',
+  AI_JAM_HERO_SUBHEADING_1:
+    'Všichni poslední dobou mluví o AI v programování. Neustále se objevují nové AI nástroje a ve chvíli, kdy se s něčím naučíš, je tu hned další den něco „novějšího" a „lepšího". My ti pomůžeme se v tom všem vyznat!',
+  AI_JAM_HERO_SUBHEADING_2:
+    'Máme lektory, kteří s těmito nástroji denně pracují a znají vždy to nejnovější z tohoto světa. Formou pravidelných workshopů se seznámíš s výběrem zažitých i nejnovějších AI nástrojů, které při programování můžeš hned začít používat.',
+  AI_JAM_HERO_SUBHEADING_3:
+    'Každý AI jam bude zakončen hodinovým volným prostorem. Je na tobě, jestli se zapojíš do diskuze k tématu s lektorem a kouči, jestli čas věnuješ zkoušení nových nástrojů po vlastní ose, nebo jestli si budeš povídat s kamarádkou, se kterou ses na AI jamu potkala.',
+  AI_JAM_CTA_TITLE: 'Brzy zveřejníme další informace',
+  AI_JAM_CTA_DESCRIPTION:
+    'Sleduj nás na našich sociálních sítích, kde všechny novinky uvidíš jako první, a nenech si utéct přihlašování!',
+  BACKEND_ACADEMY_HERO_HEADING_BEFORE: '',
+  BACKEND_ACADEMY_HERO_HEADING_HIGHLIGHT: 'Backend',
+  BACKEND_ACADEMY_HERO_HEADING_AFTER: 'akademie',
+  BACKEND_ACADEMY_HERO_SUBHEADING:
+    'Zajímá tě, jak můžeš svoje znalosti z frontendu propojit s backendem? Připravujeme novou akademii, kde tě se základy backendu seznámíme.',
+  BACKEND_ACADEMY_CTA_TITLE: 'Brzy zveřejníme další informace',
+  BACKEND_ACADEMY_CTA_DESCRIPTION:
+    'Sleduj nás na našich sociálních sítích, kde všechny novinky uvidíš jako první, a nenech si utéct přihlašování!',
+  COURSES_CARD_REACT_TITLE: 'React akademie',
+  COURSES_CARD_REACT_DESCRIPTION:
+    'Umíš už HTML, CSS a JavaScript a chceš začít vytvářet větší aplikace v Reactu? Kromě Reactu se seznámíš i s Gitem a TypeScriptem.',
+  COURSES_CARD_REACT_INSTRUCTION_HOURS: '45 hodin',
+  COURSES_CARD_REACT_INSTRUCTION_TYPE: 'prezenční výuka',
+  COURSES_CARD_REACT_BULLET_1: 'Praha',
+  COURSES_CARD_REACT_BULLET_2: 'pro středně pokročilé',
+  COURSES_CARD_REACT_BULLET_3: 'lektoři a kouči z praxe',
+  COURSES_CARD_REACT_BULLET_4: 'React, Git a TypeScript',
+  COURSES_CARD_REACT_BADGE: 'Probíhá přihlašování',
+  COURSES_CARD_REACT_PRIMARY_BUTTON: 'Přihlásit se',
+  COURSES_CARD_LEARN_MORE_BUTTON: 'Zjistit víc',
+  COURSES_CARD_BACKEND_TITLE: 'Backend akademie',
+  COURSES_CARD_BACKEND_DESCRIPTION:
+    'Zajímá tě, jak můžeš svoje znalosti z frontendu propojit s backendem? Připravujeme novou akademii, kde tě se základy backendu seznámíme.',
+  COURSES_CARD_AI_TITLE: 'AI jam',
+  COURSES_CARD_AI_DESCRIPTION:
+    'Neustále se objevují nové AI nástroje a ve chvíli, kdy se s něčím naučíš, je tu hned další den něco „novějšího" a „lepšího". My ti pomůžeme se v tom všem vyznat!',
+  COURSES_CARD_COMING_SOON:
+    'Brzy budeme zveřejňovat další informace. Sleduj nás na sociálních sítích, kde všechny novinky uvidíš jako první!',
 } as const;
 
 export type TranslationKey = keyof typeof TRANSLATIONS_CS;

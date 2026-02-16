@@ -1,4 +1,4 @@
-import { ComponentProps } from 'react';
+import { ComponentProps, ReactNode } from 'react';
 import Link from 'next/link';
 import clsx from 'clsx';
 
@@ -8,7 +8,7 @@ import style from './Button.module.scss';
 type BaseButtonProps = {
   variant: 'aztecAtom' | 'explodingStar' | 'grapefruitPulp' | 'paleLavender';
   className?: string;
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
 type ButtonWithHref = BaseButtonProps & {

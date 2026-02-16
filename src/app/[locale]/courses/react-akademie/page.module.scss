@@ -1,0 +1,33 @@
+.cardsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  width: 100%;
+
+  @media (min-width: $screen-md-min) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.tipCtaBanner {
+  background-color: $aztec-atom;
+}
+
+.testCtaBanner {
+  background-color: $aztec-atom;
+}
+
+.iconReact {
+  background: url('../../../../assets/code.svg') no-repeat center center;
+  background-size: 24px 24px;
+}
+
+.iconGit {
+  background: url('../../../../assets/checkmark.svg') no-repeat center center;
+  background-size: 24px 24px;
+}
+
+.iconTypescript {
+  background: url('../../../../assets/star.svg') no-repeat center center;
+  background-size: 24px 24px;
+}

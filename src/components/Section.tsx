@@ -10,7 +10,7 @@ type SectionProps = {
   titleColor?: string;
   heading?: ReactNode;
   headingClassName?: string;
-  subheading?: string;
+  subheading?: ReactNode;
   className?: string;
   mainHeading?: boolean;
 };
@@ -47,7 +47,12 @@ export const Section: ChildrenFC<SectionProps> = ({
                 {heading}
               </HeadingTag>
             )}
-            {subheading && <p className={style.subheading}>{subheading}</p>}
+            {subheading &&
+              (typeof subheading === 'string' ? (
+                <p className={style.subheading}>{subheading}</p>
+              ) : (
+                <div className={style.subheading}>{subheading}</div>
+              ))}
           </div>
         )}
         {children}

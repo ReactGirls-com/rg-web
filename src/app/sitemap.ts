@@ -4,7 +4,16 @@ import { LOCALES, DEFAULT_LOCALE } from '@/src/constants/translations';
 
 const baseUrl = 'https://reactgirls.com';
 
-const routes = ['', 'meetups', 'mentoring', 'courses', 'contact'];
+const routes = [
+  '',
+  'meetups',
+  'mentoring',
+  'courses',
+  'contact',
+  'courses/react-akademie',
+  'courses/ai-jam',
+  'courses/backend-akademie',
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const sitemapEntries: MetadataRoute.Sitemap = [];

@@ -346,4 +346,88 @@ export const TRANSLATIONS_EN: Record<TranslationKey, string> = {
   LANGUAGE_SWITCH_LABEL: 'Change language',
   LANGUAGE_CZECH: 'Čeština',
   LANGUAGE_ENGLISH: 'English',
+  META_REACT_ACADEMY_TITLE: 'React Academy | ReactGirls',
+  META_REACT_ACADEMY_DESCRIPTION:
+    'Intensive React course for women. 12 lessons in Prague, 45 hours of instruction. Learn React, TypeScript, and Git with experienced instructors.',
+  META_AI_JAM_TITLE: 'Regular AI Jam | ReactGirls',
+  META_AI_JAM_DESCRIPTION:
+    'Regular workshops on AI tools in programming. We will help you navigate the latest tools and use them in development.',
+  META_BACKEND_ACADEMY_TITLE: 'Backend Academy | ReactGirls',
+  META_BACKEND_ACADEMY_DESCRIPTION:
+    'Interested in connecting frontend with backend? We are preparing a Backend Academy where we will introduce you to the basics of backend.',
+  REACT_ACADEMY_HERO_HEADING_BEFORE: 'Learn',
+  REACT_ACADEMY_HERO_HEADING_HIGHLIGHT: 'React',
+  REACT_ACADEMY_HERO_HEADING_AFTER: 'with us',
+  REACT_ACADEMY_HERO_SUBHEADING:
+    'Intensive React course for women who want to take their frontend skills to the next level. During 12 lessons, we will guide you through the basics of React, TypeScript, and Git.',
+  REACT_ACADEMY_STATS_HOURS: 'Hours of instruction',
+  REACT_ACADEMY_STATS_LOCATION: 'Prague',
+  REACT_ACADEMY_STATS_LESSONS: 'Lessons',
+  REACT_ACADEMY_STATS_PRICE: 'Course price',
+  REACT_ACADEMY_LEARN_HEADING_BEFORE: 'What will you learn in',
+  REACT_ACADEMY_LEARN_HEADING_HIGHLIGHT: 'React Academy?',
+  REACT_ACADEMY_LEARN_CARD_1_TITLE: 'React',
+  REACT_ACADEMY_LEARN_CARD_1_DESCRIPTION:
+    'You will learn the basics of React, components, props, state, and hooks. You will be able to create your own React application.',
+  REACT_ACADEMY_LEARN_CARD_2_TITLE: 'Git',
+  REACT_ACADEMY_LEARN_CARD_2_DESCRIPTION:
+    'You will master working with the Git version control system, which is essential for team collaboration on projects.',
+  REACT_ACADEMY_LEARN_CARD_3_TITLE: 'TypeScript',
+  REACT_ACADEMY_LEARN_CARD_3_DESCRIPTION:
+    'You will get to know TypeScript, which will help you write safer and more maintainable code.',
+  REACT_ACADEMY_PREREQUISITES_HEADING_BEFORE: 'What should you',
+  REACT_ACADEMY_PREREQUISITES_HEADING_HIGHLIGHT: 'know?',
+  REACT_ACADEMY_PREREQUISITES_DESCRIPTION:
+    'To get the most out of the course, you should have basic knowledge of HTML, CSS, and JavaScript. If you are not sure whether you have sufficient knowledge, try our test.',
+  REACT_ACADEMY_TIP_CTA_TITLE: 'Our tip',
+  REACT_ACADEMY_TIP_CTA_DESCRIPTION:
+    'If you want to continue your development after completing the academy, sign up for our mentoring program. An experienced mentor will guide you through creating your own project.',
+  REACT_ACADEMY_TIP_CTA_BUTTON: 'Explore mentoring',
+  REACT_ACADEMY_TEST_CTA_TITLE: 'Test your knowledge',
+  REACT_ACADEMY_TEST_CTA_DESCRIPTION:
+    'Not sure if you have sufficient knowledge to enter React Academy? Try our short test and find out if you are ready.',
+  REACT_ACADEMY_TEST_CTA_BUTTON: 'Start test',
+  REACT_ACADEMY_SCHEDULE_HEADING_BEFORE: 'How and when does the academy',
+  REACT_ACADEMY_SCHEDULE_HEADING_HIGHLIGHT: 'take place?',
+  REACT_ACADEMY_SCHEDULE_DESCRIPTION:
+    'Lessons take place on weekdays in the evening hours in Prague. We will publish specific dates before registration opens.',
+  AI_JAM_HERO_HEADING_BEFORE: 'Regular',
+  AI_JAM_HERO_HEADING_HIGHLIGHT: 'AI Jam',
+  AI_JAM_HERO_SUBHEADING_1:
+    'Everyone has been talking about AI in programming lately. New AI tools are constantly appearing, and the moment you learn something, there is immediately something "newer" and "better" the next day. We will help you understand all of this!',
+  AI_JAM_HERO_SUBHEADING_2:
+    'We have lecturers who work with these tools daily and always know the latest from this world. Through regular workshops, you will get acquainted with a selection of established and the latest AI tools that you can start using immediately in programming.',
+  AI_JAM_HERO_SUBHEADING_3:
+    'Each AI jam will conclude with an hour of free space. It is up to you whether you join a discussion on the topic with a lecturer and coaches, whether you spend time experimenting with new tools on your own, or whether you chat with a friend you met at the AI jam.',
+  AI_JAM_CTA_TITLE: 'More information coming soon',
+  AI_JAM_CTA_DESCRIPTION:
+    'Follow us on our social networks, where you will see all the news first, and do not miss out on registration!',
+  BACKEND_ACADEMY_HERO_HEADING_BEFORE: '',
+  BACKEND_ACADEMY_HERO_HEADING_HIGHLIGHT: 'Backend',
+  BACKEND_ACADEMY_HERO_HEADING_AFTER: 'Academy',
+  BACKEND_ACADEMY_HERO_SUBHEADING:
+    'Interested in how you can connect your frontend knowledge with the backend? We are preparing a new academy where we will introduce you to the basics of backend.',
+  BACKEND_ACADEMY_CTA_TITLE: 'More information coming soon',
+  BACKEND_ACADEMY_CTA_DESCRIPTION:
+    'Follow us on our social networks, where you will see all the news first, and do not miss out on registration!',
+  COURSES_CARD_REACT_TITLE: 'React Academy',
+  COURSES_CARD_REACT_DESCRIPTION:
+    'Already know HTML, CSS, and JavaScript and want to start building larger applications in React? Besides React, you will also learn Git and TypeScript.',
+  COURSES_CARD_REACT_INSTRUCTION_HOURS: '45 hours',
+  COURSES_CARD_REACT_INSTRUCTION_TYPE: 'in-person instruction',
+  COURSES_CARD_REACT_BULLET_1: 'Prague',
+  COURSES_CARD_REACT_BULLET_2: 'for intermediate level',
+  COURSES_CARD_REACT_BULLET_3: 'lecturers and coaches from practice',
+  COURSES_CARD_REACT_BULLET_4: 'React, Git, and TypeScript',
+  COURSES_CARD_REACT_BADGE: 'Registration open',
+  COURSES_CARD_REACT_PRIMARY_BUTTON: 'Sign up',
+  COURSES_CARD_LEARN_MORE_BUTTON: 'Learn more',
+  COURSES_CARD_BACKEND_TITLE: 'Backend Academy',
+  COURSES_CARD_BACKEND_DESCRIPTION:
+    'Interested in how you can connect your frontend knowledge with backend? We are preparing a new academy where we will introduce you to backend basics.',
+  COURSES_CARD_AI_TITLE: 'AI Jam',
+  COURSES_CARD_AI_DESCRIPTION:
+    'New AI tools are constantly emerging and the moment you learn something, there is already something "newer" and "better" the next day. We will help you navigate through it all!',
+  COURSES_CARD_COMING_SOON:
+    'More information coming soon. Follow us on social media to see all the news first!',
 } as const;

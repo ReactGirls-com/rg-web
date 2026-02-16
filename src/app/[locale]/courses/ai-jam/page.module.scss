@@ -1,0 +1,16 @@
+.ctaBanner {
+  background-color: $aztec-atom;
+}
+
+.socialLinksContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.socialLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}

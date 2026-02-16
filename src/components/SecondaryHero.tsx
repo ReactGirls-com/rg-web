@@ -25,7 +25,7 @@ type SecondaryHeroProps = {
   headingBefore: string;
   headingHighlight: string;
   headingAfter?: string;
-  subheading: string;
+  subheading: string | ReactNode;
   dataCards?: DataCardItem[];
   children?: ReactNode;
 };

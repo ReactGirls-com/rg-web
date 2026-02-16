@@ -20,6 +20,7 @@ export const MEDIUM_LINK = 'https://reactgirls.medium.com/';
 export const MENTORING_FORM_LINK = 'https://forms.gle/EdLmU3fv5rpMm4W88';
 
 export const YOUTUBE_CHANNEL_URL = 'https://www.youtube.com/@ReactGirls';
+export const PREREQUISITE_CHECK_URL = 'https://prerequisite-check.netlify.app/';
 
 export const SOCIAL_LINKS = [
   {
