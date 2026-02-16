@@ -18,16 +18,99 @@
 }
 
 .iconReact {
-  background: url('../../../../assets/code.svg') no-repeat center center;
+  background: url('../../../../assets/target.svg') no-repeat center center;
   background-size: 24px 24px;
 }
 
 .iconGit {
-  background: url('../../../../assets/checkmark.svg') no-repeat center center;
+  background: url('../../../../assets/target.svg') no-repeat center center;
   background-size: 24px 24px;
 }
 
 .iconTypescript {
-  background: url('../../../../assets/star.svg') no-repeat center center;
+  background: url('../../../../assets/target.svg') no-repeat center center;
   background-size: 24px 24px;
+}
+
+.iconSchedule {
+  background: url('../../../../assets/target.svg') no-repeat center center;
+  background-size: 24px 24px;
+}
+
+.prerequisitesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  width: 100%;
+
+  @media (min-width: $screen-md-min) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.scheduleCard {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  background-color: $crystal-cut;
+}
+
+.scheduleIconWrapper {
+  margin-bottom: 24px;
+}
+
+.scheduleCardTitle {
+  margin-bottom: 16px;
+  color: $carbon-fiber;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.3;
+}
+
+.scheduleCardDescription {
+  margin-bottom: 16px;
+  color: $cursed-gray;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.prerequisitesCardTitle {
+  margin-bottom: 16px;
+  color: $carbon-fiber;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.3;
+}
+
+.prerequisitesCardDescription {
+  margin-bottom: 16px;
+  color: $cursed-gray;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.learnChecklistSubheading {
+  margin: 0 0 12px;
+  color: $carbon-fiber;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.scheduleCalendarLabel {
+  margin: 16px 0 12px;
+  color: $carbon-fiber;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.scheduleDatesList {
+  ul {
+    @media (min-width: $screen-md-min) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 24px;
+    }
+  }
 }

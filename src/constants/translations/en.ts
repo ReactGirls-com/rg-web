@@ -139,6 +139,8 @@ export const TRANSLATIONS_EN: Record<TranslationKey, string> = {
   MENTORING_STATS_MENTORS_LABEL: 'Experienced mentors',
   MENTORING_STATS_DURATION_LABEL: 'Program duration',
   MENTORING_STATS_DURATION_SUFFIX: ' months',
+  SUFFIX_HOURS: ' hours',
+  SUFFIX_LESSONS: ' lessons',
   MENTORING_STATS_RECOMMENDATION_LABEL:
     'Mentees would recommend mentoring to a friend',
   MEETUPS_SECTION_HEADING_BEFORE: 'Enjoy with us',
@@ -355,30 +357,76 @@ export const TRANSLATIONS_EN: Record<TranslationKey, string> = {
   META_BACKEND_ACADEMY_TITLE: 'Backend Academy | ReactGirls',
   META_BACKEND_ACADEMY_DESCRIPTION:
     'Interested in connecting frontend with backend? We are preparing a Backend Academy where we will introduce you to the basics of backend.',
-  REACT_ACADEMY_HERO_HEADING_BEFORE: 'Learn',
+  REACT_ACADEMY_HERO_HEADING_BEFORE: '',
   REACT_ACADEMY_HERO_HEADING_HIGHLIGHT: 'React',
-  REACT_ACADEMY_HERO_HEADING_AFTER: 'with us',
+  REACT_ACADEMY_HERO_HEADING_AFTER: ' Academy',
   REACT_ACADEMY_HERO_SUBHEADING:
-    'Intensive React course for women who want to take their frontend skills to the next level. During 12 lessons, we will guide you through the basics of React, TypeScript, and Git.',
-  REACT_ACADEMY_STATS_HOURS: 'Hours of instruction',
+    'Already know HTML, CSS and JavaScript and want to start building larger applications in React? Our React Academy will guide you from the very basics to creating your own reusable components and assembling your app like a jigsaw puzzle! You will also learn TypeScript for better control over complex object data types, and how to keep your application versions in order with the Git version control system and collaborate in a larger team.',
+  REACT_ACADEMY_HERO_BUTTON: 'Sign up',
+  REACT_ACADEMY_STATS_HOURS: 'in-person instruction',
   REACT_ACADEMY_STATS_LOCATION: 'Prague',
-  REACT_ACADEMY_STATS_LESSONS: 'Lessons',
-  REACT_ACADEMY_STATS_PRICE: 'Course price',
+  REACT_ACADEMY_STATS_LOCATION_SUFFIX: 'as venue',
+  REACT_ACADEMY_STATS_LESSONS: 'of intensive programming',
+  REACT_ACADEMY_STATS_PRICE: 'thanks to our partners’ support',
+  REACT_ACADEMY_STATS_PRICE_VALUE: 'only 2,490 CZK',
   REACT_ACADEMY_LEARN_HEADING_BEFORE: 'What will you learn in',
   REACT_ACADEMY_LEARN_HEADING_HIGHLIGHT: 'React Academy?',
+  REACT_ACADEMY_LEARN_CHECKLIST_SUBHEADING: 'What will you get to know?',
   REACT_ACADEMY_LEARN_CARD_1_TITLE: 'React',
   REACT_ACADEMY_LEARN_CARD_1_DESCRIPTION:
-    'You will learn the basics of React, components, props, state, and hooks. You will be able to create your own React application.',
+    'Build websites that react to every click. Master React, learn to compose components like a pro, and bring your ideas to life with state and interactions.',
+  REACT_ACADEMY_LEARN_CARD_1_CHECKLIST_1: 'creating React components',
+  REACT_ACADEMY_LEARN_CARD_1_CHECKLIST_2: 'passing data to components (props)',
+  REACT_ACADEMY_LEARN_CARD_1_CHECKLIST_3: 'useState and useEffect hooks',
+  REACT_ACADEMY_LEARN_CARD_1_CHECKLIST_4: 'React Router',
+  REACT_ACADEMY_LEARN_CARD_1_CHECKLIST_5: 'React Context',
+  REACT_ACADEMY_LEARN_CARD_1_CHECKLIST_6: 'creating your own React application',
   REACT_ACADEMY_LEARN_CARD_2_TITLE: 'Git',
   REACT_ACADEMY_LEARN_CARD_2_DESCRIPTION:
-    'You will master working with the Git version control system, which is essential for team collaboration on projects.',
+    'Get acquainted with the most used version control system. Learn to version code effectively and collaborate on it with others, even in larger teams. With Git, you will always have your projects under control.',
+  REACT_ACADEMY_LEARN_CARD_2_CHECKLIST_1:
+    'code management and versioning (history)',
+  REACT_ACADEMY_LEARN_CARD_2_CHECKLIST_2: 'working with remote repositories',
+  REACT_ACADEMY_LEARN_CARD_2_CHECKLIST_3:
+    'creating and resolving conflicts, merging changes',
+  REACT_ACADEMY_LEARN_CARD_2_CHECKLIST_4: 'teamwork on SW projects',
+  REACT_ACADEMY_LEARN_CARD_2_CHECKLIST_5: 'branches and working with them',
+  REACT_ACADEMY_LEARN_CARD_2_CHECKLIST_6: 'working with GitHub',
   REACT_ACADEMY_LEARN_CARD_3_TITLE: 'TypeScript',
   REACT_ACADEMY_LEARN_CARD_3_DESCRIPTION:
-    'You will get to know TypeScript, which will help you write safer and more maintainable code.',
-  REACT_ACADEMY_PREREQUISITES_HEADING_BEFORE: 'What should you',
-  REACT_ACADEMY_PREREQUISITES_HEADING_HIGHLIGHT: 'know?',
+    'Uncover the secrets of TypeScript and find out why it has become the standard for modern development. We will show you how it can make programming safer, clearer, and more enjoyable.',
+  REACT_ACADEMY_LEARN_CARD_3_CHECKLIST_1:
+    'JavaScript vs. TypeScript – why types make sense',
+  REACT_ACADEMY_LEARN_CARD_3_CHECKLIST_2:
+    'basic types and working with functions',
+  REACT_ACADEMY_LEARN_CARD_3_CHECKLIST_3:
+    'TypeScript in the browser – DOM and events',
+  REACT_ACADEMY_LEARN_CARD_3_CHECKLIST_4:
+    'advanced types (inheritance, unions)',
+  REACT_ACADEMY_LEARN_CARD_3_CHECKLIST_5: 'working with data from API',
+  REACT_ACADEMY_LEARN_CARD_3_CHECKLIST_6: 'TypeScript in React',
+  REACT_ACADEMY_PREREQUISITES_HEADING_BEFORE: 'What should you know',
+  REACT_ACADEMY_PREREQUISITES_HEADING_HIGHLIGHT: 'before the first lesson?',
   REACT_ACADEMY_PREREQUISITES_DESCRIPTION:
     'To get the most out of the course, you should have basic knowledge of HTML, CSS, and JavaScript. If you are not sure whether you have sufficient knowledge, try our test.',
+  REACT_ACADEMY_PREREQUISITES_HTML_TITLE: 'HTML',
+  REACT_ACADEMY_PREREQUISITES_HTML_DESCRIPTION:
+    'Basics of page structure and semantic markup.',
+  REACT_ACADEMY_PREREQUISITES_HTML_CHECKLIST_1: 'Tags and attributes',
+  REACT_ACADEMY_PREREQUISITES_HTML_CHECKLIST_2: 'Semantic HTML',
+  REACT_ACADEMY_PREREQUISITES_HTML_CHECKLIST_3: 'Document structure',
+  REACT_ACADEMY_PREREQUISITES_JS_TITLE: 'JavaScript',
+  REACT_ACADEMY_PREREQUISITES_JS_DESCRIPTION:
+    'Basics of JavaScript programming for frontend.',
+  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_1: 'Variables and functions',
+  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_2: 'Arrays and objects',
+  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_3: 'DOM and events',
+  REACT_ACADEMY_PREREQUISITES_CSS_TITLE: 'CSS',
+  REACT_ACADEMY_PREREQUISITES_CSS_DESCRIPTION:
+    'Basics of styling and page layout.',
+  REACT_ACADEMY_PREREQUISITES_CSS_CHECKLIST_1: 'Selectors and properties',
+  REACT_ACADEMY_PREREQUISITES_CSS_CHECKLIST_2: 'Flexbox and layout',
+  REACT_ACADEMY_PREREQUISITES_CSS_CHECKLIST_3: 'Responsive design',
   REACT_ACADEMY_TIP_CTA_TITLE: 'Our tip',
   REACT_ACADEMY_TIP_CTA_DESCRIPTION:
     'If you want to continue your development after completing the academy, sign up for our mentoring program. An experienced mentor will guide you through creating your own project.',
@@ -386,11 +434,32 @@ export const TRANSLATIONS_EN: Record<TranslationKey, string> = {
   REACT_ACADEMY_TEST_CTA_TITLE: 'Test your knowledge',
   REACT_ACADEMY_TEST_CTA_DESCRIPTION:
     'Not sure if you have sufficient knowledge to enter React Academy? Try our short test and find out if you are ready.',
-  REACT_ACADEMY_TEST_CTA_BUTTON: 'Start test',
-  REACT_ACADEMY_SCHEDULE_HEADING_BEFORE: 'How and when does the academy',
-  REACT_ACADEMY_SCHEDULE_HEADING_HIGHLIGHT: 'take place?',
+  REACT_ACADEMY_TEST_CTA_BUTTON: 'Try practical tasks',
+  REACT_ACADEMY_SCHEDULE_HEADING_BEFORE: '',
+  REACT_ACADEMY_SCHEDULE_HEADING_HIGHLIGHT: 'How and when does the academy',
+  REACT_ACADEMY_SCHEDULE_HEADING_AFTER: ' take place?',
   REACT_ACADEMY_SCHEDULE_DESCRIPTION:
     'Lessons take place on weekdays in the evening hours in Prague. We will publish specific dates before registration opens.',
+  REACT_ACADEMY_SCHEDULE_TERMS_TITLE: 'Dates',
+  REACT_ACADEMY_SCHEDULE_TERMS_INTRO_1:
+    'The course runs from 23 March to 25 April and includes 12 in-person lessons in Prague.',
+  REACT_ACADEMY_SCHEDULE_TERMS_INTRO_2:
+    'Classes take place regularly on Mondays and Wednesdays from 18:00 to 21:00, except Monday 13 April.',
+  REACT_ACADEMY_SCHEDULE_TERMS_INTRO_3:
+    'The program also includes intensive Saturday blocks on 11 April, 18 April and 25 April, always from 9:00 to 16:00.',
+  REACT_ACADEMY_SCHEDULE_CALENDAR_LABEL: 'Add to calendar:',
+  REACT_ACADEMY_SCHEDULE_DATE_1: '23 Mar 2026 (Mon) 18:00–21:00',
+  REACT_ACADEMY_SCHEDULE_DATE_2: '25 Mar 2026 (Wed) 18:00–21:00',
+  REACT_ACADEMY_SCHEDULE_DATE_3: '30 Mar 2026 (Mon) 18:00–21:00',
+  REACT_ACADEMY_SCHEDULE_DATE_4: '01 Apr 2026 (Wed) 18:00–21:00',
+  REACT_ACADEMY_SCHEDULE_DATE_5: '06 Apr 2026 (Mon) 18:00–21:00',
+  REACT_ACADEMY_SCHEDULE_DATE_6: '08 Apr 2026 (Mon) 18:00–21:00',
+  REACT_ACADEMY_SCHEDULE_DATE_7: '11 Apr 2026 (Sat) 9:00–16:00',
+  REACT_ACADEMY_SCHEDULE_DATE_8: '15 Apr 2026 (Wed) 18:00–21:00',
+  REACT_ACADEMY_SCHEDULE_DATE_9: '18 Apr 2026 (Sat) 9:00–16:00',
+  REACT_ACADEMY_SCHEDULE_DATE_10: '20 Apr 2026 (Mon) 18:00–21:00',
+  REACT_ACADEMY_SCHEDULE_DATE_11: '22 Apr 2026 (Wed) 18:00–21:00',
+  REACT_ACADEMY_SCHEDULE_DATE_12: '25 Apr 2026 (Sat) 9:00–16:00',
   AI_JAM_HERO_HEADING_BEFORE: 'Regular',
   AI_JAM_HERO_HEADING_HIGHLIGHT: 'AI Jam',
   AI_JAM_HERO_SUBHEADING_1:
