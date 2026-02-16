@@ -33,7 +33,6 @@ export const WhatYouGonnaLearnSection: React.FC = async () => {
                 {t.REACT_ACADEMY_LEARN_CHECKLIST_SUBHEADING}
               </p>
               <Checklist
-                variant="coral"
                 items={[
                   t.REACT_ACADEMY_LEARN_CARD_1_CHECKLIST_1,
                   t.REACT_ACADEMY_LEARN_CARD_1_CHECKLIST_2,
@@ -58,7 +57,6 @@ export const WhatYouGonnaLearnSection: React.FC = async () => {
                 {t.REACT_ACADEMY_LEARN_CHECKLIST_SUBHEADING}
               </p>
               <Checklist
-                variant="coral"
                 items={[
                   t.REACT_ACADEMY_LEARN_CARD_2_CHECKLIST_1,
                   t.REACT_ACADEMY_LEARN_CARD_2_CHECKLIST_2,
@@ -83,7 +81,6 @@ export const WhatYouGonnaLearnSection: React.FC = async () => {
                 {t.REACT_ACADEMY_LEARN_CHECKLIST_SUBHEADING}
               </p>
               <Checklist
-                variant="coral"
                 items={[
                   t.REACT_ACADEMY_LEARN_CARD_3_CHECKLIST_1,
                   t.REACT_ACADEMY_LEARN_CARD_3_CHECKLIST_2,

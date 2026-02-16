@@ -78,7 +78,6 @@ export const CourseCard: React.FC<CourseCardProps> = async ({
       {bullets && bullets.length > 0 && (
         <Checklist
           items={bullets}
-          variant="coral"
           className={style.bulletList}
           ariaLabel={title}
         />
