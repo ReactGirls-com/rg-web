@@ -452,15 +452,15 @@ export const TRANSLATIONS_CS = {
     'Připravili jsme si pro tebe několik krátkých úloh, na kterých si své dosavadní znalosti můžeš vyzkoušet v praxi. Zkus si úlohy vyplnit a zjisti tak, kde potřebuješ znalosti doplnit.',
   REACT_ACADEMY_TEST_CTA_BUTTON: 'Vyzkoušej si praktické úlohy',
   REACT_ACADEMY_SCHEDULE_HEADING_BEFORE: '',
-  REACT_ACADEMY_SCHEDULE_HEADING_HIGHLIGHT: 'Jak a kdy akademie',
-  REACT_ACADEMY_SCHEDULE_HEADING_AFTER: ' probíhá?',
+  REACT_ACADEMY_SCHEDULE_HEADING_HIGHLIGHT: 'Jak a kdy',
+  REACT_ACADEMY_SCHEDULE_HEADING_AFTER: ' akademie probíhá?',
   REACT_ACADEMY_SCHEDULE_DESCRIPTION:
     'Lekce probíhají ve všední dny ve večerních hodinách v Praze. Konkrétní termíny zveřejníme před začátkem přihlašování.',
   REACT_ACADEMY_SCHEDULE_TERMS_TITLE: 'Termíny',
   REACT_ACADEMY_SCHEDULE_TERMS_INTRO_1:
-    'Kurz probíhá od 23. března do 25. dubna a zahrnuje celkem 12 prezenčních lekcí v Praze.',
+    'Kurz probíhá od **23. března** do **25. dubna** a zahrnuje celkem **12 prezenčních lekcí** v Praze.',
   REACT_ACADEMY_SCHEDULE_TERMS_INTRO_2:
-    'Výuka probíhá pravidelně v pondělí a středu od 18:00 do 21:00, s výjimkou pondělí 13. 4.',
+    'Výuka probíhá pravidelně v **pondělí a středu** od **18:00 do 21:00**, s výjimkou pondělí **13. 4.** Součástí programu jsou také intenzivní **sobotní bloky** v termínech **11. 4., 18. 4. a 25. 4.**, vždy od **9:00 do 16:00**.',
   REACT_ACADEMY_SCHEDULE_TERMS_INTRO_3:
     'Součástí programu jsou také intenzivní sobotní bloky v termínech 11. 4., 18. 4. a 25. 4., vždy od 9:00 do 16:00.',
   REACT_ACADEMY_SCHEDULE_CALENDAR_LABEL: 'Zapiš si do kalendáře:',

@@ -462,15 +462,15 @@ export const TRANSLATIONS_EN: Record<TranslationKey, string> = {
     'We have prepared several short tasks for you to practice your current knowledge. Try to complete the tasks and find out where you need to supplement your knowledge.',
   REACT_ACADEMY_TEST_CTA_BUTTON: 'Try practical tasks',
   REACT_ACADEMY_SCHEDULE_HEADING_BEFORE: '',
-  REACT_ACADEMY_SCHEDULE_HEADING_HIGHLIGHT: 'How and when does the academy',
-  REACT_ACADEMY_SCHEDULE_HEADING_AFTER: ' take place?',
+  REACT_ACADEMY_SCHEDULE_HEADING_HIGHLIGHT: 'How and when',
+  REACT_ACADEMY_SCHEDULE_HEADING_AFTER: ' does the academy take place?',
   REACT_ACADEMY_SCHEDULE_DESCRIPTION:
     'Lessons take place on weekdays in the evening hours in Prague. We will publish specific dates before registration opens.',
   REACT_ACADEMY_SCHEDULE_TERMS_TITLE: 'Dates',
   REACT_ACADEMY_SCHEDULE_TERMS_INTRO_1:
-    'The course runs from 23 March to 25 April and includes 12 in-person lessons in Prague.',
+    'The course runs from **23 March** to **25 April** and includes **12 in-person lessons** in Prague.',
   REACT_ACADEMY_SCHEDULE_TERMS_INTRO_2:
-    'Classes take place regularly on Mondays and Wednesdays from 18:00 to 21:00, except Monday 13 April.',
+    'Classes take place regularly on **Mondays and Wednesdays** from **18:00 to 21:00**, except Monday **13 April**. The program also includes intensive **Saturday blocks** on **11 April, 18 April and 25 April**, always from **9:00 to 16:00**.',
   REACT_ACADEMY_SCHEDULE_TERMS_INTRO_3:
     'The program also includes intensive Saturday blocks on 11 April, 18 April and 25 April, always from 9:00 to 16:00.',
   REACT_ACADEMY_SCHEDULE_CALENDAR_LABEL: 'Add to calendar:',
