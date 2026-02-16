@@ -2,18 +2,18 @@ import {
   getTranslationsWithLocale,
   getTranslations,
   getLocaleFromParams,
+  getLocalizedPercentSuffix,
 } from '@/src/utils/getTranslations';
 import { SecondaryHero } from '@/src/components/SecondaryHero';
 import { COLORS } from '@/src/styles/color';
 import { Section } from '@/src/components/Section';
 import { HeadingHighlight } from '@/src/components/HeadingHighlight';
 import { AreYouLostBanner } from '@/src/components/AreYouLostBanner/AreYouLostBanner';
-import { WhyChooseCoursesSection } from './components';
+import { WhyChooseCoursesSection, CoursesCardsSection } from './components';
 import { StepProcess } from '@/src/components/StepProcess';
 import { getPageAlternates } from '@/src/utils/getCanonicalUrl';
 import { AppLocalePageProps } from '@/src/utils/types';
 import { SUFFIX } from '@/src/constants';
-import { getLocalizedPercentSuffix } from '@/src/utils/getTranslations';
 
 export const generateMetadata = async ({ params }: AppLocalePageProps) => {
   const locale = await getLocaleFromParams(params);
@@ -71,10 +71,7 @@ const CoursesPage: React.FC = async () => {
           </>
         }
       >
-        <AreYouLostBanner
-          title={t.COURSES_REGISTRATION_BANNER_DESCRIPTION}
-          description=""
-        />
+        <CoursesCardsSection />
       </Section>
       <WhyChooseCoursesSection />
       <StepProcess

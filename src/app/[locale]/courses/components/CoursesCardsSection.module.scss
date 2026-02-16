@@ -1,0 +1,54 @@
+.cardsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  width: 100%;
+
+  @media (min-width: $screen-md-min) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.iconReact {
+  background: url('../../../../assets/code.svg') no-repeat center center;
+  background-size: 28px 28px;
+}
+
+.iconBackend {
+  background: url('../../../../assets/computer.svg') no-repeat center center;
+  background-size: 28px 28px;
+}
+
+.iconAi {
+  background: url('../../../../assets/suitcase.svg') no-repeat center center;
+  background-size: 28px 28px;
+}
+
+.additionalDescription {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  color: $cursed-gray;
+  font-size: 0.9rem;
+}
+
+.hoursIcon {
+  width: 15px;
+  height: 15px;
+  background-color: $cursed-gray;
+  mask-image: url('../../../../assets/clock.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.typeIcon {
+  width: 15px;
+  height: 15px;
+  background-color: $cursed-gray;
+  mask-image: url('../../../../assets/people.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}

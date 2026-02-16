@@ -25,9 +25,10 @@ type SecondaryHeroProps = {
   headingBefore: string;
   headingHighlight: string;
   headingAfter?: string;
-  subheading: string;
+  subheading: string | ReactNode;
   dataCards?: DataCardItem[];
   children?: ReactNode;
+  contentAfterCards?: ReactNode;
 };
 
 export const SecondaryHero: React.FC<SecondaryHeroProps> = ({
@@ -39,6 +40,7 @@ export const SecondaryHero: React.FC<SecondaryHeroProps> = ({
   subheading,
   dataCards,
   children,
+  contentAfterCards,
 }) => (
   <Section
     titleText={titleText}
@@ -73,5 +75,6 @@ export const SecondaryHero: React.FC<SecondaryHeroProps> = ({
         ))}
       </div>
     )}
+    {contentAfterCards}
   </Section>
 );

@@ -1,0 +1,33 @@
+.cardsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  width: 100%;
+
+  @media (min-width: $screen-md-min) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.iconReact {
+  background: url('../../../../../../assets/target.svg') no-repeat center center;
+  background-size: 24px 24px;
+}
+
+.iconGit {
+  background: url('../../../../../../assets/target.svg') no-repeat center center;
+  background-size: 24px 24px;
+}
+
+.iconTypescript {
+  background: url('../../../../../../assets/target.svg') no-repeat center center;
+  background-size: 24px 24px;
+}
+
+.learnChecklistSubheading {
+  margin: 0 0 12px;
+  color: $cursed-gray;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5;
+}

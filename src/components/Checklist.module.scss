@@ -1,0 +1,31 @@
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 8px;
+  color: $cursed-gray;
+  font-size: 1rem;
+  line-height: 1.6;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.icon {
+  flex-shrink: 0;
+  width: 12px;
+  height: 12px;
+  background-color: $grapefruit-pulp;
+  background-image: none;
+  mask-image: url('../assets/checkmark.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}

@@ -63,4 +63,8 @@
   @media (min-width: $screen-md-min) {
     font-size: 1.15rem;
   }
+
+  p + p {
+    margin-top: 1em;
+  }
 }

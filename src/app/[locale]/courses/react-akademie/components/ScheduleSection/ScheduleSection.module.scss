@@ -1,0 +1,80 @@
+.scheduleCard {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  background-color: $crystal-cut;
+}
+
+.scheduleIconWrapper {
+  margin-bottom: 24px;
+}
+
+.iconSchedule {
+  background: url('../../../../../../assets/target.svg') no-repeat center center;
+  background-size: 24px 24px;
+}
+
+.scheduleCardTitle {
+  margin-bottom: 16px;
+  color: $carbon-fiber;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.3;
+}
+
+.scheduleCardDescription {
+  margin-bottom: 16px;
+  color: $cursed-gray;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.scheduleCalendarLabel {
+  margin: 16px 0 12px;
+  color: $cursed-gray;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.scheduleDateItemHighlight {
+  color: $aztec-atom;
+}
+
+.scheduleDatesListList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $screen-md-min) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 24px;
+  }
+}
+
+.scheduleDatesListItem {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 8px;
+  color: $cursed-gray;
+  font-size: 1rem;
+  line-height: 1.6;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.scheduleDatesListIcon {
+  flex-shrink: 0;
+  width: 12px;
+  height: 12px;
+  background-color: $grapefruit-pulp;
+  background-image: none;
+  mask-image: url('../../../../../../assets/checkmark.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}

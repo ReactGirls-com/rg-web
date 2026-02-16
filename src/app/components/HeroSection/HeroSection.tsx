@@ -2,12 +2,11 @@ import Image from 'next/image';
 
 import { StatsCard } from './StatsCard';
 import { getTranslationsWithLocale } from '@/src/utils/getTranslations';
-import { SOCIAL_LINKS } from '@/src/constants';
-import { IconButton } from '@/src/components/IconButton';
 import { HeadingHighlight } from '@/src/components/HeadingHighlight';
 import { COLORS } from '@/src/styles/color';
 import { Section } from '@/src/components/Section';
 import { BorderBox } from '@/src/components/BorderBox';
+import { SocialLinks } from '@/src/components/SocialLinks';
 import heroImage from '../../../assets/main.webp';
 import { HeroButtons } from './HeroButtons';
 import { HeroTypewriter } from './HeroTypewriter';
@@ -90,21 +89,10 @@ export const HeroSection: React.FC = async () => {
       </div>
 
       <div className={style.socialSection}>
-        <nav
+        <SocialLinks
+          ariaLabel={t.ARIA_SOCIAL_MEDIA_LINKS}
           className={style.socialLinks}
-          aria-label={t.ARIA_SOCIAL_MEDIA_LINKS}
-        >
-          {SOCIAL_LINKS.map(({ label, icon, href, ariaLabel }) => (
-            <IconButton
-              key={label}
-              href={href}
-              variant="primary"
-              backgroundColor={COLORS.crystalCut}
-              aria-label={ariaLabel}
-              icon={icon}
-            />
-          ))}
-        </nav>
+        />
       </div>
     </Section>
   );
