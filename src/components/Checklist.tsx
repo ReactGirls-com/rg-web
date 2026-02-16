@@ -6,14 +6,16 @@ type ChecklistProps = {
   items: string[];
   ariaLabel?: string;
   variant?: 'default' | 'coral';
+  className?: string;
 };
 
 export const Checklist: React.FC<ChecklistProps> = ({
   items,
   ariaLabel = 'Checklist',
   variant = 'default',
+  className,
 }) => (
-  <ul className={style.list} aria-label={ariaLabel}>
+  <ul className={clsx(style.list, className)} aria-label={ariaLabel}>
     {items.map((item) => (
       <li key={item} className={style.item}>
         <span

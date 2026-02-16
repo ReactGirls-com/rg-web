@@ -3,6 +3,7 @@ import clsx from 'clsx';
 
 import { BorderBox } from '@/src/components/BorderBox';
 import { Button } from '@/src/components/Button';
+import { Checklist } from '@/src/components/Checklist';
 import { getTranslationsWithLocale } from '@/src/utils/getTranslations';
 import style from './CourseCard.module.scss';
 
@@ -75,11 +76,12 @@ export const CourseCard: React.FC<CourseCardProps> = async ({
       {additionalDescription}
 
       {bullets && bullets.length > 0 && (
-        <ul className={style.bulletList}>
-          {bullets.map((bullet, index) => (
-            <li key={index}>{bullet}</li>
-          ))}
-        </ul>
+        <Checklist
+          items={bullets}
+          variant="coral"
+          className={style.bulletList}
+          ariaLabel={title}
+        />
       )}
 
       <div className={style.buttonsWrapper}>

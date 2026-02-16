@@ -70,7 +70,7 @@ const ReactAcademyPage: React.FC<AppLocalePageProps> = async ({ params }) => {
           >
             <Button
               variant="explodingStar"
-              href={`${getLocaleAwareLink(MENTORING_LINK, locale)}#research`}
+              href={getLocaleAwareLink(MENTORING_LINK, locale)}
             >
               {t.REACT_ACADEMY_TIP_CTA_BUTTON}
             </Button>

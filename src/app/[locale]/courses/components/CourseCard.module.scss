@@ -48,27 +48,7 @@
 }
 
 .bulletList {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
   margin-top: 8px;
-  list-style: none;
-}
-
-.bulletList li {
-  position: relative;
-  padding-left: 24px;
-  color: $cursed-gray;
-  font-size: 0.95rem;
-  line-height: 1.5;
-
-  &::before {
-    content: '✓';
-    position: absolute;
-    left: 0;
-    color: $grapefruit-pulp;
-    font-weight: 600;
-  }
 }
 
 .buttonsWrapper {

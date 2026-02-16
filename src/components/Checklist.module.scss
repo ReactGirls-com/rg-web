@@ -7,7 +7,7 @@
 .item {
   display: flex;
   gap: 12px;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 8px;
   color: $cursed-gray;
   font-size: 1rem;
@@ -20,8 +20,8 @@
 
 .icon {
   flex-shrink: 0;
-  width: 24px;
-  height: 24px;
+  width: 12px;
+  height: 12px;
 }
 
 .iconCoral {

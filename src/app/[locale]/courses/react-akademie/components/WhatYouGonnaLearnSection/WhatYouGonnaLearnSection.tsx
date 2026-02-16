@@ -17,6 +17,7 @@ export const WhatYouGonnaLearnSection: React.FC = async () => {
           <HeadingHighlight highlightColor={COLORS.paleLavender}>
             {t.REACT_ACADEMY_LEARN_HEADING_HIGHLIGHT}
           </HeadingHighlight>
+          {t.REACT_ACADEMY_LEARN_HEADING_AFTER}
         </>
       }
     >
