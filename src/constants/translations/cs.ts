@@ -401,32 +401,55 @@ export const TRANSLATIONS_CS = {
   REACT_ACADEMY_PREREQUISITES_HEADING_BEFORE: 'Co bys měla znát',
   REACT_ACADEMY_PREREQUISITES_HEADING_HIGHLIGHT: 'před první lekcí?',
   REACT_ACADEMY_PREREQUISITES_DESCRIPTION:
-    'Abys z kurzu vytěžila maximum, měla bys mít základní znalosti HTML, CSS a JavaScriptu. Pokud si nejsi jistá, zda máš dostatečné znalosti, vyzkoušej si náš test.',
+    'Není nutné, abys uměla už před první lekcí perfektně programovat. Aby ale pro tebe byl průchod akademií co nejplynulejší a z akademie sis toho odnesla co nejvíce, je důležité, aby ses v určitých oblastech už předem orientovala. Tyto oblasti jsme níže vypsali v bodech. Prosím, projdi si je a případné mezery si před první lekcí zkus doplnit.',
   REACT_ACADEMY_PREREQUISITES_HTML_TITLE: 'HTML',
   REACT_ACADEMY_PREREQUISITES_HTML_DESCRIPTION:
     'Základy struktury webové stránky a sémantického značkování.',
-  REACT_ACADEMY_PREREQUISITES_HTML_CHECKLIST_1: 'Značky a atributy',
-  REACT_ACADEMY_PREREQUISITES_HTML_CHECKLIST_2: 'Sémantické HTML',
-  REACT_ACADEMY_PREREQUISITES_HTML_CHECKLIST_3: 'Struktura dokumentu',
+  REACT_ACADEMY_PREREQUISITES_HTML_CHECKLIST_1:
+    'základní elementy pro formátování textu (odstavce, nadpisy, seznamy)',
+  REACT_ACADEMY_PREREQUISITES_HTML_CHECKLIST_2: 'práce s odkazy',
+  REACT_ACADEMY_PREREQUISITES_HTML_CHECKLIST_3: 'práce s obrázky',
+  REACT_ACADEMY_PREREQUISITES_HTML_CHECKLIST_4:
+    'formulářové prvky (různé typy elementu input, elementy select, textarea a label)',
+  REACT_ACADEMY_PREREQUISITES_HTML_CHECKLIST_5: 'atributy class a id',
   REACT_ACADEMY_PREREQUISITES_JS_TITLE: 'JavaScript',
   REACT_ACADEMY_PREREQUISITES_JS_DESCRIPTION:
     'Základy programování v JavaScriptu pro frontend.',
-  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_1: 'Proměnné a funkce',
-  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_2: 'Pole a objekty',
-  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_3: 'DOM a události',
+  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_1: 'proměnné a datové typy',
+  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_2: 'podmínky a podmínkový operátor',
+  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_3:
+    'funkce, jejich parametry a návratová hodnota (včetně anonymních funkcí a šipkové notace)',
+  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_4:
+    'pole a funkcionální práce s ním (funkce map, filter, toSorted, find, forEach a podobné)',
+  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_5:
+    'objekty a jejich vlastnosti, destrukturalizace objektu',
+  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_6: 'použití document.querySelector',
+  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_7:
+    'modifikace elementu pomocí vlastností jako innerHTML, classList, style a podobných',
+  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_8:
+    'událostmi řízené programování pomocí addEventListener a objekt události (např. preventDefault)',
+  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_9:
+    'rozdělení programu do více souborů s použitím export a import',
+  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_10:
+    'načítání a odesílání dat ve formátu JSON pomocí funkce fetch (včetně základní představy o protokolu HTTP)',
+  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_11:
+    'asynchronní funkce (použití async a await)',
   REACT_ACADEMY_PREREQUISITES_CSS_TITLE: 'CSS',
   REACT_ACADEMY_PREREQUISITES_CSS_DESCRIPTION:
     'Základy stylování a rozložení stránky.',
-  REACT_ACADEMY_PREREQUISITES_CSS_CHECKLIST_1: 'Selektory a vlastnosti',
-  REACT_ACADEMY_PREREQUISITES_CSS_CHECKLIST_2: 'Flexbox a layout',
-  REACT_ACADEMY_PREREQUISITES_CSS_CHECKLIST_3: 'Responzivní design',
+  REACT_ACADEMY_PREREQUISITES_CSS_CHECKLIST_1: 'základní selektory',
+  REACT_ACADEMY_PREREQUISITES_CSS_CHECKLIST_2:
+    'základní vlastnosti pro formátování textu',
+  REACT_ACADEMY_PREREQUISITES_CSS_CHECKLIST_3: 'nastavení barev text a pozadí',
+  REACT_ACADEMY_PREREQUISITES_CSS_CHECKLIST_4:
+    'vlastnosti margin, border, padding, width a height',
   REACT_ACADEMY_TIP_CTA_TITLE: 'Náš tip',
   REACT_ACADEMY_TIP_CTA_DESCRIPTION:
     'Pokud přemýšlíš nad účastí v našem podzimním mentoringu, React akademie je ideální jako přípravná fáze! Budeš si totiž jistá při práci s technologiemi, které ve svém projektu v mentoringu budeš na podzim používat a zajistíš si tak větší posun a plynulejší průběh programem.',
   REACT_ACADEMY_TIP_CTA_BUTTON: 'Zjisti víc o mentoringu',
   REACT_ACADEMY_TEST_CTA_TITLE: 'Otestuj si své znalosti',
   REACT_ACADEMY_TEST_CTA_DESCRIPTION:
-    'Nejsi si jistá, jestli máš dostatečné znalosti pro vstup do React akademie? Vyzkoušej si náš krátký test a zjisti, jestli jsi připravená.',
+    'Připravili jsme si pro tebe několik krátkých úloh, na kterých si své dosavadní znalosti můžeš vyzkoušet v praxi. Zkus si úlohy vyplnit a zjisti tak, kde potřebuješ znalosti doplnit.',
   REACT_ACADEMY_TEST_CTA_BUTTON: 'Vyzkoušej si praktické úlohy',
   REACT_ACADEMY_SCHEDULE_HEADING_BEFORE: '',
   REACT_ACADEMY_SCHEDULE_HEADING_HIGHLIGHT: 'Jak a kdy akademie',

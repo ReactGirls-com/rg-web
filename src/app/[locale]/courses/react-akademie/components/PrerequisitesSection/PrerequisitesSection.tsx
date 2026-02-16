@@ -1,3 +1,5 @@
+import clsx from 'clsx';
+
 import { Section } from '@/src/components/Section';
 import { HeadingHighlight } from '@/src/components/HeadingHighlight';
 import { BorderBox } from '@/src/components/BorderBox';
@@ -29,48 +31,50 @@ export const PrerequisitesSection: React.FC = async () => {
           <h3 className={style.cardTitle}>
             {t.REACT_ACADEMY_PREREQUISITES_HTML_TITLE}
           </h3>
-          <p className={style.cardDescription}>
-            {t.REACT_ACADEMY_PREREQUISITES_HTML_DESCRIPTION}
-          </p>
           <Checklist
             items={[
               t.REACT_ACADEMY_PREREQUISITES_HTML_CHECKLIST_1,
               t.REACT_ACADEMY_PREREQUISITES_HTML_CHECKLIST_2,
               t.REACT_ACADEMY_PREREQUISITES_HTML_CHECKLIST_3,
+              t.REACT_ACADEMY_PREREQUISITES_HTML_CHECKLIST_4,
+              t.REACT_ACADEMY_PREREQUISITES_HTML_CHECKLIST_5,
             ]}
             ariaLabel={t.REACT_ACADEMY_PREREQUISITES_HTML_TITLE}
           />
         </BorderBox>
         <BorderBox as="article" className={style.card}>
           <h3 className={style.cardTitle}>
-            {t.REACT_ACADEMY_PREREQUISITES_JS_TITLE}
-          </h3>
-          <p className={style.cardDescription}>
-            {t.REACT_ACADEMY_PREREQUISITES_JS_DESCRIPTION}
-          </p>
-          <Checklist
-            items={[
-              t.REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_1,
-              t.REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_2,
-              t.REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_3,
-            ]}
-            ariaLabel={t.REACT_ACADEMY_PREREQUISITES_JS_TITLE}
-          />
-        </BorderBox>
-        <BorderBox as="article" className={style.card}>
-          <h3 className={style.cardTitle}>
             {t.REACT_ACADEMY_PREREQUISITES_CSS_TITLE}
           </h3>
-          <p className={style.cardDescription}>
-            {t.REACT_ACADEMY_PREREQUISITES_CSS_DESCRIPTION}
-          </p>
           <Checklist
             items={[
               t.REACT_ACADEMY_PREREQUISITES_CSS_CHECKLIST_1,
               t.REACT_ACADEMY_PREREQUISITES_CSS_CHECKLIST_2,
               t.REACT_ACADEMY_PREREQUISITES_CSS_CHECKLIST_3,
+              t.REACT_ACADEMY_PREREQUISITES_CSS_CHECKLIST_4,
             ]}
             ariaLabel={t.REACT_ACADEMY_PREREQUISITES_CSS_TITLE}
+          />
+        </BorderBox>
+        <BorderBox as="article" className={clsx(style.card, style.cardJs)}>
+          <h3 className={style.cardTitle}>
+            {t.REACT_ACADEMY_PREREQUISITES_JS_TITLE}
+          </h3>
+          <Checklist
+            items={[
+              t.REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_1,
+              t.REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_2,
+              t.REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_3,
+              t.REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_4,
+              t.REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_5,
+              t.REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_6,
+              t.REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_7,
+              t.REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_8,
+              t.REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_9,
+              t.REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_10,
+              t.REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_11,
+            ]}
+            ariaLabel={t.REACT_ACADEMY_PREREQUISITES_JS_TITLE}
           />
         </BorderBox>
       </div>

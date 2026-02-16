@@ -409,32 +409,57 @@ export const TRANSLATIONS_EN: Record<TranslationKey, string> = {
   REACT_ACADEMY_PREREQUISITES_HEADING_BEFORE: 'What should you know',
   REACT_ACADEMY_PREREQUISITES_HEADING_HIGHLIGHT: 'before the first lesson?',
   REACT_ACADEMY_PREREQUISITES_DESCRIPTION:
-    'To get the most out of the course, you should have basic knowledge of HTML, CSS, and JavaScript. If you are not sure whether you have sufficient knowledge, try our test.',
+    'You do not need to be able to program perfectly before the first lesson. However, for your academy journey to be as smooth as possible and for you to get the most out of the academy, it is important that you are already oriented in certain areas beforehand. We have listed these areas below. Please go through them and try to fill in any gaps before the first lesson.',
   REACT_ACADEMY_PREREQUISITES_HTML_TITLE: 'HTML',
   REACT_ACADEMY_PREREQUISITES_HTML_DESCRIPTION:
     'Basics of page structure and semantic markup.',
-  REACT_ACADEMY_PREREQUISITES_HTML_CHECKLIST_1: 'Tags and attributes',
-  REACT_ACADEMY_PREREQUISITES_HTML_CHECKLIST_2: 'Semantic HTML',
-  REACT_ACADEMY_PREREQUISITES_HTML_CHECKLIST_3: 'Document structure',
+  REACT_ACADEMY_PREREQUISITES_HTML_CHECKLIST_1:
+    'basic elements for text formatting (paragraphs, headings, lists)',
+  REACT_ACADEMY_PREREQUISITES_HTML_CHECKLIST_2: 'working with links',
+  REACT_ACADEMY_PREREQUISITES_HTML_CHECKLIST_3: 'working with images',
+  REACT_ACADEMY_PREREQUISITES_HTML_CHECKLIST_4:
+    'form elements (various input types, select, textarea and label)',
+  REACT_ACADEMY_PREREQUISITES_HTML_CHECKLIST_5: 'class and id attributes',
   REACT_ACADEMY_PREREQUISITES_JS_TITLE: 'JavaScript',
   REACT_ACADEMY_PREREQUISITES_JS_DESCRIPTION:
     'Basics of JavaScript programming for frontend.',
-  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_1: 'Variables and functions',
-  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_2: 'Arrays and objects',
-  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_3: 'DOM and events',
+  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_1: 'variables and data types',
+  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_2:
+    'conditions and conditional operator',
+  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_3:
+    'functions, their parameters and return value (including anonymous functions and arrow notation)',
+  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_4:
+    'arrays and functional work with them (map, filter, toSorted, find, forEach and similar)',
+  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_5:
+    'objects and their properties, object destructuring',
+  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_6: 'use of document.querySelector',
+  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_7:
+    'modifying elements using properties like innerHTML, classList, style and similar',
+  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_8:
+    'event-driven programming using addEventListener and the event object (e.g. preventDefault)',
+  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_9:
+    'splitting the program into multiple files using export and import',
+  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_10:
+    'loading and sending data in JSON format using fetch (including basic understanding of HTTP protocol)',
+  REACT_ACADEMY_PREREQUISITES_JS_CHECKLIST_11:
+    'asynchronous functions (using async and await)',
   REACT_ACADEMY_PREREQUISITES_CSS_TITLE: 'CSS',
   REACT_ACADEMY_PREREQUISITES_CSS_DESCRIPTION:
     'Basics of styling and page layout.',
-  REACT_ACADEMY_PREREQUISITES_CSS_CHECKLIST_1: 'Selectors and properties',
-  REACT_ACADEMY_PREREQUISITES_CSS_CHECKLIST_2: 'Flexbox and layout',
-  REACT_ACADEMY_PREREQUISITES_CSS_CHECKLIST_3: 'Responsive design',
+  REACT_ACADEMY_PREREQUISITES_CSS_CHECKLIST_1: 'basic selectors',
+  REACT_ACADEMY_PREREQUISITES_CSS_CHECKLIST_2:
+    'basic properties for text formatting',
+  REACT_ACADEMY_PREREQUISITES_CSS_CHECKLIST_3:
+    'setting text and background colors',
+  REACT_ACADEMY_PREREQUISITES_CSS_CHECKLIST_4:
+    'properties margin, border, padding, width and height',
   REACT_ACADEMY_TIP_CTA_TITLE: 'Our tip',
   REACT_ACADEMY_TIP_CTA_DESCRIPTION:
     'If you want to continue your development after completing the academy, sign up for our mentoring program. An experienced mentor will guide you through creating your own project.',
   REACT_ACADEMY_TIP_CTA_BUTTON: 'Find out more about mentoring',
   REACT_ACADEMY_TEST_CTA_TITLE: 'Test your knowledge',
   REACT_ACADEMY_TEST_CTA_DESCRIPTION:
-    'Not sure if you have sufficient knowledge to enter React Academy? Try our short test and find out if you are ready.',
+    'We have prepared several short tasks for you to practice your current knowledge. Try to complete the tasks and find out where you need to supplement your knowledge.',
   REACT_ACADEMY_TEST_CTA_BUTTON: 'Try practical tasks',
   REACT_ACADEMY_SCHEDULE_HEADING_BEFORE: '',
   REACT_ACADEMY_SCHEDULE_HEADING_HIGHLIGHT: 'How and when does the academy',
