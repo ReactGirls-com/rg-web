@@ -2,6 +2,7 @@ import {
   getTranslationsWithLocale,
   getTranslations,
   getLocaleFromParams,
+  getHourSuffix,
 } from '@/src/utils/getTranslations';
 import { SecondaryHero } from '@/src/components/SecondaryHero';
 import { CtaBanner } from '@/src/components/CtaBanner';
@@ -45,7 +46,7 @@ const ReactAcademyPage: React.FC<AppLocalePageProps> = async ({ params }) => {
         dataCards={[
           {
             value: 45,
-            valueSuffix: t.SUFFIX_HOURS,
+            valueSuffix: getHourSuffix(locale, 45),
             label: t.REACT_ACADEMY_STATS_HOURS,
           },
           {
