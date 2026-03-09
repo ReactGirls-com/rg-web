@@ -75,6 +75,8 @@ export const CoursesCardsSection: React.FC = async () => {
           iconColor={COLORS.paleLavender}
           title={t.COURSES_CARD_AI_TITLE}
           description={t.COURSES_CARD_AI_DESCRIPTION}
+          showBadge
+          badgeText={t.AI_JAM_EVENT_STATUS}
           primaryButtonText={t.COURSES_CARD_REACT_PRIMARY_BUTTON}
           primaryButtonHref={AI_JAM_REGISTRATION_LINK}
           primaryButtonVariant="explodingStar"

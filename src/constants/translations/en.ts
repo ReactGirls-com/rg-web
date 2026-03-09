@@ -499,7 +499,7 @@ export const TRANSLATIONS_EN: Record<TranslationKey, string> = {
   AI_JAM_STATS_LOCATION_SUFFIX: 'as venue',
   AI_JAM_STATS_PRICE: 'thanks to our partners’ support',
   AI_JAM_STATS_PRICE_VALUE: 'only 350 CZK',
-  AI_JAM_EVENT_STATUS: 'Registration in progress',
+  AI_JAM_EVENT_STATUS: 'Registration open',
   AI_JAM_EVENT_TITLE_BEFORE: '',
   AI_JAM_EVENT_TITLE_HIGHLIGHT: 'AI jam #1',
   AI_JAM_EVENT_TITLE_AFTER: ': Code smart, not more',
