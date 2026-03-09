@@ -38,3 +38,19 @@ export const getTranslationsWithLocale = async () => {
 
 export const getLocalizedPercentSuffix = (locale: Locale) =>
   locale.startsWith(DEFAULT_LOCALE) ? `${NNBSP}%` : '%';
+
+export const getHourSuffix = (locale: Locale, value: number) => {
+  if (locale === 'en') {
+    return value === 1 ? `${NNBSP}hour` : `${NNBSP}hours`;
+  }
+
+  if (value === 1) {
+    return `${NNBSP}hodina`;
+  }
+
+  if (value <= 4) {
+    return `${NNBSP}hodiny`;
+  }
+
+  return `${NNBSP}hodin`;
+};

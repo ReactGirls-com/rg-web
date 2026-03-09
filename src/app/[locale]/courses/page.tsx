@@ -7,7 +7,6 @@ import {
 import { SecondaryHero } from '@/src/components/SecondaryHero';
 import { COLORS } from '@/src/styles/color';
 import { Section } from '@/src/components/Section';
-import { HeadingHighlight } from '@/src/components/HeadingHighlight';
 import { AreYouLostBanner } from '@/src/components/AreYouLostBanner/AreYouLostBanner';
 import { WhyChooseCoursesSection, CoursesCardsSection } from './components';
 import { StepProcess } from '@/src/components/StepProcess';
@@ -60,20 +59,10 @@ const CoursesPage: React.FC = async () => {
         ]}
       />
 
-      <Section
-        heading={
-          <>
-            {t.COURSES_REGISTRATION_SECTION_HEADING_BEFORE}{' '}
-            <HeadingHighlight highlightColor={COLORS.grapefruitPulp}>
-              {t.COURSES_REGISTRATION_SECTION_HEADING_HIGHLIGHT}
-            </HeadingHighlight>{' '}
-            {t.COURSES_REGISTRATION_SECTION_HEADING_AFTER}
-          </>
-        }
-      >
-        <CoursesCardsSection />
-      </Section>
+      <CoursesCardsSection />
+
       <WhyChooseCoursesSection />
+
       <StepProcess
         headingBefore={t.REGISTRATION_PROCESS_SECTION_HEADING_BEFORE}
         headingHighlight={t.REGISTRATION_PROCESS_SECTION_HEADING_HIGHLIGHT}

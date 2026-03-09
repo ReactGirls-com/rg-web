@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import clsx from 'clsx';
 
 import { COLORS } from '@/src/styles/color';
 import { BorderBox } from './BorderBox';
@@ -11,6 +12,7 @@ type BasicCardProps = {
   description: string;
   iconColor?: string;
   checklistContent?: ReactNode;
+  className?: string;
 };
 
 export const BasicCard: React.FC<BasicCardProps> = ({
@@ -19,8 +21,9 @@ export const BasicCard: React.FC<BasicCardProps> = ({
   description,
   iconColor = COLORS.aztecAtom,
   checklistContent,
+  className,
 }) => (
-  <BorderBox as="article" className={style.basicCard}>
+  <BorderBox as="article" className={clsx(style.basicCard, className)}>
     <IconWrapper
       iconClassName={iconClassName}
       iconColor={iconColor}

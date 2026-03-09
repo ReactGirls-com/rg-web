@@ -1,0 +1,27 @@
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: $max-screen-width;
+
+  @media (min-width: $screen-md-min) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.description {
+  margin-top: 16px;
+}
+
+.iconComputer {
+  background-image: url('../../../../../assets/computer.svg');
+}
+
+.iconPeople {
+  background-image: url('../../../../../assets/people.svg');
+}
+
+.iconRocket {
+  background-image: url('../../../../../assets/rocket.svg');
+}

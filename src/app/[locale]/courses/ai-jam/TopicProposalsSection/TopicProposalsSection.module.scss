@@ -1,0 +1,32 @@
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: $max-screen-width;
+
+  @media (min-width: $screen-md-min) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background-color: #fff;
+}
+
+.ctaBanner {
+  margin-top: 40px;
+  background-color: $aztec-atom;
+}
+
+.iconAgent {
+  background-image: url('../../../../../assets/computer.svg');
+}
+
+.iconDesign {
+  background-image: url('../../../../../assets/people.svg');
+}
+
+.iconWorkflow {
+  background-image: url('../../../../../assets/rocket.svg');
+}

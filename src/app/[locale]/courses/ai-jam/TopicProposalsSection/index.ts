@@ -1,0 +1,1 @@
+export { TopicProposalsSection } from './TopicProposalsSection';

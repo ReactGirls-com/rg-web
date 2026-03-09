@@ -20,9 +20,13 @@ export const MEDIUM_LINK = 'https://reactgirls.medium.com/';
 export const MENTORING_FORM_LINK = 'https://forms.gle/EdLmU3fv5rpMm4W88';
 export const REACT_ACADEMY_REGISTRATION_LINK =
   'https://docs.google.com/forms/d/1Ge7IKDAzykRLro9W68YhHfQepMrP4yrVwwt216gunQA/viewform?edit_requested=true';
+export const AI_JAM_REGISTRATION_LINK =
+  'https://docs.google.com/forms/d/e/1FAIpQLSdvnq3A3bZmJdyzuRuaYZkn9MIVzgb1UL9mcAyNpCOBN6tqxQ/viewform?usp=publish-editor';
 
 export const YOUTUBE_CHANNEL_URL = 'https://www.youtube.com/@ReactGirls';
 export const PREREQUISITE_CHECK_URL = 'https://prerequisite-check.netlify.app/';
+export const AI_JAM_TOPIC_PROPOSALS_URL =
+  'https://docs.google.com/forms/d/e/1FAIpQLSd2ezAdjLa3JMJ6yNJQ-37HeXRpoEaaan7uDFFrzC59B6tBhQ/viewform?usp=publish-editor';
 
 export const SOCIAL_LINKS = [
   {

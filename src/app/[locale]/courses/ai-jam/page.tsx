@@ -2,15 +2,17 @@ import {
   getTranslationsWithLocale,
   getTranslations,
   getLocaleFromParams,
+  getHourSuffix,
 } from '@/src/utils/getTranslations';
 import { SecondaryHero } from '@/src/components/SecondaryHero';
-import { Section } from '@/src/components/Section';
-import { CtaBanner } from '@/src/components/CtaBanner';
-import { SocialLinks } from '@/src/components/SocialLinks';
 import { COLORS } from '@/src/styles/color';
 import { getPageAlternates } from '@/src/utils/getCanonicalUrl';
 import { AppLocalePageProps } from '@/src/utils/types';
-import style from './page.module.scss';
+import { Button } from '@/src/components/Button';
+import { AI_JAM_REGISTRATION_LINK } from '@/src/constants';
+import { EventIntroSection } from './EventIntroSection';
+import { AboutCourseSection } from './AboutCourseSection';
+import { TopicProposalsSection } from './TopicProposalsSection';
 
 export const generateMetadata = async ({ params }: AppLocalePageProps) => {
   const locale = await getLocaleFromParams(params);
@@ -24,36 +26,49 @@ export const generateMetadata = async ({ params }: AppLocalePageProps) => {
 };
 
 const AIJamPage: React.FC = async () => {
-  const { t } = await getTranslationsWithLocale();
+  const { locale, t } = await getTranslationsWithLocale();
 
   return (
     <>
       <SecondaryHero
-        titleColor={COLORS.aztecAtom}
+        titleColor={COLORS.paleLavender}
         headingBefore={t.AI_JAM_HERO_HEADING_BEFORE}
         headingHighlight={t.AI_JAM_HERO_HEADING_HIGHLIGHT}
-        subheading={
-          <>
-            <p>{t.AI_JAM_HERO_SUBHEADING_1}</p>
-            <p>{t.AI_JAM_HERO_SUBHEADING_2}</p>
-            <p>{t.AI_JAM_HERO_SUBHEADING_3}</p>
-          </>
-        }
-      />
-
-      <Section>
-        <CtaBanner
-          title={t.AI_JAM_CTA_TITLE}
-          description={t.AI_JAM_CTA_DESCRIPTION}
-          className={style.ctaBanner}
-          buttonsContainerClassName={style.socialLinksContainer}
+        subheading={t.AI_JAM_HERO_SUBHEADING}
+        dataCards={[
+          {
+            value: t.AI_JAM_STATS_FORMAT,
+            label: t.AI_JAM_STATS_FORMAT_SUFFIX,
+          },
+          {
+            value: 3,
+            valueSuffix: getHourSuffix(locale, 3),
+            label: t.AI_JAM_STATS_HOURS,
+          },
+          {
+            value: t.AI_JAM_STATS_LOCATION,
+            label: t.AI_JAM_STATS_LOCATION_SUFFIX,
+          },
+          {
+            value: t.AI_JAM_STATS_PRICE_VALUE,
+            label: t.AI_JAM_STATS_PRICE,
+          },
+        ]}
+      >
+        <Button
+          variant="grapefruitPulp"
+          href={AI_JAM_REGISTRATION_LINK}
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <SocialLinks
-            ariaLabel={t.ARIA_SOCIAL_MEDIA_LINKS}
-            className={style.socialLinks}
-          />
-        </CtaBanner>
-      </Section>
+          {t.REACT_ACADEMY_HERO_BUTTON}
+        </Button>
+      </SecondaryHero>
+      <AboutCourseSection />
+
+      <EventIntroSection />
+
+      <TopicProposalsSection />
     </>
   );
 };
