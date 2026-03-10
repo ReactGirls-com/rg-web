@@ -1,0 +1,38 @@
+export const meetups = {
+  META_MEETUPS_TITLE: 'Meetups | ReactGirls',
+  META_MEETUPS_DESCRIPTION:
+    'Community meetups for women in IT. Talks from speakers in practice, networking, and a safe space for sharing experiences. Join us in Prague.',
+  MEETUPS_LINK_TEXT: 'Meetups',
+  MEETUPS_SECTION_HEADING_BEFORE: 'Enjoy with us',
+  MEETUPS_SECTION_HEADING_HIGHLIGHT: 'community',
+  MEETUPS_SECTION_HEADING_AFTER: 'atmosphere',
+  MEETUPS_SECTION_SUBHEADING:
+    'Join us at the next ReactGirls meetup. Listen to interesting talks or try to get on stage with a microphone.',
+  MEETUPS_SECTION_BUTTON: 'Check out planned events',
+  MEETUPS_STATS_PAST_MEETUPS_LABEL: 'Past meetups',
+  MEETUPS_STATS_MEMBERS_LABEL: 'Members',
+  MEETUPS_STATS_SPEAKERS_LABEL: 'Speakers from practice',
+  MEETUPS_STATS_RATING_LABEL: 'Meetup rating',
+  MEETUPS_HOW_IT_WORKS_SECTION_HEADING_BEFORE: 'How our',
+  MEETUPS_HOW_IT_WORKS_SECTION_HEADING_HIGHLIGHT: 'meetups',
+  MEETUPS_HOW_IT_WORKS_SECTION_HEADING_AFTER: 'work',
+  MEETUPS_HOW_IT_WORKS_SECTION_SUBHEADING:
+    'We would love to see you at our meetup.',
+  MEETUPS_HOW_IT_WORKS_STEP_1_TITLE: 'Choose a meetup',
+  MEETUPS_HOW_IT_WORKS_STEP_1_DESCRIPTION: '',
+  MEETUPS_HOW_IT_WORKS_STEP_2_TITLE: 'Arrive at the venue',
+  MEETUPS_HOW_IT_WORKS_STEP_2_DESCRIPTION: '',
+  MEETUPS_HOW_IT_WORKS_STEP_3_TITLE: 'Listen to talks',
+  MEETUPS_HOW_IT_WORKS_STEP_3_DESCRIPTION: '',
+  MEETUPS_HOW_IT_WORKS_STEP_4_TITLE: 'Network',
+  MEETUPS_HOW_IT_WORKS_STEP_4_DESCRIPTION: '',
+  MEETUPS_CTA_TITLE: 'Want to speak at our meetup?',
+  MEETUPS_CTA_DESCRIPTION:
+    "Curious what it's like to present in front of an audience? You can try it with us, even if you don't have presentation experience yet. Come up with a topic and fill out our form. We will get back to you soon.",
+  MEETUPS_CTA_BUTTON: 'Sign up your talk',
+  PAST_MEETUPS_SECTION_HEADING_BEFORE: 'Past',
+  PAST_MEETUPS_SECTION_HEADING_HIGHLIGHT: 'meetups',
+  PAST_MEETUPS_BY: 'by',
+  PAST_MEETUPS_WATCH_BUTTON: 'Watch recording',
+  PAST_MEETUPS_GO_TO_YOUTUBE: 'Go to Youtube',
+};
