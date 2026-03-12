@@ -41,7 +41,7 @@ export const aiJam = {
   AI_JAM_ABOUT_TRENDS_DESCRIPTION:
     'Seznámíš se s nejnovějšími trendy a nástroji v oblasti AI',
   AI_JAM_TOPIC_SECTION_HEADING_BEFORE: 'Co tě čeká na',
-  AI_JAM_TOPIC_SECTION_HEADING_HIGHLIGHT: 'AI jamu',
+  AI_JAM_TOPIC_SECTION_HEADING_HIGHLIGHT: 'AI jamu #1',
   AI_JAM_TOPIC_SECTION_HEADING_AFTER: '?',
   AI_JAM_TOPIC_SECTION_SUBHEADING:
     'Během jednoho večera projdeme konkrétní témata, díky kterým začneš AI nástroje používat sebevědomě v praxi.',

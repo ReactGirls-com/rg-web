@@ -41,7 +41,7 @@ export const aiJam = {
   AI_JAM_ABOUT_TRENDS_DESCRIPTION:
     'Learn about the latest trends and tools in the AI field',
   AI_JAM_TOPIC_SECTION_HEADING_BEFORE: 'What awaits you at',
-  AI_JAM_TOPIC_SECTION_HEADING_HIGHLIGHT: 'AI Jam',
+  AI_JAM_TOPIC_SECTION_HEADING_HIGHLIGHT: 'AI Jam #1',
   AI_JAM_TOPIC_SECTION_HEADING_AFTER: '?',
   AI_JAM_TOPIC_SECTION_SUBHEADING:
     'In one evening, we will walk through concrete topics that help you use AI tools in your coding workflow with confidence.',
