@@ -109,15 +109,47 @@
 
 .footerBottom {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
   padding-top: 24px;
   border-top: 1px solid $white-20;
+
+  @media (min-width: $screen-md-min) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footerLegal {
+  width: 100%;
+
+  @media (min-width: $screen-md-min) {
+    width: auto;
+  }
+}
+
+.footerLegalList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $screen-md-min) {
+    justify-content: flex-start;
+  }
 }
 
 .copyright {
+  margin: 0;
   color: $white-80;
   font-weight: 400;
   font-size: 0.85rem;
+  text-align: center;
 }
 
 .contactIconEmail,

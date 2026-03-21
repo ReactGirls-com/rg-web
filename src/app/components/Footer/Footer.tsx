@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { SOCIAL_LINKS } from '@/src/constants';
+import { PRIVACY_PATH, SOCIAL_LINKS, TERMS_PATH } from '@/src/constants';
 import { CustomLink } from '../../../components/CustomLink';
 import { IconButton } from '@/src/components/IconButton';
 import { ContactRow } from './ContactRow';
@@ -100,6 +100,28 @@ export const Footer: React.FC = async () => {
         </section>
       </div>
       <div className={style.footerBottom}>
+        <nav aria-label={t.ARIA_FOOTER_LEGAL} className={style.footerLegal}>
+          <ul className={style.footerLegalList}>
+            <li>
+              <CustomLink
+                className={style.footerNavLink}
+                activeClassName={style.footerNavLinkActive}
+                href={getLocaleAwareLink(TERMS_PATH, locale)}
+              >
+                {t.FOOTER_LEGAL_TERMS}
+              </CustomLink>
+            </li>
+            <li>
+              <CustomLink
+                className={style.footerNavLink}
+                activeClassName={style.footerNavLinkActive}
+                href={getLocaleAwareLink(PRIVACY_PATH, locale)}
+              >
+                {t.FOOTER_LEGAL_PRIVACY}
+              </CustomLink>
+            </li>
+          </ul>
+        </nav>
         <p className={style.copyright}>
           Lukas Cizek & Thi Phuong Vo © {new Date().getFullYear()}
         </p>
