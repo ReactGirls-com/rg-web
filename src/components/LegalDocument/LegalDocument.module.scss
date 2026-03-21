@@ -1,0 +1,26 @@
+.wrapper {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+
+  @media (min-width: $screen-md-min) {
+    padding: 48px 24px 80px;
+  }
+}
+
+.title {
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 1.25;
+
+  @media (min-width: $screen-md-min) {
+    font-size: 2rem;
+  }
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}

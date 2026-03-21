@@ -10,6 +10,8 @@ const routes = [
   'mentoring',
   'courses',
   'contact',
+  'terms',
+  'privacy',
   'courses/react-akademie',
   'courses/ai-jam',
   'courses/backend-akademie',

@@ -2,6 +2,7 @@ import '../../styles/globalStyles.scss';
 
 import localFont from 'next/font/local';
 import Link from 'next/link';
+import Script from 'next/script';
 import type { Metadata } from 'next';
 
 import { NavLinks } from '../components/NavLinks';
@@ -97,6 +98,10 @@ const LocaleLayout: ChildrenFC<LocaleLayoutProps> = async ({
           <main className={style.content}>{children}</main>
 
           <Footer />
+          <Script
+            src="https://scripts.simpleanalyticscdn.com/latest.js"
+            strategy="lazyOnload"
+          />
         </LanguageProvider>
       </body>
     </html>
