@@ -11,10 +11,7 @@ import { COLORS } from '@/src/styles/color';
 import { getPageAlternates } from '@/src/utils/getCanonicalUrl';
 import { getLocaleAwareLink } from '@/src/utils/getNavLinks';
 import { AppLocalePageProps } from '@/src/utils/types';
-import {
-  MENTORING_LINK,
-  REACT_ACADEMY_REGISTRATION_LINK,
-} from '@/src/constants';
+import { MENTORING_LINK } from '@/src/constants';
 import { WhatYouGonnaLearnSection } from './components/WhatYouGonnaLearnSection/WhatYouGonnaLearnSection';
 import { PrerequisitesSection } from './components/PrerequisitesSection/PrerequisitesSection';
 import { ScheduleSection } from './components/ScheduleSection/ScheduleSection';
@@ -77,16 +74,7 @@ const ReactAcademyPage: React.FC<AppLocalePageProps> = async ({ params }) => {
             </Button>
           </CtaBanner>
         }
-      >
-        <Button
-          variant="grapefruitPulp"
-          href={REACT_ACADEMY_REGISTRATION_LINK}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t.REACT_ACADEMY_HERO_BUTTON}
-        </Button>
-      </SecondaryHero>
+      />
 
       <WhatYouGonnaLearnSection />
       <PrerequisitesSection />
