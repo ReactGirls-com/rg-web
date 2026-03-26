@@ -2,10 +2,7 @@ import { getTranslationsWithLocale } from '@/src/utils/getTranslations';
 import { getLocaleAwareLink } from '@/src/utils/getNavLinks';
 import { COLORS } from '@/src/styles/color';
 import { CourseCard } from './CourseCard';
-import {
-  AI_JAM_REGISTRATION_LINK,
-  REACT_ACADEMY_REGISTRATION_LINK,
-} from '@/src/constants';
+import { AI_JAM_REGISTRATION_LINK } from '@/src/constants';
 import { HeadingHighlight } from '@/src/components/HeadingHighlight';
 import { Section } from '@/src/components/Section';
 import style from './CoursesCardsSection.module.scss';
@@ -46,9 +43,6 @@ export const CoursesCardsSection: React.FC = async () => {
             t.COURSES_CARD_REACT_BULLET_4,
           ]}
           showBadge
-          badgeText={t.COURSES_CARD_REACT_BADGE}
-          primaryButtonText={t.COURSES_CARD_REACT_PRIMARY_BUTTON}
-          primaryButtonHref={REACT_ACADEMY_REGISTRATION_LINK}
           primaryButtonVariant="explodingStar"
           secondaryButtonText={t.COURSES_CARD_LEARN_MORE_BUTTON}
           secondaryButtonHref={getLocaleAwareLink(
