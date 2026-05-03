@@ -1,14 +1,16 @@
 import { getTranslationsWithLocale } from '@/src/utils/getTranslations';
+import { isCourseRegistrationOpen } from '@/src/utils/isCourseRegistrationOpen';
 import { getLocaleAwareLink } from '@/src/utils/getNavLinks';
+import { BACKEND_ACADEMY_REGISTRATION_LINK } from '@/src/constants';
 import { COLORS } from '@/src/styles/color';
 import { CourseCard } from './CourseCard';
-import { AI_JAM_REGISTRATION_LINK } from '@/src/constants';
 import { HeadingHighlight } from '@/src/components/HeadingHighlight';
 import { Section } from '@/src/components/Section';
 import style from './CoursesCardsSection.module.scss';
 
 export const CoursesCardsSection: React.FC = async () => {
   const { locale, t } = await getTranslationsWithLocale();
+  const registrationOpen = isCourseRegistrationOpen();
 
   return (
     <Section
@@ -42,8 +44,6 @@ export const CoursesCardsSection: React.FC = async () => {
             t.COURSES_CARD_REACT_BULLET_3,
             t.COURSES_CARD_REACT_BULLET_4,
           ]}
-          showBadge
-          primaryButtonVariant="explodingStar"
           secondaryButtonText={t.COURSES_CARD_LEARN_MORE_BUTTON}
           secondaryButtonHref={getLocaleAwareLink(
             '/courses/react-akademie',
@@ -56,24 +56,29 @@ export const CoursesCardsSection: React.FC = async () => {
           iconColor={COLORS.grapefruitPulp}
           title={t.COURSES_CARD_BACKEND_TITLE}
           description={t.COURSES_CARD_BACKEND_DESCRIPTION}
+          showBadge={registrationOpen}
+          badgeText={
+            registrationOpen ? t.COURSES_CARD_REGISTRATION_OPEN_PILL : undefined
+          }
+          primaryButtonText={
+            registrationOpen ? t.BACKEND_ACADEMY_HERO_BUTTON : undefined
+          }
+          primaryButtonHref={
+            registrationOpen ? BACKEND_ACADEMY_REGISTRATION_LINK : undefined
+          }
+          primaryButtonVariant={registrationOpen ? 'explodingStar' : undefined}
           secondaryButtonText={t.COURSES_CARD_LEARN_MORE_BUTTON}
           secondaryButtonHref={getLocaleAwareLink(
             '/courses/backend-akademie',
             locale,
           )}
           secondaryButtonVariant="grapefruitPulp"
-          showComingSoon
         />
         <CourseCard
           iconClassName={style.iconAi}
           iconColor={COLORS.paleLavender}
           title={t.COURSES_CARD_AI_TITLE}
           description={t.COURSES_CARD_AI_DESCRIPTION}
-          showBadge
-          badgeText={t.AI_JAM_EVENT_STATUS}
-          primaryButtonText={t.COURSES_CARD_REACT_PRIMARY_BUTTON}
-          primaryButtonHref={AI_JAM_REGISTRATION_LINK}
-          primaryButtonVariant="explodingStar"
           secondaryButtonText={t.COURSES_CARD_LEARN_MORE_BUTTON}
           secondaryButtonHref={getLocaleAwareLink('/courses/ai-jam', locale)}
           secondaryButtonVariant="paleLavender"

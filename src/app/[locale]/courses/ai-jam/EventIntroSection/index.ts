@@ -1,1 +1,0 @@
-export { EventIntroSection } from './EventIntroSection';

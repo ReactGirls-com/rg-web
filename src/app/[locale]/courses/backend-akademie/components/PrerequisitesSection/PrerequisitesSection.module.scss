@@ -1,0 +1,16 @@
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: $max-screen-width;
+}
+
+.card {
+  background-color: #fff;
+}
+
+.iconTarget {
+  background: url('../../../../../../assets/target.svg') no-repeat center center;
+  background-size: 24px 24px;
+}

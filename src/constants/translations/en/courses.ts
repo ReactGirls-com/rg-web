@@ -52,12 +52,12 @@ export const courses = {
   COURSES_CARD_REACT_BULLET_2: 'for intermediate level',
   COURSES_CARD_REACT_BULLET_3: 'lecturers and coaches from practice',
   COURSES_CARD_REACT_BULLET_4: 'React, Git, and TypeScript',
-  COURSES_CARD_REACT_BADGE: 'Registration open',
   COURSES_CARD_REACT_PRIMARY_BUTTON: 'Sign up',
   COURSES_CARD_LEARN_MORE_BUTTON: 'Learn more',
   COURSES_CARD_BACKEND_TITLE: 'Backend Academy',
   COURSES_CARD_BACKEND_DESCRIPTION:
     'Interested in how you can connect your frontend knowledge with backend? We are preparing a new academy where we will introduce you to backend basics.',
+  COURSES_CARD_REGISTRATION_OPEN_PILL: 'Registration open',
   COURSES_CARD_AI_TITLE: 'AI Jam',
   COURSES_CARD_AI_DESCRIPTION:
     'New AI tools are constantly emerging and the moment you learn something, there is already something "newer" and "better" the next day. We will help you navigate through it all!',
