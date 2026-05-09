@@ -8,9 +8,6 @@ import { SecondaryHero } from '@/src/components/SecondaryHero';
 import { COLORS } from '@/src/styles/color';
 import { getPageAlternates } from '@/src/utils/getCanonicalUrl';
 import { AppLocalePageProps } from '@/src/utils/types';
-import { Button } from '@/src/components/Button';
-import { AI_JAM_REGISTRATION_LINK } from '@/src/constants';
-import { EventIntroSection } from './EventIntroSection';
 import { AboutCourseSection } from './AboutCourseSection';
 import { TopicProposalsSection } from './TopicProposalsSection';
 
@@ -54,19 +51,8 @@ const AIJamPage: React.FC = async () => {
             label: t.AI_JAM_STATS_PRICE,
           },
         ]}
-      >
-        <Button
-          variant="grapefruitPulp"
-          href={AI_JAM_REGISTRATION_LINK}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t.REACT_ACADEMY_HERO_BUTTON}
-        </Button>
-      </SecondaryHero>
+      />
       <AboutCourseSection />
-
-      <EventIntroSection />
 
       <TopicProposalsSection />
     </>

@@ -20,10 +20,10 @@ export const TERMS_PATH = '/terms';
 export const PRIVACY_PATH = '/privacy';
 export const MEDIUM_LINK = 'https://reactgirls.medium.com/';
 export const MENTORING_FORM_LINK = 'https://forms.gle/EdLmU3fv5rpMm4W88';
-export const REACT_ACADEMY_REGISTRATION_LINK =
-  'https://docs.google.com/forms/d/1Ge7IKDAzykRLro9W68YhHfQepMrP4yrVwwt216gunQA/viewform?edit_requested=true';
-export const AI_JAM_REGISTRATION_LINK =
-  'https://docs.google.com/forms/d/e/1FAIpQLSdvnq3A3bZmJdyzuRuaYZkn9MIVzgb1UL9mcAyNpCOBN6tqxQ/viewform?usp=publish-editor';
+export const BACKEND_ACADEMY_REGISTRATION_LINK =
+  'https://docs.google.com/forms/d/e/1FAIpQLSfgS3ZBU3lLrQEPPyuVgPIKsAyAv2tnGinsz412yo5RjXsyvg/viewform?usp=dialog';
+
+export const COURSE_REGISTRATION_CUTOFF = new Date(2026, 5, 1);
 
 export const YOUTUBE_CHANNEL_URL = 'https://www.youtube.com/@ReactGirls';
 export const PREREQUISITE_CHECK_URL = 'https://prerequisite-check.netlify.app/';

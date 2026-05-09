@@ -30,6 +30,7 @@ type CourseCardProps = {
     | 'paleLavender';
   showBadge?: boolean;
   badgeText?: string;
+  registrationPillText?: string;
   showComingSoon?: boolean;
 };
 
@@ -48,6 +49,7 @@ export const CourseCard: React.FC<CourseCardProps> = async ({
   secondaryButtonVariant,
   showBadge = false,
   badgeText,
+  registrationPillText,
   showComingSoon = false,
 }) => {
   const { t } = await getTranslationsWithLocale();
@@ -61,8 +63,17 @@ export const CourseCard: React.FC<CourseCardProps> = async ({
         >
           <div className={clsx(style.icon, iconClassName)} />
         </div>
-        {showBadge && badgeText && (
-          <span className={style.badge}>{badgeText}</span>
+        {(registrationPillText || (showBadge && badgeText)) && (
+          <div className={style.headerTrailing}>
+            {registrationPillText && (
+              <span className={style.registrationPill} role="status">
+                {registrationPillText}
+              </span>
+            )}
+            {showBadge && badgeText && (
+              <span className={style.badge}>{badgeText}</span>
+            )}
+          </div>
         )}
       </div>
 

@@ -2,6 +2,7 @@ import clsx from 'clsx';
 
 import { CustomLink } from '@/src/components/CustomLink';
 import { getLocaleAwareLink, getNavLinks } from '@/src/utils/getNavLinks';
+import { isCourseRegistrationOpen } from '@/src/utils/isCourseRegistrationOpen';
 import { type Translations } from '@/src/utils/getTranslations';
 import { Locale } from '@/src/context/LanguageContext';
 import { Button } from '@/src/components/Button';
@@ -46,15 +47,17 @@ export const NavLinks: React.FC<NavLinksProps> = ({
         </li>
       ))}
 
-      <li className={clsx(style.buttonWrapper, buttonWrapperClassName)}>
-        <Button
-          variant="aztecAtom"
-          onClick={onLinkClick}
-          href={`${getLocaleAwareLink('/', locale)}#${SECTION_IDS.OUR_ACTIVITIES}`}
-        >
-          {t.JOIN_BUTTON_TEXT}
-        </Button>
-      </li>
+      {isCourseRegistrationOpen() && (
+        <li className={clsx(style.buttonWrapper, buttonWrapperClassName)}>
+          <Button
+            variant="aztecAtom"
+            onClick={onLinkClick}
+            href={`${getLocaleAwareLink('/', locale)}#${SECTION_IDS.OUR_ACTIVITIES}`}
+          >
+            {t.JOIN_BUTTON_TEXT}
+          </Button>
+        </li>
+      )}
     </ul>
   );
 };

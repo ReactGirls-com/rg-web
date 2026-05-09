@@ -50,12 +50,12 @@ export const courses = {
   COURSES_CARD_REACT_BULLET_2: 'pro středně pokročilé',
   COURSES_CARD_REACT_BULLET_3: 'lektoři a kouči z praxe',
   COURSES_CARD_REACT_BULLET_4: 'React, Git a TypeScript',
-  COURSES_CARD_REACT_BADGE: 'Probíhá přihlašování',
   COURSES_CARD_REACT_PRIMARY_BUTTON: 'Přihlásit se',
   COURSES_CARD_LEARN_MORE_BUTTON: 'Zjistit víc',
   COURSES_CARD_BACKEND_TITLE: 'Backend akademie',
   COURSES_CARD_BACKEND_DESCRIPTION:
     'Zajímá tě, jak můžeš svoje znalosti z frontendu propojit s backendem? Připravujeme novou akademii, kde tě se základy backendu seznámíme.',
+  COURSES_CARD_REGISTRATION_OPEN_PILL: 'Probíhá přihlašování',
   COURSES_CARD_AI_TITLE: 'AI jam',
   COURSES_CARD_AI_DESCRIPTION:
     'Neustále se objevují nové AI nástroje a ve chvíli, kdy se s něčím naučíš, je tu hned další den něco „novějšího" a „lepšího". My ti pomůžeme se v tom všem vyznat!',
