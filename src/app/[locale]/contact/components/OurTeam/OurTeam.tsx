@@ -5,7 +5,7 @@ import {
   type Translations,
 } from '@/src/utils/getTranslations';
 import { COLORS } from '@/src/styles/color';
-import { TeamCard } from './TeamCard';
+import { TeamCard, type RoleType } from './TeamCard';
 import zuzkaImage from '@/src/assets/profileImages/zuzka.webp';
 import eliskaImage from '@/src/assets/profileImages/eliska.webp';
 import ondraImage from '@/src/assets/profileImages/ondra.webp';
@@ -17,19 +17,15 @@ import honzaImage from '@/src/assets/profileImages/honza.webp';
 import evaImage from '@/src/assets/profileImages/eva.webp';
 import tonyImage from '@/src/assets/profileImages/tony.webp';
 import marketaImage from '@/src/assets/profileImages/marketa.webp';
+import jonasImage from '@/src/assets/profileImages/jonas.webp';
+import blankaImage from '@/src/assets/profileImages/blanka.webp';
+import jakubImage from '@/src/assets/profileImages/jakub.webp';
+import filipImage from '@/src/assets/profileImages/filip.webp';
 import style from './OurTeam.module.scss';
-
-type RoleType =
-  | 'ceo'
-  | 'founder'
-  | 'organization'
-  | 'education'
-  | 'marketing'
-  | 'creative';
 
 type TeamMember = {
   name: string;
-  role: RoleType;
+  role: RoleType[];
   descriptionKey: string;
   image: string;
   socialLinks?: {
@@ -42,7 +38,7 @@ type TeamMember = {
 const TEAM_MEMBERS: TeamMember[] = [
   {
     name: 'Zuzana Vlachovská',
-    role: 'ceo',
+    role: ['ceo'],
     descriptionKey: 'TEAM_MEMBER_ZUZANA_DESCRIPTION',
     image: zuzkaImage.src,
     socialLinks: {
@@ -52,7 +48,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: 'Tereza Vaňková',
-    role: 'founder',
+    role: ['founder'],
     descriptionKey: 'TEAM_MEMBER_TEREZA_DESCRIPTION',
     image: terkaImage.src,
     socialLinks: {
@@ -62,7 +58,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: 'Eliška Vo',
-    role: 'organization',
+    role: ['organization', 'education'],
     descriptionKey: 'TEAM_MEMBER_ELISKA_DESCRIPTION',
     image: eliskaImage.src,
     socialLinks: {
@@ -72,7 +68,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: 'Ondřej Kučera',
-    role: 'education',
+    role: ['organization', 'education'],
     descriptionKey: 'TEAM_MEMBER_ONDREJ_DESCRIPTION',
     image: ondraImage.src,
     socialLinks: {
@@ -82,7 +78,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: 'Markéta Krejčí Snížková',
-    role: 'marketing',
+    role: ['marketing'],
     descriptionKey: 'TEAM_MEMBER_MARKETA_DESCRIPTION',
     image: marketaImage.src,
     socialLinks: {
@@ -92,7 +88,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: 'Lukáš Čížek',
-    role: 'education',
+    role: ['organization', 'education'],
     descriptionKey: 'TEAM_MEMBER_LUKAS_DESCRIPTION',
     image: lukasImage.src,
     socialLinks: {
@@ -101,16 +97,17 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: 'Adam Jahelka',
-    role: 'marketing',
+    role: ['organization', 'marketing'],
     descriptionKey: 'TEAM_MEMBER_ADAM_DESCRIPTION',
     image: adamImage.src,
     socialLinks: {
+      email: 'adam@reactgirls.com',
       linkedin: 'https://www.linkedin.com/in/adam-jahelka-a4b01326b/',
     },
   },
   {
     name: 'Eva Čechová',
-    role: 'creative',
+    role: ['creative', 'education'],
     descriptionKey: 'TEAM_MEMBER_EVA_DESCRIPTION',
     image: evaImage.src,
     socialLinks: {
@@ -119,7 +116,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: 'Helena Beranová',
-    role: 'organization',
+    role: ['organization', 'education'],
     descriptionKey: 'TEAM_MEMBER_HELENA_DESCRIPTION',
     image: helcaImage.src,
     socialLinks: {
@@ -129,7 +126,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: 'Tony Truong',
-    role: 'creative',
+    role: ['creative', 'education'],
     descriptionKey: 'TEAM_MEMBER_TONY_DESCRIPTION',
     image: tonyImage.src,
     socialLinks: {
@@ -138,8 +135,45 @@ const TEAM_MEMBERS: TeamMember[] = [
     },
   },
   {
+    name: 'Jonáš Václavek',
+    role: ['education'],
+    descriptionKey: 'TEAM_MEMBER_JONAS_DESCRIPTION',
+    image: jonasImage.src,
+    socialLinks: {
+      linkedin:
+        'https://www.linkedin.com/in/jon%C3%A1%C5%A1-v%C3%A1clavek-82819699/',
+    },
+  },
+  {
+    name: 'Blanka Semanová',
+    role: ['education'],
+    descriptionKey: 'TEAM_MEMBER_BLANKA_DESCRIPTION',
+    image: blankaImage.src,
+    socialLinks: {
+      linkedin: 'https://www.linkedin.com/in/blanka-semanov%C3%A1/',
+    },
+  },
+  {
+    name: 'Jakub Fišer',
+    role: ['education'],
+    descriptionKey: 'TEAM_MEMBER_JAKUB_DESCRIPTION',
+    image: jakubImage.src,
+    socialLinks: {
+      linkedin: 'https://www.linkedin.com/in/jficz/',
+    },
+  },
+  {
+    name: 'Filip Jirsák',
+    role: ['education'],
+    descriptionKey: 'TEAM_MEMBER_FILIP_DESCRIPTION',
+    image: filipImage.src,
+    socialLinks: {
+      linkedin: 'https://www.linkedin.com/in/filipjirsak/',
+    },
+  },
+  {
     name: 'Jan Čuma',
-    role: 'education',
+    role: ['education'],
     descriptionKey: 'TEAM_MEMBER_JAN_DESCRIPTION',
     image: honzaImage.src,
     socialLinks: {
@@ -147,28 +181,6 @@ const TEAM_MEMBERS: TeamMember[] = [
     },
   },
 ];
-
-const TEAM_COLORS: Record<RoleType, string> = {
-  ceo: COLORS.aztecAtom,
-  founder: COLORS.grapefruitPulp,
-  organization: COLORS.explodingStar,
-  education: COLORS.grapefruitPulp,
-  marketing: COLORS.aztecAtom,
-  creative: COLORS.paleLavender,
-};
-
-const getRoleName = (role: RoleType, t: Translations) => {
-  const roleNames: Record<RoleType, string> = {
-    ceo: t.TEAM_MEMBER_ZUZANA_ROLE,
-    founder: t.TEAM_MEMBER_TEREZA_ROLE,
-    organization: t.TEAM_MEMBER_ORGANIZATION_ROLE,
-    education: t.TEAM_MEMBER_EDUCATION_ROLE,
-    marketing: t.TEAM_MEMBER_MARKETING_ROLE,
-    creative: t.TEAM_MEMBER_CREATIVE_ROLE,
-  };
-
-  return roleNames[role];
-};
 
 const getDescription = (key: string, t: Translations) =>
   t[key as keyof typeof t] || '';
@@ -197,11 +209,10 @@ export const OurTeam: React.FC = async () => {
           <TeamCard
             key={member.name}
             name={member.name}
-            role={getRoleName(member.role, t)}
+            roles={member.role}
             description={getDescription(member.descriptionKey, t)}
             image={member.image}
             socialLinks={member.socialLinks}
-            teamColor={TEAM_COLORS[member.role]}
           />
         ))}
       </div>
@@ -211,11 +222,10 @@ export const OurTeam: React.FC = async () => {
           <TeamCard
             key={member.name}
             name={member.name}
-            role={getRoleName(member.role, t)}
+            roles={member.role}
             description={getDescription(member.descriptionKey, t)}
             image={member.image}
             socialLinks={member.socialLinks}
-            teamColor={TEAM_COLORS[member.role]}
           />
         ))}
       </div>
