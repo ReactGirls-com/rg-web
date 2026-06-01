@@ -29,19 +29,27 @@ export const contact = {
   TEAM_MEMBER_MARKETA_DESCRIPTION:
     'Markéta learned to program with ReactGirls, now she helps with content.',
   TEAM_MEMBER_ELISKA_DESCRIPTION:
-    'Eliška was our mentee, now she takes care of organizing our activities.',
+    'Eliška was our mentee, now she takes care of organization and helps with coaching.',
   TEAM_MEMBER_ONDREJ_DESCRIPTION:
     'Ondra is our lecturer and consultant for educational courses.',
   TEAM_MEMBER_LUKAS_DESCRIPTION:
     'Lukáš is our mentor and one of the interviewers in mock interviews.',
   TEAM_MEMBER_HELENA_DESCRIPTION:
-    'Helča participated in our academies, now she helps us at our events.',
+    'Helča participated in our academies, now she is an organizer and lecturer.',
   TEAM_MEMBER_TONY_DESCRIPTION:
-    'Tony helps us as a photographer and with creative ideas for marketing.',
+    'Tony helps us as a photographer, assistant coach, and lecturer.',
   TEAM_MEMBER_EVA_DESCRIPTION:
-    'Evča was our mentee, now she helps us with creative work and as a photographer.',
+    'Evča was our mentee, now she helps us with creative work and as a coach.',
   TEAM_MEMBER_ADAM_DESCRIPTION:
-    'Adam regularly creates content for you on social media.',
+    'Adam creates content for you on social media and helps with events.',
   TEAM_MEMBER_JAN_DESCRIPTION:
     'Honza is our mentor, lecturer, and helps us with educational content.',
+  TEAM_MEMBER_JONAS_DESCRIPTION:
+    'Jonáš has lectured the React academy for the second year in a row and is our mentor.',
+  TEAM_MEMBER_BLANKA_DESCRIPTION:
+    'Blanka is one of our historically first mentees, now she lectures with us.',
+  TEAM_MEMBER_JAKUB_DESCRIPTION:
+    'Kuba is our lecturer. You can mainly meet him when it comes to Git.',
+  TEAM_MEMBER_FILIP_DESCRIPTION:
+    'Filip is our mentor and lecturer for our Backend academy.',
 };

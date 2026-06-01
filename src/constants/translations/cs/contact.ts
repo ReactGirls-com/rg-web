@@ -29,19 +29,27 @@ export const contact = {
   TEAM_MEMBER_MARKETA_DESCRIPTION:
     'Markéta se naučila programovat s ReactGirls, teď pomáhá s obsahem.',
   TEAM_MEMBER_ELISKA_DESCRIPTION:
-    'Eliška byla naší mentee, teď se stará o organizaci našich aktivit.',
+    'Eliška byla naší mentee, teď se stará o organizaci a pomáhá koučovat.',
   TEAM_MEMBER_ONDREJ_DESCRIPTION:
     'Ondra je naším lektorem a konzultantem pro vzdělávací kurzy.',
   TEAM_MEMBER_LUKAS_DESCRIPTION:
     'Lukáš je naším mentorem a jedním z pohovorujících v mock interviews.',
   TEAM_MEMBER_HELENA_DESCRIPTION:
-    'Helča se zúčastnila našich akademií, teď nám pomáhá na našich akcích.',
+    'Helča se zúčastnila našich akademií, teď je organizátorka a lektorka.',
   TEAM_MEMBER_TONY_DESCRIPTION:
-    'Tony nám pomáhá jako fotograf a s kreativními nápady pro marketing.',
+    'Tony nám pomáhá jako fotograf, pomocný kouč a lektor.',
   TEAM_MEMBER_EVA_DESCRIPTION:
-    'Evča byla naší mentee, teď nám pomáhá s kreativou a jako fotografka.',
+    'Evča byla naší mentee, teď nám pomáhá s kreativou a jako koučka.',
   TEAM_MEMBER_ADAM_DESCRIPTION:
-    'Adam pro vás pravidelně tvoří obsah na sociální sítě.',
+    'Adam pro vás tvoří obsah na sociální sítě a pomáhá s eventy.',
   TEAM_MEMBER_JAN_DESCRIPTION:
     'Honza je naším mentorem, lektorem a pomáhá nám s edukačním obsahem.',
+  TEAM_MEMBER_JONAS_DESCRIPTION:
+    'Jonáš už druhý rok za sebou lektoroval React akademii a je naším mentorem.',
+  TEAM_MEMBER_BLANKA_DESCRIPTION:
+    'Blanka je jednou z našich historicky prvních mentees, teď u nás lektoruje.',
+  TEAM_MEMBER_JAKUB_DESCRIPTION:
+    'Kuba je naším lektorem. Potkat se s ním můžete hlavně, když jde o Git.',
+  TEAM_MEMBER_FILIP_DESCRIPTION:
+    'Filip je naším mentorem a lektorem naší Backend akademie.',
 };
