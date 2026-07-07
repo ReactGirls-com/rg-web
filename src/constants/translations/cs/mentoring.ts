@@ -55,8 +55,8 @@ export const mentoring = {
   MENTORING_BENEFITS_7: 'Vlastní projekt do portfolia',
   MENTORING_BENEFITS_8: 'Podpora v řízení kariéry',
   MENTORING_BENEFITS_9: 'Zkušenost s prací na reálném projektu',
-  MENTORING_CTA_TITLE: 'Zaujal tě náš mentoring?',
+  MENTORING_CTA_TITLE: 'Přihlašování právě probíhá',
   MENTORING_CTA_DESCRIPTION:
-    'Přihlašování na další běh mentoringu spustíme v létě. Pokud si chceš už teď zarezervovat své místo, můžeš se přihlásit předběžně a my se s tebou spojíme.',
-  MENTORING_CTA_BUTTON_PRELIMINARY: 'Předběžně se přihlásit',
+    'Přihlásit se můžeš přes formulář. Počkej potom prosím, my tě co nejdříve komtaktujeme. ',
+  MENTORING_CTA_BUTTON: 'Přihlásit se',
 };

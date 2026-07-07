@@ -2,6 +2,7 @@
   "name": "rg-web",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "yarn@1.22.22",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -51,14 +52,8 @@
     "typescript-eslint": "^8.45.0"
   },
   "lint-staged": {
-    "src/**/*.{js,ts?(x)}": [
-      "yarn lint:fix"
-    ],
-    "src/**/*.{css,scss}": [
-      "yarn lint:styles:fix"
-    ],
-    "src/**/*.{js,ts,tsx}": [
-      "yarn format:fix"
-    ]
+    "src/**/*.{js,ts?(x)}": ["yarn lint:fix"],
+    "src/**/*.{css,scss}": ["yarn lint:styles:fix"],
+    "src/**/*.{js,ts,tsx}": ["yarn format:fix"]
   }
 }
