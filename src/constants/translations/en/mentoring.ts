@@ -55,8 +55,8 @@ export const mentoring = {
   MENTORING_BENEFITS_7: 'Your own project for portfolio',
   MENTORING_BENEFITS_8: 'Career management support',
   MENTORING_BENEFITS_9: 'Experience working on a real project',
-  MENTORING_CTA_TITLE: 'Interested in our mentoring?',
+  MENTORING_CTA_TITLE: 'Registration is currently in progress',
   MENTORING_CTA_DESCRIPTION:
-    'Registration for the next mentoring run will open in summer. If you want to reserve your spot now, you can sign up in advance and we will get in touch with you.',
-  MENTORING_CTA_BUTTON_PRELIMINARY: 'Sign up in advance',
+    'You can sign up using the form. Please wait—we will contact you as soon as possible.',
+  MENTORING_CTA_BUTTON: 'Sign up',
 };

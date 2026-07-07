@@ -18,7 +18,7 @@ export const MentoringCtaSection: React.FC = async () => {
         buttonsContainerClassName={style.buttonsContainer}
       >
         <Button variant="aztecAtom" href={MENTORING_FORM_LINK}>
-          {t.MENTORING_CTA_BUTTON_PRELIMINARY}
+          {t.MENTORING_CTA_BUTTON}
         </Button>
         <WriteToUsButton />
       </CtaBanner>

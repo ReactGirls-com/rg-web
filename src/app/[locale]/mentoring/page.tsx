@@ -62,8 +62,8 @@ const MentoringPage: React.FC = async () => {
       />
       <WhyChooseMentoringSection />
       <MentoringRegistrationProcess />
-      <MentoringBenefitsSection />
       <MentoringCtaSection />
+      <MentoringBenefitsSection />
     </>
   );
 };

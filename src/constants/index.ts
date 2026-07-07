@@ -19,7 +19,8 @@ export const CONTACT_LINK = '/contact';
 export const TERMS_PATH = '/terms';
 export const PRIVACY_PATH = '/privacy';
 export const MEDIUM_LINK = 'https://reactgirls.medium.com/';
-export const MENTORING_FORM_LINK = 'https://forms.gle/EdLmU3fv5rpMm4W88';
+export const MENTORING_FORM_LINK =
+  'https://docs.google.com/forms/d/e/1FAIpQLScHu6XkO6hAij59fUEDa_DyT2BZUq7YGhs0ATVhv8Qehpl2sg/viewform?usp=header';
 export const BACKEND_ACADEMY_REGISTRATION_LINK =
   'https://docs.google.com/forms/d/e/1FAIpQLSfgS3ZBU3lLrQEPPyuVgPIKsAyAv2tnGinsz412yo5RjXsyvg/viewform?usp=dialog';
 
