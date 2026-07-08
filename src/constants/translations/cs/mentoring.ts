@@ -57,6 +57,6 @@ export const mentoring = {
   MENTORING_BENEFITS_9: 'Zkušenost s prací na reálném projektu',
   MENTORING_CTA_TITLE: 'Přihlašování právě probíhá',
   MENTORING_CTA_DESCRIPTION:
-    'Přihlásit se můžeš přes formulář. Počkej potom prosím, my tě co nejdříve komtaktujeme. ',
+    'Přihlásit se můžeš přes formulář. Počkej potom prosím, my tě co nejdříve kontaktujeme.',
   MENTORING_CTA_BUTTON: 'Přihlásit se',
 };
