@@ -2,14 +2,18 @@ import {
   getTranslationsWithLocale,
   getTranslations,
   getLocaleFromParams,
-  getHourSuffix,
 } from '@/src/utils/getTranslations';
 import { SecondaryHero } from '@/src/components/SecondaryHero';
+import { BorderBox } from '@/src/components/BorderBox';
+import { Button } from '@/src/components/Button';
 import { COLORS } from '@/src/styles/color';
 import { getPageAlternates } from '@/src/utils/getCanonicalUrl';
 import { AppLocalePageProps } from '@/src/utils/types';
+import { AI_JAM_REGISTRATION_LINK } from '@/src/constants';
+import { isAiJamRegistrationOpen } from '@/src/utils/isAiJamRegistrationOpen';
 import { AboutCourseSection } from './AboutCourseSection';
 import { TopicProposalsSection } from './TopicProposalsSection';
+import style from './page.module.scss';
 
 export const generateMetadata = async ({ params }: AppLocalePageProps) => {
   const locale = await getLocaleFromParams(params);
@@ -23,38 +27,36 @@ export const generateMetadata = async ({ params }: AppLocalePageProps) => {
 };
 
 const AIJamPage: React.FC = async () => {
-  const { locale, t } = await getTranslationsWithLocale();
+  const { t } = await getTranslationsWithLocale();
+  const registrationOpen = isAiJamRegistrationOpen();
 
   return (
     <>
       <SecondaryHero
         titleColor={COLORS.paleLavender}
-        headingBefore={t.AI_JAM_HERO_HEADING_BEFORE}
         headingHighlight={t.AI_JAM_HERO_HEADING_HIGHLIGHT}
         subheading={t.AI_JAM_HERO_SUBHEADING}
-        dataCards={[
-          {
-            value: t.AI_JAM_STATS_FORMAT,
-            label: t.AI_JAM_STATS_FORMAT_SUFFIX,
-          },
-          {
-            value: 3,
-            valueSuffix: getHourSuffix(locale, 3),
-            label: t.AI_JAM_STATS_HOURS,
-          },
-          {
-            value: t.AI_JAM_STATS_LOCATION,
-            label: t.AI_JAM_STATS_LOCATION_SUFFIX,
-          },
-          {
-            value: t.AI_JAM_STATS_PRICE_VALUE,
-            label: t.AI_JAM_STATS_PRICE,
-          },
-        ]}
-      />
-      <AboutCourseSection />
+        contentAfterCards={<TopicProposalsSection />}
+      >
+        <div className={style.heroActions}>
+          <BorderBox className={style.dateBadge}>
+            <span className={style.dateIcon} aria-hidden />
+            <span>{t.AI_JAM_HERO_DATE}</span>
+          </BorderBox>
 
-      <TopicProposalsSection />
+          {registrationOpen && (
+            <Button
+              variant="grapefruitPulp"
+              href={AI_JAM_REGISTRATION_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t.AI_JAM_HERO_BUTTON}
+            </Button>
+          )}
+        </div>
+      </SecondaryHero>
+      <AboutCourseSection />
     </>
   );
 };

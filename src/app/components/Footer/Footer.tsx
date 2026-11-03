@@ -4,6 +4,7 @@ import { PRIVACY_PATH, SOCIAL_LINKS, TERMS_PATH } from '@/src/constants';
 import { CustomLink } from '../../../components/CustomLink';
 import { IconButton } from '@/src/components/IconButton';
 import { ContactRow } from './ContactRow';
+import { SimpleAnalyticsCredit } from './SimpleAnalyticsCredit';
 import { LanguageSwitcher } from '@/src/components/LanguageSwitcher';
 import { getLocaleAwareLink, getNavLinks } from '@/src/utils/getNavLinks';
 import { getTranslationsWithLocale } from '@/src/utils/getTranslations';
@@ -122,9 +123,12 @@ export const Footer: React.FC = async () => {
             </li>
           </ul>
         </nav>
-        <p className={style.copyright}>
-          Lukas Cizek & Thi Phuong Vo © {new Date().getFullYear()}
-        </p>
+        <div className={style.footerMeta}>
+          <p className={style.copyright}>
+            Lukas Cizek & Thi Phuong Vo © {new Date().getFullYear()}
+          </p>
+          <SimpleAnalyticsCredit />
+        </div>
       </div>
     </footer>
   );

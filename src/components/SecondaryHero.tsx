@@ -22,7 +22,7 @@ type DataCardItem = {
 type SecondaryHeroProps = {
   titleText?: string;
   titleColor: string;
-  headingBefore: string;
+  headingBefore?: string;
   headingHighlight: string;
   headingAfter?: string;
   subheading: string | ReactNode;
@@ -47,7 +47,7 @@ export const SecondaryHero: React.FC<SecondaryHeroProps> = ({
     titleColor={titleColor}
     heading={
       <>
-        {headingBefore}{' '}
+        {headingBefore && <>{headingBefore} </>}
         <HeadingHighlight highlightColor={titleColor}>
           {headingHighlight}
         </HeadingHighlight>

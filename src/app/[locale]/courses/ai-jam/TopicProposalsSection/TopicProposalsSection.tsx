@@ -1,4 +1,3 @@
-import { Section } from '@/src/components/Section';
 import { HeadingHighlight } from '@/src/components/HeadingHighlight';
 import { CtaBanner } from '@/src/components/CtaBanner';
 import { Button } from '@/src/components/Button';
@@ -12,39 +11,42 @@ export const TopicProposalsSection: React.FC = async () => {
   const { t } = await getTranslationsWithLocale();
 
   return (
-    <Section
-      heading={
-        <>
+    <>
+      <div className={style.topicHeader}>
+        <h2 className={style.topicHeading}>
           {t.AI_JAM_TOPIC_SECTION_HEADING_BEFORE}{' '}
-          <HeadingHighlight highlightColor={COLORS.grapefruitPulp}>
+          <HeadingHighlight highlightColor={COLORS.aztecAtom}>
+            {t.AI_JAM_TOPIC_SECTION_HEADING_HIGHLIGHT_FIRST}
+          </HeadingHighlight>{' '}
+          {t.AI_JAM_TOPIC_SECTION_HEADING_MIDDLE}{' '}
+          <HeadingHighlight highlightColor={COLORS.aztecAtom}>
             {t.AI_JAM_TOPIC_SECTION_HEADING_HIGHLIGHT}
           </HeadingHighlight>
           {t.AI_JAM_TOPIC_SECTION_HEADING_AFTER}
-        </>
-      }
-      subheading={t.AI_JAM_TOPIC_SECTION_SUBHEADING}
-    >
+        </h2>
+      </div>
+
       <div className={style.cardsContainer}>
         <BasicCard
           className={style.card}
           iconClassName={style.iconAgent}
           title={t.AI_JAM_TOPIC_CARD_AGENT_TITLE}
           description={t.AI_JAM_TOPIC_CARD_AGENT_DESCRIPTION}
-          iconColor={COLORS.aztecAtom}
+          iconColor={COLORS.explodingStar}
         />
         <BasicCard
           className={style.card}
           iconClassName={style.iconDesign}
           title={t.AI_JAM_TOPIC_CARD_DESIGN_TITLE}
           description={t.AI_JAM_TOPIC_CARD_DESIGN_DESCRIPTION}
-          iconColor={COLORS.paleLavender}
+          iconColor={COLORS.aztecAtom}
         />
         <BasicCard
           className={style.card}
           iconClassName={style.iconWorkflow}
           title={t.AI_JAM_TOPIC_CARD_WORKFLOW_TITLE}
           description={t.AI_JAM_TOPIC_CARD_WORKFLOW_DESCRIPTION}
-          iconColor={COLORS.explodingStar}
+          iconColor={COLORS.grapefruitPulp}
         />
       </div>
 
@@ -57,6 +59,6 @@ export const TopicProposalsSection: React.FC = async () => {
           {t.AI_JAM_TOPIC_PROPOSALS_BUTTON}
         </Button>
       </CtaBanner>
-    </Section>
+    </>
   );
 };

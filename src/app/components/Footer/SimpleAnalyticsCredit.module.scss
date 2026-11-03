@@ -1,0 +1,30 @@
+.credit {
+  display: block;
+  color: $white-80;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  text-decoration: none;
+
+  &:hover {
+    color: $aztec-atom;
+  }
+
+  &:focus-visible {
+    border-radius: 2px;
+    outline: 2px solid $aztec-atom;
+    outline-offset: 2px;
+  }
+}
+
+.byline {
+  margin-left: 0.35em;
+  white-space: nowrap;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: -0.1em;
+  height: 0.85em;
+  margin: 0 0.15em;
+  fill: currentcolor;
+}
