@@ -28,6 +28,9 @@ export const COURSE_REGISTRATION_CUTOFF = new Date(2026, 5, 1);
 
 export const YOUTUBE_CHANNEL_URL = 'https://www.youtube.com/@ReactGirls';
 export const PREREQUISITE_CHECK_URL = 'https://prerequisite-check.netlify.app/';
+export const AI_JAM_REGISTRATION_LINK =
+  'https://docs.google.com/forms/d/e/1FAIpQLSdy6Sm2a7i84i2NugP0YHOpwtaEU6awg4GPjBvpLm3cF9JSfQ/viewform';
+export const AI_JAM_REGISTRATION_CUTOFF = new Date(2026, 11, 3);
 export const AI_JAM_TOPIC_PROPOSALS_URL =
   'https://docs.google.com/forms/d/e/1FAIpQLSd2ezAdjLa3JMJ6yNJQ-37HeXRpoEaaan7uDFFrzC59B6tBhQ/viewform?usp=publish-editor';
 

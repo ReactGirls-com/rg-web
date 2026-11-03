@@ -31,18 +31,21 @@ export const AboutCourseSection: React.FC = async () => {
     >
       <div className={style.cardsContainer}>
         <BasicCard
+          className={style.card}
           iconClassName={style.iconComputer}
           title={t.AI_JAM_ABOUT_FORMAT_TITLE}
           description={t.AI_JAM_ABOUT_FORMAT_DESCRIPTION}
           iconColor={COLORS.aztecAtom}
         />
         <BasicCard
+          className={style.card}
           iconClassName={style.iconPeople}
           title={t.AI_JAM_ABOUT_NETWORKING_TITLE}
           description={t.AI_JAM_ABOUT_NETWORKING_DESCRIPTION}
           iconColor={COLORS.paleLavender}
         />
         <BasicCard
+          className={style.card}
           iconClassName={style.iconRocket}
           title={t.AI_JAM_ABOUT_TRENDS_TITLE}
           description={t.AI_JAM_ABOUT_TRENDS_DESCRIPTION}

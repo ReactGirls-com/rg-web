@@ -1,13 +1,18 @@
 .cardsContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 310px));
   gap: 24px;
+  justify-content: center;
   width: 100%;
   max-width: $max-screen-width;
 
   @media (min-width: $screen-md-min) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 310px);
   }
+}
+
+.card {
+  max-width: 310px;
 }
 
 .description {

@@ -2,10 +2,11 @@ export const aiJam = {
   META_AI_JAM_TITLE: 'Pravidelný AI jam | ReactGirls',
   META_AI_JAM_DESCRIPTION:
     'Pravidelné workshopy o AI nástrojích v programování. Pomůžeme ti se vyznat v nejnovějších nástrojích a používat je při vývoji.',
-  AI_JAM_HERO_HEADING_BEFORE: 'Pravidelný',
-  AI_JAM_HERO_HEADING_HIGHLIGHT: 'AI jam',
+  AI_JAM_HERO_HEADING_HIGHLIGHT: 'AI jam #2',
   AI_JAM_HERO_SUBHEADING:
-    'Všichni poslední dobou mluví o AI v programování. Neustále se objevují nové AI nástroje a ve chvíli, kdy se s něčím naučíš, je tu hned další den něco „novějšího" a „lepšího". My ti pomůžeme se v tom všem vyznat!',
+    'Za jeden večer společně postavíme jednu appku, od prázdného repa až po nasazený frontend. Ty vedeš, AI kóduje, a my ti ukážeme, jak z ní dostat maximum.',
+  AI_JAM_HERO_DATE: '3. prosince 2026 | 18:00',
+  AI_JAM_HERO_BUTTON: 'Přihlásit se',
   AI_JAM_CTA_TITLE: 'Brzy zveřejníme další informace',
   AI_JAM_CTA_DESCRIPTION:
     'Sleduj nás na našich sociálních sítích, kde všechny novinky uvidíš jako první, a nenech si utéct přihlašování!',
@@ -20,9 +21,9 @@ export const aiJam = {
   AI_JAM_ABOUT_COURSE_HEADING_HIGHLIGHT: 'AI jam',
   AI_JAM_ABOUT_COURSE_HEADING_AFTER: '?',
   AI_JAM_ABOUT_COURSE_DESCRIPTION_1:
-    'AI jam je pravidelná akce, která kombinuje formu workshopu a meetupu. První dvě hodiny věnujeme vzdělávání. Seznámíš se s výběrem zažitých i nejnovějších AI nástrojů, které při programování můžeš hned začít používat.',
+    'AI jam je workshop, který se zaměřuje na oblast umělé inteligence v kontextu programování. Seznámíš se s výběrem zažitých i nejnovějších AI nástrojů, které při programování můžeš hned začít používat. Témata a podoba výuky se mění podle aktuálních trendů - proto je každý AI jam jiný.',
   AI_JAM_ABOUT_COURSE_DESCRIPTION_2:
-    'Každý AI jam bude zakončen hodinovým volným prostorem. Je na tobě, jestli se zapojíš do diskuze k tématu s lektorem a kouči, jestli čas věnuješ zkoušení nových nástrojů po vlastní ose, nebo jestli si budeš povídat s kamarádkou, se kterou ses na AI jamu potkala.',
+    'Po skončení AI jamu budeme rádi, když s námi ještě chvíli zůstaneš. Je na tobě, jestli se zapojíš do diskuze k tématu s lektorem a kouči, jestli čas věnuješ zkoušení nových nástrojů po vlastní ose, nebo jestli si budeš povídat s kamarádkou, se kterou ses na AI jamu potkala.',
   AI_JAM_ABOUT_FORMAT_TITLE: 'Praktický formát',
   AI_JAM_ABOUT_FORMAT_DESCRIPTION:
     'Hands-on workshopy, kde si práci s AI nástroji i sama vyzkoušíš',
@@ -32,20 +33,21 @@ export const aiJam = {
   AI_JAM_ABOUT_TRENDS_TITLE: 'Aktuální trendy',
   AI_JAM_ABOUT_TRENDS_DESCRIPTION:
     'Seznámíš se s nejnovějšími trendy a nástroji v oblasti AI',
-  AI_JAM_TOPIC_SECTION_HEADING_BEFORE: 'Co tě čeká na',
-  AI_JAM_TOPIC_SECTION_HEADING_HIGHLIGHT: 'AI jamu #1',
+  AI_JAM_TOPIC_SECTION_HEADING_BEFORE: 'Co tě',
+  AI_JAM_TOPIC_SECTION_HEADING_HIGHLIGHT_FIRST: 'čeká',
+  AI_JAM_TOPIC_SECTION_HEADING_MIDDLE: 'na',
+  AI_JAM_TOPIC_SECTION_HEADING_HIGHLIGHT: 'AI jamu #2',
   AI_JAM_TOPIC_SECTION_HEADING_AFTER: '?',
-  AI_JAM_TOPIC_SECTION_SUBHEADING:
-    'Během jednoho večera projdeme konkrétní témata, díky kterým začneš AI nástroje používat sebevědomě v praxi.',
-  AI_JAM_TOPIC_CARD_AGENT_TITLE: 'Kdo je tady agent?',
+  AI_JAM_TOPIC_CARD_AGENT_TITLE: 'Než napíšeš první prompt',
   AI_JAM_TOPIC_CARD_AGENT_DESCRIPTION:
-    'Od webových chatů k autonomním agentům. Rychlý průlet evolucí, ukážeme si, proč je tohle pro vývojáře zlomový moment.',
-  AI_JAM_TOPIC_CARD_DESIGN_TITLE: 'AI × Design – UI z hlavy na screen',
+    'Naučíme AI tvůj projekt. Pravidla projektu, plán před kódem a pár triků, díky kterým AI přestane vymýšlet vlastní konvence a začne psát kód, jaký chceš vidět v code review.',
+  AI_JAM_TOPIC_CARD_DESIGN_TITLE:
+    'Z obrázku do Reactu (a ne do fialového gradientu)',
   AI_JAM_TOPIC_CARD_DESIGN_DESCRIPTION:
-    'Od nápadu k hotové React komponentě za minuty. Generuj profi vizuál lusknutím prstu. „Designer not included.“',
-  AI_JAM_TOPIC_CARD_WORKFLOW_TITLE: 'AI workflow – Jak z toho vyždímat maximum',
+    'Ze skici nebo screenshotu k hotovým komponentám. Ukážeme si, jak AI dát vkus, design systém a hlavně oči, aby viděla, co nakódovala, a sama si to opravila.',
+  AI_JAM_TOPIC_CARD_WORKFLOW_TITLE: 'Ship it! Debug, polish a deploy',
   AI_JAM_TOPIC_CARD_WORKFLOW_DESCRIPTION:
-    'Tvůj coding buddy na steroidech. Nastavení, efektivní prompty a tipy, jak debugovat kód v rekordním čase.',
+    'AI si appku sama proklikne v prohlížeči, najde chyby a doladí responzivitu i přístupnost. Na konci večera máš projekt online a na GitHubu.',
   AI_JAM_TOPIC_PROPOSALS_TITLE: 'Navrhni téma na příště',
   AI_JAM_TOPIC_PROPOSALS_DESCRIPTION:
     'Napadá tě téma, které by mělo na příštím AI jamu zaznít? Poděl se s námi o svůj tip!',
